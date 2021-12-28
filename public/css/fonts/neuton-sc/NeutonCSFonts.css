@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Neuton CS Regular";
+    src: url(Neuton-SC-Regular.ttf);
+}
+@font-face {
+    font-family: "Neuton CS Bold";
+    src: url(Neuton-SC-Bold.ttf);
+}
+@font-face {
+    font-family: "Neuton CS Extrabold";
+    src: url(Neuton-SC-Extrabold.ttf);
+}
+@font-face {
+    font-family: "Neuton CS Light";
+    src: url(Neuton-SC-Light.ttf);
+}
+@font-face {
+    font-family: "Neuton CS ExtraLight";
+    src: url(Neuton-SC-Extralight.ttf);
+}
