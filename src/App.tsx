@@ -20,7 +20,6 @@ export default function App () {
         <Header />
 
         <Routes>
-          <Route path="*" element={<PageNotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="apropos-de-cfbank" element={<AproposDeCFBANK />} />
           <Route path="notre-equippe" element={<NotreEquippe />} />
@@ -29,7 +28,7 @@ export default function App () {
           <Route path="investisseurs-financiers-et-strategiques" element={<InvestisseursFInanciersEtStrategiques/>} />
           <Route path="nos-solutions" element={<NosSolutions />} />
           <Route path="contact" element={<ContactUs />} />
-
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
 
         <SponsorsArea />
