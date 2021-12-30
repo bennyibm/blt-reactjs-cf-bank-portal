@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 
 
 const Footer : FunctionComponent = () =>{
+    const currentYear = new Date().getFullYear()
     return(
         <footer id="footer">
             {/* Services-lines Items Container */}
@@ -149,14 +150,14 @@ const Footer : FunctionComponent = () =>{
                             {/* <!-- Nav Footer--> */}
                             <ul className="nav-footer">
                                 <li><Link to="/">Accueil</Link> </li>
-                                <li><Link to={{pathname : "apropos-de-cfbank"}}>CF-BANK</Link></li>
+                                <li><Link to="apropos-de-cfbank">CF-BANK</Link></li>
                                 <li><Link to="nos-divisions">Nos Divisions</Link></li>
                                 <li><Link to="nos-solutions">Nos Solutions</Link></li>
                                 <li><Link to="contact">CONTACT</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-5">
-                            <p>&copy; { new Date().getFullYear() } CF BANK. All Rights Reserved</p>
+                            <p>&copy; { currentYear } CF BANK. All Rights Reserved</p>
                         </div>
                     </div>
                 </div>
