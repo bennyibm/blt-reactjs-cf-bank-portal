@@ -1,5 +1,5 @@
-import React, {FunctionComponent} from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { ReactNode, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Footer from './component/footer/Footer';
 import Header from "./component/header"
 import AproposDeCFBANK from './pages/apropos-de-cfbank';
@@ -13,26 +13,44 @@ import NotreEquippe from './pages/notre-equipe';
 import SingleDivisisionTemplate from './pages/single-division-template';
 import { SponsorsArea } from './component';
 
+function ScrollToTop({children} : {children : ReactNode}){
+  const location = useLocation()
+
+  useEffect(() =>{
+    window.scrollTo(0, 0);
+  }, [location])
+
+  return(
+    <>
+      {children}
+    </>
+  )
+}
+
 export default function App () {
+  
   return (
       
       <BrowserRouter>
-        <Header />
+        <ScrollToTop>
+          <Header />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="apropos-de-cfbank" element={<AproposDeCFBANK />} />
-          <Route path="notre-equippe" element={<NotreEquippe />} />
-          <Route path="nos-divisions" element={<NosDivisions />} />
-          <Route path="division-details" element={<SingleDivisisionTemplate />} />
-          <Route path="investisseurs-financiers-et-strategiques" element={<InvestisseursFInanciersEtStrategiques/>} />
-          <Route path="nos-solutions" element={<NosSolutions />} />
-          <Route path="contact" element={<ContactUs />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="apropos-de-cfbank" element={<AproposDeCFBANK />} />
+            <Route path="notre-equippe" element={<NotreEquippe />} />
+            <Route path="nos-divisions" element={<NosDivisions />} />
+            <Route path="division-details" element={<SingleDivisisionTemplate />} />
+            <Route path="investisseurs-financiers-et-strategiques" element={<InvestisseursFInanciersEtStrategiques/>} />
+            <Route path="nos-solutions" element={<NosSolutions />} />
+            <Route path="contact" element={<ContactUs />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
 
-        <SponsorsArea />
-        <Footer/>
+          <SponsorsArea />
+          <Footer/>
+        </ScrollToTop>
+        
       </BrowserRouter>
   );
 }

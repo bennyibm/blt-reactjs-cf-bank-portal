@@ -148,16 +148,15 @@ const Footer : FunctionComponent = () =>{
                         <div className="col-md-7">
                             {/* <!-- Nav Footer--> */}
                             <ul className="nav-footer">
-                                <li><Link to="#">HOME</Link> </li>
-                                <li><Link to="#">COMPANY</Link></li>
-                                <li><Link to="#">SERVICES</Link></li>
-                                <li><Link to="#">NEWS</Link></li>
-                                <li><Link to="#">PORTFOLIO</Link></li>
-                                <li><Link to="#">CONTACT</Link></li>
+                                <li><Link to="/">Accueil</Link> </li>
+                                <li><Link to={{pathname : "apropos-de-cfbank"}}>CF-BANK</Link></li>
+                                <li><Link to="nos-divisions">Nos Divisions</Link></li>
+                                <li><Link to="nos-solutions">Nos Solutions</Link></li>
+                                <li><Link to="contact">CONTACT</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-5">
-                            <p>&copy; 2015 CF BANK. All Rights Reserved.  2010 - 2015</p>
+                            <p>&copy; { new Date().getFullYear() } CF BANK. All Rights Reserved</p>
                         </div>
                     </div>
                 </div>
