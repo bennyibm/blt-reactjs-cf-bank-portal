@@ -47,17 +47,30 @@ const NavBar : FunctionComponent = () =>{
                         <div id="navbar-collapse-1"  className="navbar-collapse collapse">
                             {/* <!-- Nav Bar Items --> */}
                             <ul  className="nav navbar-nav">
-                                <NavBarItem title="Apropos de CF BANK" link="apropos-de-cfbank" />
-                                {/* <NavBarItem title="Nos Divisions" link="nos-divisions" /> */}
+                                {/* <NavBarItem title="Apropos de CF BANK" link="apropos-de-cfbank" /> */}
+                                <NavBarItemWithSubMenu title="Apropos de CF BANK">
+                                        <li>
+                                            <Link to="apropos-de-cfbank"> A propos </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="historique"> Historique </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="notre-equippe"> Notre equippe </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="events"> Events </Link>
+                                        </li>
+                                </NavBarItemWithSubMenu>
                                 <NavBarItemWithSubMenu title="Nos Divisions">
                                         <li>
-                                            <a href="division-details"> About Us </a>
+                                            <Link to="banque-d-investissement"> Banque d'Investissement </Link>
                                         </li>
                                         <li>
-                                            <a href="division-details"> History </a>
+                                            <Link to="banque-d-affaires"> Banque d'affaires </Link>
                                         </li>
                                         <li>
-                                            <a href="division-details"> Events </a>
+                                            <Link to="notation-financiere"> Notation financiere </Link>
                                         </li>
                                 </NavBarItemWithSubMenu>
                                 <NavBarItem title="Investisseurs financiers et strategiques" link="investisseurs-financiers-et-strategiques" />

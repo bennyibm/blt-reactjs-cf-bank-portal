@@ -2,6 +2,10 @@ import React, {FunctionComponent} from "react"
 import { Link } from "react-router-dom"
 
 
+function RecentLinkItem(){
+
+}
+
 const Footer : FunctionComponent = () =>{
     const currentYear = new Date().getFullYear()
     return(
@@ -98,14 +102,20 @@ const Footer : FunctionComponent = () =>{
 
                     <div className="col-sm-6 col-md-3">
                         <div className="border-right border-right-none">
-                            <h4>Recent Links</h4>
+                            <h4>Nos divisions</h4>
                             <ul className="list-styles">
-                                <li><i className="fa fa-check"></i> 
-                                    <Link to="#">Corporate Web CF BANK</Link>
+                                <li>
+                                    <i className="fa fa-check"></i> 
+                                    <Link to="bank-d-investissement">Banque d'Investissement</Link>
                                 </li>
-                                <li><i className="fa fa-check"></i> <Link to="#">CF BANK Innovation Center</Link></li>
-                                <li><i className="fa fa-check"></i> <Link to="#">Corporate Responsibility</Link></li>
-                                <li><i className="fa fa-check"></i> <Link to="#">Information of interest</Link></li>
+                                <li>
+                                    <i className="fa fa-check"></i>
+                                    <Link to="banque-d-affaire">Banque d'affaires</Link>
+                                </li>
+                                <li>
+                                    <i className="fa fa-check"></i>
+                                    <Link to="notation-financiere">Notation financiere</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

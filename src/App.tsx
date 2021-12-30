@@ -12,6 +12,8 @@ import NosDivisions from './pages/nos-divisions';
 import NotreEquippe from './pages/notre-equipe';
 import SingleDivisisionTemplate from './pages/single-division-template';
 import { SponsorsArea } from './component';
+import Events from './pages/company/events';
+import History from './pages/company/history';
 
 function ScrollToTop({children} : {children : ReactNode}){
   const location = useLocation()
@@ -36,15 +38,20 @@ export default function App () {
           <Header />
 
           <Routes>
+            <Route path="*" element={<PageNotFound />} />
             <Route path="/" element={<Home />} />
             <Route path="apropos-de-cfbank" element={<AproposDeCFBANK />} />
+            <Route path="historique" element={<History />} />
+            <Route path="events" element={<Events />} />
             <Route path="notre-equippe" element={<NotreEquippe />} />
-            <Route path="nos-divisions" element={<NosDivisions />} />
+            <Route path="nos-divisions" element={<SingleDivisisionTemplate />} />
+            <Route path="banque-d-affaires" element={<SingleDivisisionTemplate />} />
+            <Route path="banque-d-investissement" element={<SingleDivisisionTemplate />} />
+            <Route path="notation-financiere" element={<SingleDivisisionTemplate />} />
             <Route path="division-details" element={<SingleDivisisionTemplate />} />
             <Route path="investisseurs-financiers-et-strategiques" element={<InvestisseursFInanciersEtStrategiques/>} />
             <Route path="nos-solutions" element={<NosSolutions />} />
             <Route path="contact" element={<ContactUs />} />
-            <Route path="*" element={<PageNotFound />} />
           </Routes>
 
           <SponsorsArea />

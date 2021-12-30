@@ -1,7 +1,7 @@
 import React, {FunctionComponent} from "react"
 import { Link } from "react-router-dom"
 
-const HeroBreadcrumb : FunctionComponent<{title : string}> = ({title}) =>{
+const HeroBreadcrumb : FunctionComponent<{title : string, description? : string}> = ({title, description}) =>{
     return(
         <div className="content_info">
             {/* Info Section title*/}
@@ -12,7 +12,7 @@ const HeroBreadcrumb : FunctionComponent<{title : string}> = ({title}) =>{
                             <h3 style={{color : "white"}}>{title}</h3>
                             <h5 style={{color : "white"}}>Capital Financial BANK</h5>
                             <p style={{color : "white"}}>
-                                {/* Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. */}
+                                {description}
                             </p>
                         </div>
                         <div className="col-md-5 hidden-xs hidden-sm">
@@ -36,7 +36,7 @@ const HeroBreadcrumb : FunctionComponent<{title : string}> = ({title}) =>{
                     <Link to="/">Accueil</Link>
                 </li>
                 <li>/</li>
-                <li>Apropos de F-BANK</li>
+                <li>{title}</li>
             </ul>
             </div>
             {/* End breadcrumbs*/}

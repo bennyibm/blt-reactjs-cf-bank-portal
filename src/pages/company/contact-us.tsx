@@ -1,9 +1,8 @@
-import React, {FunctionComponent} from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import ContatDetails from "../../component/contat-details";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
-const ContactUs : FunctionComponent= () =>{
+export default function ContactUs(){
     return(
         <div>
             <HeroBreadcrumb title="Apropos de CF BANK" />
@@ -52,4 +51,3 @@ const ContactUs : FunctionComponent= () =>{
     )
 }
 
-export default ContactUs

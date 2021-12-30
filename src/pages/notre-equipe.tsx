@@ -2,7 +2,90 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroBreadcrumb from "../component/hero-breadcrumb";
 
+type TeamMemberProps={
+    name? : string,
+    location? : string,
+    email? : string,
+    phone? : string,
+    facebook? : string,
+    linkedin? : string,
+
+}
+
+const defaultTeamMember = {
+    name : "Benny",
+    location : "Congo/Kinshasa",
+    email : "benny.nkonga@businesslighthouse.tech",
+    phone : "+243815490726",
+    facebook : "bennyibmn",
+    linkedin : "bennyinkonga"
+}
+function TeamMemberItem(teamMember : TeamMemberProps = defaultTeamMember){
+    return(
+        <div className="col-md-3">
+            <div className="item-team">
+                <a href="img/team/1.jpg" className="fancybox"><img src="img/team/1.jpg" alt="" /></a>
+                <h4>Jeniffer</h4>
+                <span className="country"><img src="img/country/london.png" alt="" /> {teamMember.location}</span>
+                <ul className="list-styles">
+                    <li>
+                        <i className="fa fa-envelope" /> 
+                        <Link to="#">{teamMember.email}</Link>
+                    </li>
+                    <li>
+                        <i className="fa fa-headphones" />
+                         <Link to="#">{teamMember.phone}</Link>
+                    </li>
+                    <li>
+                        <i className="fa fa-facebook" /> 
+                        <Link to="#">{teamMember.facebook}</Link>
+                    </li>
+                    <li>
+                        <i className="fa fa-linkedin" /> 
+                        <Link to="#">{teamMember.linkedin}</Link>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+const teamMembersDummy = [
+    {
+        name : "Benny",
+        location : "Congo/Kinshasa",
+        email : "benny.nkonga@businesslighthouse.tech",
+        phone : "+243815490726",
+        facebook : "bennyibmn",
+        linkedin : "bennyinkonga"
+    },
+    {
+        name : "Benny",
+        location : "Congo/Kinshasa",
+        email : "benny.nkonga@businesslighthouse.tech",
+        phone : "+243815490726",
+        facebook : "bennyibmn",
+        linkedin : "bennyinkonga"
+    },
+    {
+        name : "Benny",
+        location : "Congo/Kinshasa",
+        email : "benny.nkonga@businesslighthouse.tech",
+        phone : "+243815490726",
+        facebook : "bennyibmn",
+        linkedin : "bennyinkonga"
+    },
+    {
+        name : "Benny",
+        location : "Congo/Kinshasa",
+        email : "benny.nkonga@businesslighthouse.tech",
+        phone : "+243815490726",
+        facebook : "bennyibmn",
+        linkedin : "bennyinkonga"
+    }
+]
 export default function NotreEquippe() {
+
     return(
         <div>
             <HeroBreadcrumb title="Notre equippe" />
@@ -25,11 +108,11 @@ export default function NotreEquippe() {
                         {/* Item Team Member*/} 
                         <div className="col-md-3">
                             <div className="item-team">
-                            <a href="img/team/1.jpg" className="fancybox"><img src="img/team/1.jpg" alt="" /></a>
-                            <h4>Jeniffer</h4>
-                            <span className="country"><img src="img/country/london.png" alt="" /> London, UK</span>
+                            <img src="img/team/2.jpg" alt="" />
+                            <h4>Federick</h4>
+                            <span className="country"><img src="img/country/au.png" alt="" /> London, UK</span>
                             <ul className="list-styles">
-                                <li><i className="fa fa-envelope" /> <Link to="#">jm@iwthemes.com</Link></li>
+                                <li><i className="fa fa-envelope" /> <Link to="#">fg@iwthemes.com</Link></li>
                                 <li><i className="fa fa-headphones" /> <Link to="#">+56 3456298</Link></li>
                                 <li><i className="fa fa-facebook" /> <Link to="#">@jeniffer</Link></li>
                                 <li><i className="fa fa-linkedin" /> <Link to="#">jenifer</Link></li>

@@ -1,45 +1,14 @@
-import React, {FunctionComponent} from "react";
+import React from "react";
+import { HeroBreadcrumb } from "../../component";
 
-const History : FunctionComponent= () =>{
+export default function History(){
+    const headerDescriptor = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra."
     return(
         <div>
-            {/* Info Content - Section Title*/}
-            <div className="content_info">
-                {/* Info Section title*/}
-                <div className="section-title-01 section-title-01-center">
-                <div className="container">
-                    <div className="row">
-                    <div className="col-md-12">
-                        <h3>Our History</h3>
-                        <h5>Great Company</h5>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                {/* End Info Section Title*/}
-                {/* breadcrumbs*/}
-                <div className="breadcrumbs breadcrumbs-sections">
-                <ul>
-                    <li className="breadcrumbs-home">
-                    <a href="#" title="Back To Home">
-                        <i className="fa fa-home" />
-                    </a>
-                    </li>
-                    <li>
-                    <a href="#">Company</a>
-                    </li>
-                    <li>
-                    /
-                    </li>
-                    <li>
-                    History
-                    </li>
-                </ul>
-                </div>
-                {/* End breadcrumbs*/}
-            </div>
-            {/* End Info Content - Section Title*/}
+            
+            <HeroBreadcrumb title="Nos evenements" description={headerDescriptor} />
+
+
             {/* Info Content  1980*/}
             <div className="content_info">
                 {/* title-vertical-line*/}
@@ -197,4 +166,3 @@ const History : FunctionComponent= () =>{
     )
 }
 
-export default History
