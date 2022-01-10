@@ -1,11 +1,17 @@
-import React, {FunctionComponent} from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 
-const HeroBreadcrumb : FunctionComponent<{title : string, description? : string}> = ({title, description}) =>{
+type HeroBreadcrumbProps = {
+    title : string, 
+    description? : string
+    heroImagePath? : string,
+    heroImagePosition? : "top" | "bottom" | "left" | "right" | "center" 
+}
+export default function HeroBreadcrumb({title, description, heroImagePath = "custom/hands-together.png", heroImagePosition = "center"} : HeroBreadcrumbProps){
     return(
         <div className="content_info">
             {/* Info Section title*/}
-            <div className="section-title-01 breadcrumb-hero">
+            <div className="section-title-01 breadcrumb-hero" style={{backgroundImage : `url(/img/${heroImagePath})`, backgroundPosition : heroImagePosition }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7">
@@ -17,7 +23,7 @@ const HeroBreadcrumb : FunctionComponent<{title : string, description? : string}
                         </div>
                         <div className="col-md-5 hidden-xs hidden-sm">
                             <div className="image-title-section">
-                            <img src="img/women-head.png" alt="" className="img-responsive" />
+                            {/* <img src="img/women-head.png" alt="" className="img-responsive" /> */}
                             </div>
                         </div>
                     </div>
@@ -28,7 +34,7 @@ const HeroBreadcrumb : FunctionComponent<{title : string, description? : string}
             <div className="breadcrumbs breadcrumbs-sections">
             <ul>
                 <li className="breadcrumbs-home">
-                    <Link to="#" title="Back To Home">
+                    <Link to="/" title="Back To Home">
                         <i className="fa fa-home" />
                     </Link>
                 </li>
@@ -43,5 +49,3 @@ const HeroBreadcrumb : FunctionComponent<{title : string, description? : string}
         </div>
     )
 }
-
-export default HeroBreadcrumb

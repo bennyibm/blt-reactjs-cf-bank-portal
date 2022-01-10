@@ -15,7 +15,7 @@ export function BlogItem() {
                 {/*End Head Blog Post*/}  
                 {/*Img Blog Post*/}
                 <div className="img-item-blog-post">
-                    <img src="img/blog-img/thumbs/1.jpg" alt="" />
+                    <img src="/img/custom/launch-business.jpg" alt="" />
                     <div className="post-meta">
                     <ul>
                         <li>

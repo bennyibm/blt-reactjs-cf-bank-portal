@@ -2,20 +2,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BlogSection } from "../component";
 
-function SlideItem() {
+type SlideItemProps = {
+    image? : string,
+    principalTitle? : string,
+    subTitle? : string,
+    description? : string,
+
+}
+function SlideItem({image = "custom/assembly.png", principalTitle = "ARE YOU READY?", subTitle = "YOURS SUCCESFULLS ARE OURS", description = "Check Coopbank included multiple features"} : SlideItemProps) {
     return(
         <li data-transition="zoomout" data-slotamount={7} data-masterspeed={1500}>
             {/* MAIN IMAGE */}
-            <img src="img/cf-bank-hero.png" alt="fullslide1" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat" />
+            <img src={`/img/${image}`} alt="fullslide1" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat" />
             {/* LAYERS */}
             {/* LAYER NR. 1 */}
-            <div className="tp-caption medium_text lft stl" data-x="center" data-hoffset data-y="top" data-voffset={160} data-speed={300} data-start={800} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">YOURS SUCCESFULLS ARE OURS
+            <div className="tp-caption medium_text lft stl" data-x="center" data-hoffset data-y="top" data-voffset={160} data-speed={300} data-start={800} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
+                {subTitle}
             </div>
             {/* LAYER NR. 2 */}
-            <div className="tp-caption large_bold_white sft stb" data-x="center" data-hoffset data-y="top" data-voffset={190} data-speed={300} data-start={1000} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">ARE YOU READY?
+            <div className="tp-caption large_bold_white sft stb" data-x="center" data-hoffset data-y="top" data-voffset={190} data-speed={300} data-start={1000} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
+                {principalTitle}
             </div>
             {/* LAYER NR. 3 */}
-            <div className="tp-caption small_light_white sfb stb" data-x="center" data-hoffset data-y="top" data-voffset={260} data-speed={500} data-start={1200} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">Check Coopbank included multiple features
+            <div className="tp-caption small_light_white sfb stb" data-x="center" data-hoffset data-y="top" data-voffset={260} data-speed={500} data-start={1200} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
+                {description}
             </div>
             {/* LAYER NR. 3 */}
             <div className="tp-caption lfb tp-resizeme" data-x="center" data-hoffset={-100} data-y="center" data-voffset={75} data-speed={300} data-start={1400} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed={300}>
@@ -32,14 +42,27 @@ function SlideItem() {
 }
 export default function Home(){
 
-    const slides = [1,2,3,4,5,6,7,8,9]
+    const slides = [
+        {
+            image : "custom/assembly.png"
+        },
+        {
+            image : "custom/launch-business.jpg"
+        },
+        {
+            image : "custom/hands-together.png"
+        },
+        {
+            image : "custom/why-choose-us.jpg"
+        }
+]
     return(
         <>
             <div className="tp-banner-container">
                 <div className="tp-banner">
                 {/* SLIDES CONTENT*/}
                 <ul> 
-                    {slides.map( () => <SlideItem /> )}
+                    {slides.map( slide => <SlideItem image={slide.image} /> )}
                 </ul> 
                 {/* END SLIDES  */} 
                 <div className="tp-bannertimer" />  
@@ -103,7 +126,7 @@ export default function Home(){
             </div>
             {/* End Info Content - Boxes Services*/}
             {/* Info Content  - parallax - services Big Title */}
-            <div className="parallax-window" data-parallax="scroll" data-image-src="img/cf-bank-hero.png">
+            <div className="parallax-window" data-parallax="scroll" data-image-src="/img/custom/why-choose-us.jpg">
                 {/* Content Parallax*/}
                 <section className="opacy_bg_02 paddings">
                     <div className="container">

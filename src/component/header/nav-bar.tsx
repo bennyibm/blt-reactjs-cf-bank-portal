@@ -1,8 +1,6 @@
 import React, {FunctionComponent, ReactNode} from "react"
 import { Link, useLocation } from "react-router-dom"
 
-
-
 const NavBarItem : FunctionComponent<{title : string, link? : string}> = ({title, link}) =>{
     if(!link)
         link = title.toLowerCase()
@@ -48,7 +46,7 @@ const NavBar : FunctionComponent = () =>{
                             {/* <!-- Nav Bar Items --> */}
                             <ul  className="nav navbar-nav">
                                 {/* <NavBarItem title="Apropos de CF BANK" link="apropos-de-cfbank" /> */}
-                                <NavBarItemWithSubMenu title="Apropos de CF BANK">
+                                <NavBarItemWithSubMenu title="Company">
                                         <li>
                                             <Link to="apropos-de-cfbank"> A propos </Link>
                                         </li>
@@ -56,10 +54,24 @@ const NavBar : FunctionComponent = () =>{
                                             <Link to="historique"> Historique </Link>
                                         </li>
                                         <li>
-                                            <Link to="notre-equippe"> Notre equippe </Link>
+                                            <Link to="ce-qui-nous-differencie"> Pourquoi nous </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="nos-clients"> Nos clients </Link>
                                         </li>
                                         <li>
                                             <Link to="events"> Events </Link>
+                                        </li>
+                                </NavBarItemWithSubMenu>
+                                <NavBarItemWithSubMenu title="Gouvernance">
+                                        <li>
+                                            <Link to="/gouvernance/Conseil d'administration"> Conseil d'administration </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/gouvernance/Comité de pilotage">Comité de pilotage </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/gouvernance/Comité de direction">Comité de direction</Link>
                                         </li>
                                 </NavBarItemWithSubMenu>
                                 <NavBarItemWithSubMenu title="Nos Divisions">
@@ -74,7 +86,15 @@ const NavBar : FunctionComponent = () =>{
                                         </li>
                                 </NavBarItemWithSubMenu>
                                 <NavBarItem title="Investisseurs financiers et strategiques" link="investisseurs-financiers-et-strategiques" />
-                                <NavBarItem title="Nos solutions" link="nos-solutions" />
+                                {/* <NavBarItem title="Nos solutions" link="nos-solutions" /> */}
+                                <NavBarItemWithSubMenu title="Media">
+                                        <li>
+                                            <Link to="press-release">Press Release</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="blog">In the news</Link>
+                                        </li>
+                                </NavBarItemWithSubMenu>
                                 <NavBarItem title="Contact" link="contact" />
                             </ul>
                             

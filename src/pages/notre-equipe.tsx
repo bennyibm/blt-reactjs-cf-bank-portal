@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroBreadcrumb from "../component/hero-breadcrumb";
+import { FunctionComponent } from 'react';
 
-type TeamMemberProps={
-    name? : string,
-    location? : string,
-    email? : string,
-    phone? : string,
-    facebook? : string,
-    linkedin? : string,
+type TeamMemberType={
+    name : string,
+    location : string,
+    email : string,
+    phone : string,
+    facebook : string,
+    linkedin : string,
 
 }
 
@@ -20,7 +21,7 @@ const defaultTeamMember = {
     facebook : "bennyibmn",
     linkedin : "bennyinkonga"
 }
-function TeamMemberItem(teamMember : TeamMemberProps = defaultTeamMember){
+const TeamMemberItem : FunctionComponent<{teamMember : TeamMemberType}> = ({teamMember = defaultTeamMember} ) =>{
     return(
         <div className="col-md-3">
             <div className="item-team">
@@ -30,19 +31,19 @@ function TeamMemberItem(teamMember : TeamMemberProps = defaultTeamMember){
                 <ul className="list-styles">
                     <li>
                         <i className="fa fa-envelope" /> 
-                        <Link to="#">{teamMember.email}</Link>
+                        <Link to={`mailto:${teamMember.email}`}>{teamMember.email}</Link>
                     </li>
                     <li>
                         <i className="fa fa-headphones" />
-                         <Link to="#">{teamMember.phone}</Link>
+                         <Link to={`tel:${teamMember.phone}`}>{teamMember.phone}</Link>
                     </li>
                     <li>
                         <i className="fa fa-facebook" /> 
-                        <Link to="#">{teamMember.facebook}</Link>
+                        <Link to={`facebook.com/${teamMember.facebook}`} target="_blank">{teamMember.facebook}</Link>
                     </li>
                     <li>
                         <i className="fa fa-linkedin" /> 
-                        <Link to="#">{teamMember.linkedin}</Link>
+                        <Link to={`linkedin.com/${teamMember.linkedin}`} target="_blank">{teamMember.linkedin}</Link>
                     </li>
                 </ul>
             </div>
@@ -106,6 +107,8 @@ export default function NotreEquippe() {
                 <div className="container">
                     <div className="row">
                         {/* Item Team Member*/} 
+
+                        <TeamMemberItem teamMember={teamMembersDummy[0]} />
                         <div className="col-md-3">
                             <div className="item-team">
                             <img src="img/team/2.jpg" alt="" />

@@ -5,7 +5,7 @@ import HeroBreadcrumb from "../component/hero-breadcrumb";
 export default function InvestisseursFInanciersEtStrategiques() {
   return(
     <div>
-        <HeroBreadcrumb title="Investisseurs financiers et strategiques" />
+        <HeroBreadcrumb title="Investisseurs financiers et strategiques"  heroImagePath="custom/assembly.png"/>
 
         {/* Info Varius*/}
         <div className="content_info">
@@ -48,8 +48,8 @@ export default function InvestisseursFInanciersEtStrategiques() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <h2>INVESTISSEURS FINANCIER ET STRATEGIQU</h2>  
-                  <img src="img/cf-bank-hero.png" alt="" className="img-responsive" style={{borderRadius : 5, marginTop : 20, marginBottom : 20}} />
+                  <h2>INVESTISSEURS FINANCIER ET STRATEGIQUE</h2>  
+                  <img src="/img/custom/assembly.png" alt="" className="img-responsive" style={{height : 400, borderRadius : 5, marginTop : 20, marginBottom : 20, objectFit : "cover"}} />
                   <p style={{textAlign : "justify"}}>
                     Le Groupe des investisseurs financiers et stratégiques CF Bank fournit des services de conseil et de banque d'investissement à un large éventail d'institutions, notamment des sociétés de capital investissement, des fonds de pension, des fonds souverains et d'autres investisseurs.
                   </p>
@@ -62,15 +62,15 @@ export default function InvestisseursFInanciersEtStrategiques() {
         {/* Info Varius*/}
         
         {/* Info Content  - Clients Downloads Area */}
-        <div className="parallax-window" data-parallax="scroll" data-image-src="img/cf-bank-hero.png">
-            {/* Content Parallax*/}
-            <div className="opacy_bg_02 paddings">
+        <div className="parallax-window" data-parallax="scroll" data-image-src="img/parallax-img/parallax-01.jpg">
+          {/* Content Parallax*/}
+          <div className="opacy_bg_02 paddings">
             <div className="container">
-                <div className="row">
+              <div className="row">
                 {/* title-downloads */}             
                 <h1 className="title-downloads">
-                    <span className="logo-clients">CF-BANK</span> Has more than
-                    <span className="responsive-numbers">
+                  <span className="logo-clients">CoopBank</span> Has more than
+                  <span className="responsive-numbers">
                     <span>2</span>
                     ,
                     <span>3</span>
@@ -80,21 +80,22 @@ export default function InvestisseursFInanciersEtStrategiques() {
                     <span>5</span>
                     <span>1</span>
                     <span>8</span>
-                    </span>
-                    Clients.
+                  </span>
+                  Clients.
                 </h1>  
                 {/* End title-downloads */}     
                 {/* subtitle-downloads */} 
                 <div className="subtitle-downloads">
-                    <h4>The best service with the <i className="fa fa-heart" /></h4>
+                  <h4>The best service with the <i className="fa fa-heart" /></h4>
                 </div> 
-                {/* End subtitle-downloads */}  
-                </div>
+                {/* End subtitle-downloads */}
+              </div>
             </div> 
-            </div>  
-            {/* End Content Parallax*/} 
+          </div>  
+          {/* End Content Parallax*/} 
         </div>
         {/* End Info Content  - Clients Downloads Area */}
+
         
     </div>
 

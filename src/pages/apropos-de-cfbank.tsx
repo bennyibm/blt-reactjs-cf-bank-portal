@@ -5,61 +5,29 @@ import HeroBreadcrumb from "../component/hero-breadcrumb";
 export default function AproposDeCFBANK() {
     return(
         <div>
-            <HeroBreadcrumb title="Apropos de CF BANK" />
-            {/* Info Content - Boxes Services*/}
+            <HeroBreadcrumb title="Apropos de CF BANK" heroImagePath="custom/launch-business.jpg"/>
             <div className="content_info">
                 <div className="padding-top padding-bottom-mini">
-                {/* Container Area - Boxes Services */}
-                <div className="container">
-                    <div className="row">
-                    <div className="col-md-5">
-                        <img src="img/gallery/3.jpg" alt="" className="img-responsive" />
-                    </div>       
-                    <div className="col-md-7"  style={{textAlign : "justify"}} >
-                        <div className="title-subtitle">
-                        <h5>Presentation</h5>
-                        <h3>Qui sommes nous ?</h3>
-                        <p className="lead">
-                            Un groupe d'institutions financières qui fournit des services definancement et de conseil a des institutions du monde entier, notamment des banques, des compagnies d'assurance, des sociétés de gestion d'actifs, des sociétés de technologie financière et des institution financières spécialisées
-
-                        </p>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-6">
-                                <h5></h5>
-                                <p style={{color : "black"}}>
-                                    Capital Financial Bank ltd (CF Bankest un leader mondial des services bancaires d’affaire, d'investissement, des valeurs mobilières et de la gestion de placements qui fournit une large gamme de services financiers à une clientèle importante et diversifiée qui comprend des sociétés, des institutions financières, des gouvernements et des particuliers. Fondée en 2019, la société possède des bureaux dans 9 pays et un réseau d’envoyés spéciaux dans tous les principaux centres financiers du monde.
-                                </p>
-                            </div>
-                            <div className="col-md-6">
-                                <h5></h5>
-                                <p style={{color : "black"}}>
-                                    Need more ideas? Create an outline of the important
-                                    sections you want to include in your booklet. Businesses
-                                    often include their vision and mission, in addition to their
-                                    yearly goals and metrics. For an event booklet, include the
-                                    day's schedule or a list of speakers. Shops also hand out
-                                    catalogs, listing their products and the prices. What's
-                                    important is that you know the purpose of your booklet, and
-                                    from there, you'll have millions of ideas ready!
-                                    Whether you're creating a compilation of your recipes or
-                                    showcasing your latest promotions, just create a good
-                                    balance of content and you're on your way to a clear,
-                                    effective booklet.
-                                </p>
+                    <div className="container">
+                        <div className="row" style={{display : "flex"}}>
+                            <div className="col-md-5">
+                                <img src="/img/custom/launch-business.jpg" style={{borderRadius : 10}} alt="" className="img-responsive" />
+                            </div>       
+                            <div className="col-md-7"  style={{textAlign : "justify", display : "flex", flexDirection : "column", justifyContent : "center"}} >
+                                <div className="title-subtitle">
+                                    <h3>Qui sommes nous</h3>
+                                    <p className="">
+                                        Notre groupe d'institutions financières fournit des services de financement et de conseil à des institutions du monde entier, notamment des banques, des compagnies d'assurance, des sociétés de gestion d'actifs, des sociétés de technologie financière et des institutions financières spécialisées.
+                                    </p>
+                                    <p className="">
+                                    Avec près de 300 employés et consultant représentant à travers certains pays du monde - et une présence croissante sur des marchés en croissance tels que l’Afrique centrale et l’ouest, l'Europe et la Chine via nos partenaires - nos spécialistes offrent une large gamme de produits, notamment des conseils en fusions et acquisitions, du financement par actions et par emprunt, des financements structurés et une gestion / couverture des risques.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>             
-                    {/* Col boxes-services */}
-                    
-                    {/* End Col boxes-services */}
                     </div>
                 </div>
-                {/* End Container Area - Boxes Services */}
-                </div>
             </div>
-            {/* End Info Content - Boxes Services*/}
-            {/* Info Content  - Clients Downloads Area */}
             <div className="parallax-window" data-parallax="scroll" data-image-src="img/cf-bank-hero.png">
                 {/* Content Parallax*/}
                 <div className="opacy_bg_02 paddings">
@@ -92,10 +60,7 @@ export default function AproposDeCFBANK() {
                 </div>  
                 {/* End Content Parallax*/} 
             </div>
-            {/* End Info Content  - Clients Downloads Area */}
-            {/* Info Varius*/}
             <div className="content_info">
-                {/* Info Resalt=""*/}
                 <div className="skin_base color-white paddings">
                 <div className="container wow fadeInUp">
                     <div className="row">
@@ -123,99 +88,41 @@ export default function AproposDeCFBANK() {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <img src="img/cf-bank-hero.png" alt="" className="img-responsive" style={{borderRadius : 10}} />
+                        <img src="img/custom/why-choose-us.jpg" alt="" className="img-responsive" style={{borderRadius : 10}} />
                     </div>                    
                     </div>
                 </div>
                 </div>
-                {/* End Info Resalt=""*/}
             </div>
-            {/* Info Varius*/}
-            {/*Info Content Team Members*/}
+            
             <div className="content_info">
-                {/* Parallax Background */}
-                <div className="borders world-bg" />
-                {/* Parallax Background */}
-                {/* title-vertical-line*/}
-                <div className="title-vertical-line">
-                <h2><span>Team</span> Members</h2>
-                <p className="lead">We have created alliances with recognized entities that contribute to improving quality of your life.</p>
-                </div>
-                {/* End title-vertical-line*/}
-                {/* Content Parallax*/}
-                <section className="paddings">
+                <div className="padding-top padding-bottom-mini">
+                {/* Container Area - Boxes Services */}
                 <div className="container">
-                    <div className="row">
-                        {/* Item Team Member*/} 
-                        <div className="col-md-3">
-                            <div className="item-team">
-                            <a href="img/team/1.jpg" className="fancybox"><img src="img/team/1.jpg" alt="" /></a>
-                            <h4>Jeniffer</h4>
-                            <span className="country"><img src="img/country/london.png" alt="" /> London, UK</span>
-                            <ul className="list-styles">
-                                <li><i className="fa fa-envelope" /> <Link to="#">jm@iwthemes.com</Link></li>
-                                <li><i className="fa fa-headphones" /> <Link to="#">+56 3456298</Link></li>
-                                <li><i className="fa fa-facebook" /> <Link to="#">@jeniffer</Link></li>
-                                <li><i className="fa fa-linkedin" /> <Link to="#">jenifer</Link></li>
-                            </ul>
+                    <div className="row" style={{display : "flex"}}>
+                        <div className="col-md-5">
+                            <img src="/img/custom/assembly.png" alt="" style={{height : 300, objectFit : "cover", borderRadius : 10}} className="img-responsive" />
+                        </div>       
+                        <div className="col-md-7"  style={{textAlign : "justify", display : "flex", flexDirection : "column", justifyContent : "center"}} >
+                            <div className="title-subtitle">
+                                <h4>Comment nous sommes organisé </h4>
+                                <p>
+                                    Notre structure mondiale nous permet de mieux répondre aux besoins stratégiques et financiers de nos clients dans toutes les zones géographiques et industries. CFB comprend deux domaines : CFB Classic et notre groupe de financement. Cette double structure nous permet d'offrir la plus large gamme de produits et de services de conseil, renforçant notre capacité à fournir les meilleures solutions de leur catégorie à nos clients.
+                                </p>
                             </div>
-                        </div>
-                        {/* End Item Team Member*/}  
-                        {/* Item Team Member*/} 
-                        <div className="col-md-3">
-                            <div className="item-team">
-                            <img src="img/team/2.jpg" alt="" />
-                            <h4>Federick</h4>
-                            <span className="country"><img src="img/country/au.png" alt="" /> London, UK</span>
-                            <ul className="list-styles">
-                                <li><i className="fa fa-envelope" /> <Link to="#">fg@iwthemes.com</Link></li>
-                                <li><i className="fa fa-headphones" /> <Link to="#">+56 3456298</Link></li>
-                                <li><i className="fa fa-facebook" /> <Link to="#">@jeniffer</Link></li>
-                                <li><i className="fa fa-linkedin" /> <Link to="#">jenifer</Link></li>
-                            </ul>
+                            <div className="title-subtitle">
+                                <h4>Solutions</h4>
+                                <p>
+                                    Les clients recherchent des solutions personnalisées et holistiques. En fonction des besoins uniques de nos clients, nous adaptons les solutions à un large éventail d'offres - de la conception de portefeuille à l'allocation d'actifs et aux solutions de conseil.
+                                </p>
                             </div>
-                        </div>
-                        {/* End Item Team Member*/}  
-                        {/* Item Team Member*/} 
-                        <div className="col-md-3">
-                            <div className="item-team">
-                            <img src="img/team/3.jpg" alt="" />
-                            <h4>Maria</h4>
-                            <span className="country"><img src="img/country/us.png" alt="" /> London, UK</span>
-                            <ul className="list-styles">
-                                <li><i className="fa fa-envelope" /> <Link to="#">ms@iwthemes.com</Link></li>
-                                <li><i className="fa fa-headphones" /> <Link to="#">+56 3456298</Link></li>
-                                <li><i className="fa fa-facebook" /> <Link to="#">@jeniffer</Link></li>
-                                <li><i className="fa fa-linkedin" /> <Link to="#">jenifer</Link></li>
-                            </ul>
-                            </div>
-                        </div>
-                        {/* End Item Team Member*/}  
-                        {/* Item Team Member*/} 
-                        <div className="col-md-3">
-                            <div className="item-team">
-                                <img src="img/team/4.jpg" alt="" />
-                                <h4>John</h4>
-                                <span className="country"><img src="img/country/london.png" alt="" /> London, UK</span>
-                                <ul className="list-styles">
-                                    <li><i className="fa fa-envelope" /> <Link to="#">jr@iwthemes.com</Link></li>
-                                    <li><i className="fa fa-headphones" /> <Link to="#">+56 3456298</Link></li>
-                                    <li><i className="fa fa-facebook" /> <Link to="#">@jeniffer</Link></li>
-                                    <li><i className="fa fa-linkedin" /> <Link to="#">jenifer</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-                        {/* End Item Team Member*/}  
-                        <div className="col-md-12 text-center margin-top">
-                            <Link to="/notre-equippe" className="btn btn-primary">Voir plus</Link>
                         </div>
                     </div>
-                </div> 
-                </section>  
-                {/* End Content Parallax*/} 
+                </div>
+                {/* End Container Area - Boxes Services */}
+                </div>
             </div>
-            {/* End Info Content Team Members*/}
-            
+
         </div>
 
     )

@@ -5,19 +5,22 @@ export default function ContatDetails(){
         <ul className="contact-list">
         <li>
         <h4><i className="fa fa-envelope-o" />Email:</h4>
-            <Link to="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</Link>
+            <a href="mailto:info@cfbank.co.uk">info@cfbank.co.uk</a>
         </li>
         <li>
             <h4><i className="fa fa-fax" />Phones:</h4>
-            <Link to="tel:123-456-7890">123-456-7890</Link>
+            <a href="tel:+442045018493">+44 (0) 204 501 8493</a>
         </li>
         <li>
             <h4><i className="fa fa-globe" />Site web</h4>
-            <Link to="http://www.reallygreatsite.com/" target="_blank">http://www.reallygreatsite.com/</Link>
+            <Link to="http://www.cfbank.co.uk " target="_blank">www.cfbank.co.uk</Link>
         </li>
         <li>
-            <h4><i className="fa fa-map" />Site web</h4>
-            <Link to="#" >23 Anywhere St., Any City, ST 12345</Link>
+            <h4><i className="fa fa-map" />Adresse</h4>
+            <Link to="#" >CF Bank, 5e Etage <br/>
+167/169 Great Portland street; <br/>
+London, W1W 5PF
+United Kingdom</Link>
         </li>
     </ul>
     )

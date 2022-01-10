@@ -10,64 +10,7 @@ const Footer : FunctionComponent = () =>{
     const currentYear = new Date().getFullYear()
     return(
         <footer id="footer">
-            {/* Services-lines Items Container */}
-            <div className="container">
-                <div className="row">
-                    {/* Services-lines Items */}
-                    <div className="col-md-12 services-lines-container">
-                    <ul className="services-lines">
-                        <li>
-                        <div className="item-service-line">
-                            <i className="fa fa-credit-card" />
-                            <h5>Your Payments</h5>
-                            <Link to="#">Go To</Link>
-                        </div>
-                        </li>
-                        <li>
-                        <div className="item-service-line">
-                            <i className="fa fa-industry" />
-                            <h5>District Tax Payment</h5>
-                            <Link to="#">Go To</Link>
-                        </div>
-                        </li>
-                        <li>
-                        <div className="item-service-line">
-                            <i className="fa fa-university" />
-                            <h5>Paying Taxes - CoopBank</h5>
-                            <Link to="#">Go To</Link>
-                        </div>
-                        </li>
-                    </ul>
-                    <ul className="services-lines no-margin">
-                        <li>
-                        <div className="item-service-line">
-                            <i className="fa fa-balance-scale" />
-                            <h5>Payment of contributions</h5>
-                            <Link to="#">Go To</Link>
-                        </div>
-                        </li>
-                        <li>
-                        <div className="item-service-line">
-                            <i className="fa fa-cc" />
-                            <h5>Settlement and severance pay.</h5>
-                            <Link to="#">Go To</Link>
-                        </div>
-                        </li>
-                        <li>
-                        <div className="item-service-line">
-                            <i className="fa fa-line-chart" />
-                            <h5>Workers pay contributions</h5>
-                            <Link to="#">Go To</Link>
-                        </div>
-                        </li>
-                    </ul>
-                    </div> 
-                    {/* End Services-lines Items */} 
-                </div>
-            </div>
-            {/* Services-lines Items Container */}
-
-
+            
             <div className="container">
                 <div className="row paddings-mini">
                     <div className="col-sm-6 col-md-3">
@@ -76,19 +19,19 @@ const Footer : FunctionComponent = () =>{
                             <ul className="contact-footer">
                                 <li>
                                     <i className="fa fa-envelope"></i> 
-                                    <Link to="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</Link>
+                                    <a href="mailto:info@cfbank.co.uk">info@cfbank.co.uk</a>
                                 </li>
                                 <li>
                                     <i className="fa fa-headphones"></i> 
-                                    <Link to="tel:123-456-7890">123-456-7890</Link>
+                                    <a href="tel:+442045018493">+44 (0) 204 501 8493</a>
                                 </li>
                                 <li>
                                     <i className="fa fa-globe"></i> 
-                                    <Link to="http://www.reallygreatsite.com/" target="_blank">1http://www.reallygreatsite.com/</Link>
+                                    <Link to="http://www.cfbank.co.uk" target="_blank">cfbank.co.uk</Link>
                                 </li>
                                 <li className="location">
                                     <i className="fa fa-map"></i> 
-                                    <Link to="#" >23 Anywhere St., Any City, ST 12345</Link>
+                                    <Link to="#" >CF Bank, 5e Etage; <br/> 167/169 Great Portland street; <br/> London, W1W 5PF United Kingdom</Link>
                                 </li>
                             </ul>
                             <div className="logo-footer">
@@ -124,14 +67,14 @@ const Footer : FunctionComponent = () =>{
                         <div className="border-right txt-right">
                             <h4>Newsletter</h4>
                             <p>Please enter your e-mail and subscribe to our newsletter.</p>
-                            <form id="newsletterForm" className="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
+                            <form id="newsletterForm" className="newsletterForm">
                                 <div className="input-group">
                                     <span className="input-group-addon">
                                         <i className="fa fa-envelope"></i>
                                     </span>
                                     <input className="form-control" placeholder="Email Address" name="email"  type="email" aria-required={true} />
                                     <span className="input-group-btn">
-                                        <button className="btn btn-primary" type="submit" name="subscribe" >Go!</button>
+                                        <button className="btn btn-primary" type="submit" name="subscribe" disabled >Go!</button>
                                     </span>
                                 </div>
                             </form>

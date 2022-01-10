@@ -1087,6 +1087,7 @@ iframe.video{
 }
 /* Boxed Services ------------------------*/
 .item-boxed-service{
+	text-align: center;
 	display: inline-block;
     margin: 0 0 40px 0;
     border-color: #dedede;
@@ -1104,19 +1105,21 @@ iframe.video{
     transition: all .2s linear;
 }
 .item-boxed-service h4{
+	text-align: center;
     color: #32373e;
     font-size: 24px;
     line-height: 1;
     min-height: 74px;
     margin: 7px 0 0;
 }
-.item-boxed-service span{
+.item-boxed-service p{
     margin-bottom: 8px;
     display: inline-block;
     width: 100%;
     color: #a8a39e;
     font-size: 0.875rem;
     line-height: 1.5rem;
+	text-align: center;
 }
 .item-boxed-service a {
     font-size: 0.875rem;
@@ -2277,7 +2280,8 @@ aside h4{
 }
 /* Sponsors --------------------------*/
 .carousel-sponsors{
-	margin:50px auto 150px auto; 
+	/* background-color: silver; */
+	margin: 10px; 
 }
 /* Blog Post Items ---------------------*/
 .blog-post-section .item-blog-post{
@@ -2496,6 +2500,12 @@ aside h4{
 .item-financial-content.color-bg-4{
 	height: 190px;
 	margin-top: 10px;
+}
+.title-subtitle h4{
+	margin-bottom: -10px;
+}
+.title-subtitle p{
+	margin-bottom: 5px;
 }
 .title-subtitle h5{
 	padding-bottom: 0;

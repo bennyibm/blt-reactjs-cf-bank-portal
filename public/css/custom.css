@@ -1,9 +1,7 @@
 .breadcrumb-hero{
-    background-image : url(./../img/cf-bank-hero.png);
-    /* background-size: cover; */
     background-size : cover;
     background-repeat : no-repeat;
-    /* background-position : center */
+    background-position : center;
 }
 .sub-title{
     margin-top : -20px;
