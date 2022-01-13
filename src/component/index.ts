@@ -4,7 +4,8 @@ import HeroBreadcrumb from './hero-breadcrumb';
 import ContactUs from '../pages/company/contact-us';
 import BackToHome from './back-to-home';
 import BlogSection from './blog-section';
+import CollapsableElement from './collapsable-element/index';
 
 
 
-export {SponsorsArea, Header, HeroBreadcrumb, ContactUs, BackToHome, BlogSection}
+export {SponsorsArea, Header, HeroBreadcrumb, ContactUs, BackToHome, BlogSection, CollapsableElement}

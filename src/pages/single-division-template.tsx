@@ -21,16 +21,16 @@ export default function SingleDivisisionTemplate(){
                             {/* Nav tabs */}
                             <ul className="nav nav-tabs" role="tablist">
                             <li role="presentation" className="active">
-                                <Link to="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">FREE INVESTMENT</Link>
+                                <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">FREE INVESTMENT</a>
                             </li>
                             <li role="presentation">
-                                <Link to="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">AGILE CREDI</Link>
+                                <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">AGILE CREDI</a>
                             </li>
                             <li role="presentation">
-                                <Link to="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">WRIT</Link>
+                                <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">WRIT</a>
                             </li>
                             <li role="presentation">
-                                <Link to="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Credit Simulator</Link>
+                                <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Credit Simulator</a>
                             </li>
                             </ul>
                             {/* End Nav tabs */}

@@ -19,6 +19,7 @@ import Gouvernance from './pages/company/gouvernance';
 import PourquoiNousChoisir from './pages/company/pourquoi-nous-choisir';
 import BanqueDAffaires from './pages/nos-divisions/banque-d-affaires';
 import NosClients from './pages/company/nos-clients';
+import BanqueDInvestissement from './pages/nos-divisions/banque-d-investissement';
 
 function ScrollToTop({children} : {children : ReactNode}){
   const location = useLocation()
@@ -53,7 +54,7 @@ export default function App () {
             {/* <Route path="notre-equippe" element={<NotreEquippe />} /> */}
             <Route path="nos-divisions" element={<SingleDivisisionTemplate />} />
             <Route path="banque-d-affaires" element={<BanqueDAffaires />} />
-            <Route path="banque-d-investissement" element={<SingleDivisisionTemplate />} />
+            <Route path="banque-d-investissement" element={<BanqueDInvestissement />} />
             <Route path="notation-financiere" element={<SingleDivisisionTemplate />} />
             <Route path="division-details" element={<SingleDivisisionTemplate />} />
             <Route path="investisseurs-financiers-et-strategiques" element={<InvestisseursFInanciersEtStrategiques/>} />

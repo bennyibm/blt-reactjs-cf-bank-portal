@@ -97,7 +97,6 @@ const NavBar : FunctionComponent = () =>{
                                 </NavBarItemWithSubMenu>
                                 <NavBarItem title="Contact" link="contact" />
                             </ul>
-                            
                             <ul  className="nav navbar-nav navbar-right">
                                 <li  className="dropdown">
                                     <Link to="#" data-toggle="dropdown"  className="dropdown-toggle" aria-expanded="false">

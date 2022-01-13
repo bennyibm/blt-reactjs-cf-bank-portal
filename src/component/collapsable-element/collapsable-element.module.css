@@ -1,0 +1,30 @@
+.collapsableElement {
+    display:block;
+    /* float:left;   */
+    padding:5px;
+}
+.collapsableElement .label {
+    display : block;
+}
+.collapsableElement > div {
+    padding-left: 28px;
+}
+
+
+.show{
+    display : block;
+    animation: showing 2s;
+}
+.hide{
+    animation: hiding 2s;
+    display : none;
+}
+
+@keyframes showing{
+    from{ opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes hiding{
+    from{ opacity: 1;}
+    to{opacity: 0;}
+}
