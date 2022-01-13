@@ -5,7 +5,7 @@ import HeroBreadcrumb from "../../component/hero-breadcrumb";
 export default function ContactUs(){
     return(
         <div>
-            <HeroBreadcrumb title="Apropos de CF BANK" />
+            <HeroBreadcrumb title="Apropos de CF BANK" heroImagePath="/custom/contact.jpg" />
 
             {/* Info Content - Boxes Services*/}
             <div className="content_info">

@@ -44,16 +44,10 @@ export default function Home(){
 
     const slides = [
         {
-            image : "custom/assembly.png"
+            image : "custom/black-business-man.jpg"
         },
         {
-            image : "custom/launch-business.jpg"
-        },
-        {
-            image : "custom/hands-together.png"
-        },
-        {
-            image : "custom/why-choose-us.jpg"
+            image : "custom/man-woman-business.jpg"
         }
 ]
     return(
@@ -126,7 +120,7 @@ export default function Home(){
             </div>
             {/* End Info Content - Boxes Services*/}
             {/* Info Content  - parallax - services Big Title */}
-            <div className="parallax-window" data-parallax="scroll" data-image-src="/img/custom/why-choose-us.jpg">
+            <div className="parallax-window" data-parallax="scroll" data-image-src="/img/custom/world-business.jpg">
                 {/* Content Parallax*/}
                 <section className="opacy_bg_02 paddings">
                     <div className="container">

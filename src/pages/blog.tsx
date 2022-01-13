@@ -5,7 +5,7 @@ import { HeroBreadcrumb } from "../component";
 const Blog : FunctionComponent = () =>{
     return(
         <>
-            <HeroBreadcrumb title="In The news"/>
+            <HeroBreadcrumb title="In The news" heroImagePath="custom/world-business.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">

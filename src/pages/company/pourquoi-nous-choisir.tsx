@@ -5,7 +5,7 @@ import HeroBreadcrumb from "../../component/hero-breadcrumb";
 export default function PourquoiNousChoisir() {
     return(
         <div>
-            <HeroBreadcrumb title="Qu'est ce qui fait notre différence" heroImagePath="custom/why-choose-us.jpg"/>
+            <HeroBreadcrumb title="Qu'est ce qui fait notre différence" heroImagePath="custom/business-man.jpg" heroImagePosition="left"/>
             
             <div className="content_info">
                 <div className="paddings">
@@ -16,7 +16,7 @@ export default function PourquoiNousChoisir() {
                         </p>
                         <div className="row" style={ { display : "flex" } }>
                             <div className="col-md-4">
-                                <img className="img-responsive" src="img/custom/hands-together.png" alt="" />
+                                <img className="img-responsive" src="img/custom/meeting.jpg" alt="" />
                             </div>
                             <div className="col-md-8" style={ { display : "flex", flexDirection : "column", justifyContent : "center"} }>
                                 <h4>Large orientation sectorielle</h4>
@@ -36,12 +36,12 @@ export default function PourquoiNousChoisir() {
                                 </p>
                             </div>
                             <div className="col-md-4">                       
-                                <img className="img-responsive" src="/img/custom/why-choose-us.jpg" alt="" />
+                                <img className="img-responsive" src="/img/custom/business-thinking-session.jpg" alt="" />
                             </div>
                         </div> 
                         <div className="row" style={{display : "flex"}}>
                             <div className="col-md-4">                       
-                                <img className="img-responsive" src="/img/custom/assembly.png" alt="" />
+                                <img className="img-responsive" src="/img/custom/black-meeting.jpg" alt="" />
                             </div>
                             <div className="col-md-8"   style={ { display : "flex", flexDirection : "column", justifyContent : "center"} }>
                                 <h4>Relation privilégiée avec les sponsors, les propriétaires et les équipes de direction. </h4>

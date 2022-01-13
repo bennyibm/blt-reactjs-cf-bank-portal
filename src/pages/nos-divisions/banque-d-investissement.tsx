@@ -6,7 +6,7 @@ export default function BanqueDInvestissement() {
     
     return(
         <div>
-            <HeroBreadcrumb title="Banque d'investissement"/>
+            <HeroBreadcrumb title="Banque d'investissement" heroImagePath="custom/black-meeting.jpg" heroImagePosition="bottom" />
             
             
             <div className="content_info">

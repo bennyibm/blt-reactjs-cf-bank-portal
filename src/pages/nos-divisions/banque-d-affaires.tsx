@@ -5,7 +5,7 @@ import HeroBreadcrumb from "../../component/hero-breadcrumb";
 export default function BanqueDAffaires() {
     return(
         <div>
-            <HeroBreadcrumb title="Banque d'affairres"/>
+            <HeroBreadcrumb title="Banque d'affairres" heroImagePath="custom/business-thinking-session.jpg" heroImagePosition="bottom" />
             
             <div className="content_info">
                 <div className="paddings">
@@ -18,7 +18,7 @@ export default function BanqueDAffaires() {
                         <br/>
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/why-choose-us.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Fusions et acquisitions</h4>
@@ -45,7 +45,7 @@ export default function BanqueDAffaires() {
                                 </p>
                             </div>
                             <div className="col-md-4">                       
-                                <img className="img-responsive" src="/img/custom/launch-business.jpg" style={{borderRadius : 10, height : 260, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/business-woman.jpg" style={{borderRadius : 10, height : 260, objectFit : "cover"}} alt="" />
                             </div>
                         </div>
                         
