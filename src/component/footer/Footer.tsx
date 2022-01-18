@@ -25,13 +25,13 @@ const Footer : FunctionComponent = () =>{
                                     <i className="fa fa-headphones"></i> 
                                     <a href="tel:+442045018493">+44 (0) 204 501 8493</a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <i className="fa fa-globe"></i> 
                                     <Link to="http://www.cfbank.co.uk" target="_blank">cfbank.co.uk</Link>
-                                </li>
+                                </li> */}
                                 <li className="location">
                                     <i className="fa fa-map"></i> 
-                                    <Link to="#" >CF Bank, 5e Etage; <br/> 167/169 Great Portland street; <br/> London, W1W 5PF United Kingdom</Link>
+                                    <a href="#" >CF Bank, 5e Etage; <br/> 167/169 Great Portland street; <br/> London, W1W 5PF United Kingdom</a>
                                 </li>
                             </ul>
                             <div className="logo-footer">
@@ -49,15 +49,15 @@ const Footer : FunctionComponent = () =>{
                             <ul className="list-styles">
                                 <li>
                                     <i className="fa fa-check"></i> 
-                                    <Link to="bank-d-investissement">Banque d'Investissement</Link>
+                                    <Link to="/nos-divisions/banque-d-investissement">Banque d'Investissement</Link>
                                 </li>
                                 <li>
                                     <i className="fa fa-check"></i>
-                                    <Link to="banque-d-affaire">Banque d'affaires</Link>
+                                    <Link to="/nos-divisions/banque-d-affaires">Banque d'affaires</Link>
                                 </li>
                                 <li>
                                     <i className="fa fa-check"></i>
-                                    <Link to="notation-financiere">Notation financiere</Link>
+                                    <Link to="/nos-divisions/notation-financiere">Notation financiere</Link>
                                 </li>
                             </ul>
                         </div>
@@ -88,7 +88,6 @@ const Footer : FunctionComponent = () =>{
                             <ul className="social">
                                 <li className="facebook"><span><i className="fa fa-facebook"></i></span><Link to="#">Facebook</Link></li>
                                 <li className="twitter"><span><i className="fa fa-twitter"></i></span><Link to="#">Twitter</Link></li>
-                                <li className="github"><span><i className="fa fa-github"></i></span><Link to="#">Github</Link></li>
                                 <li className="linkedin"><span><i className="fa fa-linkedin"></i></span><Link to="#">Linkedin</Link></li>
                             </ul>
                         </div>
@@ -100,13 +99,14 @@ const Footer : FunctionComponent = () =>{
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7">
-                            {/* <!-- Nav Footer--> */}
                             <ul className="nav-footer">
                                 <li><Link to="/">Accueil</Link> </li>
-                                <li><Link to="apropos-de-cfbank">CF-BANK</Link></li>
-                                <li><Link to="nos-divisions">Nos Divisions</Link></li>
-                                <li><Link to="nos-solutions">Nos Solutions</Link></li>
-                                <li><Link to="contact">CONTACT</Link></li>
+                                <li><Link to="apropos-de-cfbank">Company</Link></li>
+                                <li><Link to="/nos-divisions/banque-d-investissement">Banque d'investissement</Link></li>
+                                <li><Link to="/nos-divisions/banque-d-affaires">Banque d'affaires</Link></li>
+                                <li><Link to="/nos-divisions/notation-financiere">Notation financiere</Link></li>
+                                {/* <li><Link to="/nos-solutions">Nos Solutions</Link></li> */}
+                                <li><Link to="/contact">CONTACT</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-5">

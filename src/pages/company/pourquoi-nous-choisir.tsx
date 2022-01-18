@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Feature } from "../../component";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 export default function PourquoiNousChoisir() {
@@ -51,6 +52,7 @@ export default function PourquoiNousChoisir() {
                             </div>
                         </div> 
                         
+                        <Feature />
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React, {FunctionComponent} from "react";
+import { Feature } from "../../component";
 
 const PageNotFound : FunctionComponent = () =>{
     return (
@@ -42,14 +43,15 @@ const PageNotFound : FunctionComponent = () =>{
             {/* End content info - Error Pagen*/}
             <div className="content_info">
                 <div className="paddings">
-                <div className="container">
-                    <div className="page-error">
-                    <h1>404 <i className="fa fa-bomb" /></h1>
-                    <hr className="tall" />
-                    <p className="lead">We're sorry, but the page you were looking for doesn't exist.</p>
-                    <a href="/" className="btn btn-lg btn-primary">Return Home</a>       
+                    <div className="container">
+                        <div className="page-error">
+                        <h1>404 <i className="fa fa-bomb" /></h1>
+                        <hr className="tall" />
+                        <p className="lead">We're sorry, but the page you were looking for doesn't exist.</p>
+                        <a href="/" className="btn btn-lg btn-primary">Return Home</a>       
+                        </div>
+                        <Feature />
                     </div>
-                </div>
                 </div>
             </div>
             {/* End content info - Error Page */}

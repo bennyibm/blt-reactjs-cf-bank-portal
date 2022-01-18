@@ -1,16 +1,15 @@
 import React from "react";
+import { Feature } from "../../component";
 import ContatDetails from "../../component/contat-details";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 export default function ContactUs(){
     return(
         <div>
-            <HeroBreadcrumb title="Apropos de CF BANK" heroImagePath="/custom/contact.jpg" />
+            <HeroBreadcrumb title="Contactez-nous" heroImagePath="/custom/contact.jpg" />
 
-            {/* Info Content - Boxes Services*/}
             <div className="content_info">
                 <div className="padding-top padding-bottom-mini">
-                {/* Container Area - Boxes Services */}
                 <div className="container">
                     <div className="row">
                     <div className="col-md-8">
@@ -40,11 +39,10 @@ export default function ContactUs(){
                     </div>
                     {/* End Sidebars */}
                     </div>
+                    <Feature />
                 </div>
-                {/* End Container Area - Boxes Services */}
                 </div>
             </div>
-            {/* End Info Content - Boxes Services*/}
             
         </div>
 

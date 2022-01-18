@@ -43,9 +43,7 @@ const NavBar : FunctionComponent = () =>{
                             </button>
                         </div>
                         <div id="navbar-collapse-1"  className="navbar-collapse collapse">
-                            {/* <!-- Nav Bar Items --> */}
                             <ul  className="nav navbar-nav">
-                                {/* <NavBarItem title="Apropos de CF BANK" link="apropos-de-cfbank" /> */}
                                 <NavBarItemWithSubMenu title="Company">
                                         <li>
                                             <Link to="apropos-de-cfbank"> A propos </Link>
@@ -75,25 +73,122 @@ const NavBar : FunctionComponent = () =>{
                                         </li>
                                 </NavBarItemWithSubMenu>
                                 <NavBarItemWithSubMenu title="Nos Divisions">
-                                        <li>
-                                            <Link to="banque-d-investissement"> Banque d'Investissement </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="banque-d-affaires"> Banque d'affaires </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="notation-financiere"> Notation financiere </Link>
-                                        </li>
+                                    <li>
+                                        <Link to="/nos-divisions/banque-d-investissement"> Banque d'Investissement </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/nos-divisions/banque-d-affaires"> Banque d'affaires </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/nos-divisions/notation-financiere"> Notation financiere </Link>
+                                    </li>
                                 </NavBarItemWithSubMenu>
-                                <NavBarItem title="Investisseurs financiers et strategiques" link="investisseurs-financiers-et-strategiques" />
-                                {/* <NavBarItem title="Nos solutions" link="nos-solutions" /> */}
+                                <li className="dropdown yamm-fw">
+                                    <Link to="#" data-toggle="dropdown" className="dropdown-toggle">
+                                        Investisseurs financiers et strategiques
+                                        <b className="caret" />
+                                    </Link>
+                                    <ul className="dropdown-menu">
+                                        <li>
+                                            <div className="yamm-content">
+                                            <div className="row">
+                                                <ul className="col-md-3 list-unstyled">
+                                                    <li>
+                                                        <strong>Investisseurs</strong>  
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques">APROPOS</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/profile-d-investissement">PROFILE D'INVESTISSEMENT</Link>
+                                                    </li>
+                                                </ul>
+                                                <ul className="col-md-3 list-unstyled">
+                                                    <li>
+                                                        <strong>Secteurs d'investissement</strong>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/soin-de-sante"> 
+                                                            SOIN DE SANTE
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/industriels"> 
+                                                            INSDUSTRIELS
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/ressources-naturelles"> 
+                                                            RESSOURCES NATURELLES
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/finance-municipale"> 
+                                                            FINANCE MUNICIPALE
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/immobilier"> 
+                                                            IMMOBILIER
+                                                        </Link>
+                                                    </li>
+                                                
+                                                </ul>
+                                                <ul className="col-md-3 list-unstyled">
+                                                    <li>
+                                                        <strong>Seteur d'investissement</strong>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/technologie-media-et-telecomunications"> 
+                                                            TECH, MEDIAS TELECOMM
+                                                            {/* TECHNOLOGIE, MEDIAS TELECOMMUNICATIONS */}
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/infrastructure"> 
+                                                            INFRASTRUCTURES
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/credit"> 
+                                                            CREDITS
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/prets-senior"> 
+                                                            PRETS SENIOR
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/energies-alternatives"> 
+                                                            ENERGIES ALTERNATIVES
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                                <ul className="col-md-3 list-unstyled">
+                                                    <li>
+                                                        <strong>Access to all functions of Coop Bank</strong>
+                                                    </li>
+                                                    <li>
+                                                        <p style={{textAlign : "justify", wordBreak : "break-word"}}>
+                                                            Notre groupe d'institutions financières fournit des services de financement et de conseil à des institutions du monde entier.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            </div>
+                                            {/* <img src="img/img-theme/img-dropdown-bg.png" className="img-nav" alt="" /> */}
+                                        </li>
+                                    </ul>
+                                </li>
+
                                 <NavBarItemWithSubMenu title="Media">
                                         <li>
-                                            <Link to="press-release">Press Release</Link>
+                                            <Link to="/in-the-news">In the news</Link>
                                         </li>
-                                        <li>
-                                            <Link to="blog">In the news</Link>
-                                        </li>
+                                        {/* <li>
+                                            <Link to="/press-release">Press Release</Link>
+                                        </li> */}
                                 </NavBarItemWithSubMenu>
                                 <NavBarItem title="Contact" link="contact" />
                             </ul>

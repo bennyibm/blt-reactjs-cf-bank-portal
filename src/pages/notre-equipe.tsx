@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroBreadcrumb from "../component/hero-breadcrumb";
 import { FunctionComponent } from 'react';
+import { Feature } from "../component";
 
 type TeamMemberType={
     name : string,
@@ -91,22 +92,15 @@ export default function NotreEquippe() {
         <div>
             <HeroBreadcrumb title="Notre equippe" />
                         
-            {/*Info Content Team Members*/}
             <div className="content_info">
-                {/* Parallax Background */}
                 <div className="borders world-bg" />
-                {/* Parallax Background */}
-                {/* title-vertical-line*/}
                 <div className="title-vertical-line">
                     <h2><span>Team</span> Members</h2>
                     <p className="lead">We have created alliances with recognized entities that contribute to improving quality of your life.</p>
                 </div>
-                {/* End title-vertical-line*/}
-                {/* Content Parallax*/}
                 <section className="paddings">
                 <div className="container">
                     <div className="row">
-                        {/* Item Team Member*/} 
 
                         <TeamMemberItem teamMember={teamMembersDummy[0]} />
                         <div className="col-md-3">
@@ -172,6 +166,7 @@ export default function NotreEquippe() {
                             <Link to="#" className="btn btn-primary">Get started for free</Link>
                         </div> */}
                     </div>
+                    <Feature />
                 </div> 
                 </section>  
                 {/* End Content Parallax*/} 

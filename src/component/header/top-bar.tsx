@@ -1,4 +1,5 @@
 import React, {FunctionComponent} from "react"
+import { Link } from "react-router-dom"
 
 const TopBar : FunctionComponent = () =>{
 
@@ -33,13 +34,13 @@ const LoginArea : FunctionComponent = () =>{
         <div  className="col-md-8 col-lg-7">
             <div  className="info-login">
                 <div  className="head-info-login">
-                    <p>Make here your online transactions!</p>
+                    <p>Coming-soon</p>
                     <span>
-                        <a href="register">Register Here</a>
+                        <Link to="#">Register Here</Link>
                     </span>
                 </div>
                 <div  className="form-theme">
-                    <form action="template-user-area.html">
+                    <form onSubmit={e => e.preventDefault()}>
                         <div  className="selector">
                             <select  className="guests-input">
                                 <option>Citizenship Card</option>
@@ -49,8 +50,8 @@ const LoginArea : FunctionComponent = () =>{
                                 <option>Username</option>
                             </select>
                             <span  className="custom-select">Document type</span>
-                            </div>
-                            <input type="number" placeholder="Document Number"  className="input" />
+                        </div>
+                        <input type="number" placeholder="Document Number"  className="input" />
                         <input type="submit"  className="btn" value="Go" />
                     </form>
                 </div>

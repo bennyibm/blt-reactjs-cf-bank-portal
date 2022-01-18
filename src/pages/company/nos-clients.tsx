@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroBreadcrumb } from '../../component'
+import { Feature, HeroBreadcrumb } from '../../component'
 
 
 export default function NosClients(){
@@ -79,8 +79,9 @@ export default function NosClients(){
                                 </div>
                             </div>
                             {/* End boxes-services */}
-                            </section>
+                        </section>
 
+                        <Feature />
                     </div>
                 </div>
             </div>

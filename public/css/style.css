@@ -338,7 +338,7 @@ hr.tall {
 .list-styles li a,
 .list-styles li{
 	font-size: 0.82rem;
-	color: #a8a39e;
+	color: #000;
 }
 .list-styles li i{
 	border-radius: 50%;
@@ -797,7 +797,7 @@ iframe.video{
 	overflow: auto;
 }
 .info-login .head-info-login p{
-	color: #fff;
+	color: #fff !important;
 	font-size: 0.75rem;
 	margin: 0;
 	float: right;
@@ -1137,9 +1137,18 @@ iframe.video{
 	padding: 0 0 10px 0;
 }
 .item-boxed-service-02 h4{
-	font-weight: bold;
+	all : unset;
 	font-size: 2rem;
 	padding: 0 0 10px 0;
+}
+.item-boxed-service-02 a{
+	font-weight: bold;
+	padding: 0 0 10px 0;
+	color : #F16122;
+	text-transform: none !important;
+}
+.item-boxed-service-02 a i{
+	margin-right : 5px;
 }
 .item-boxed-service-02 p{
 	color : #fff !important ;

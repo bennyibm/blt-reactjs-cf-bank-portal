@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { Link, useParams } from 'react-router-dom';
+import { Feature } from "../../component";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 type TeamMemberType={
@@ -199,6 +200,7 @@ export default function Gouvernance() {
                     <div className="row">
                         {gouvernancePage && renderGouvernancePageMembers(gouvernancePage)}
                     </div>
+                    <Feature />
                 </div> 
                 </section>  
                 {/* End Content Parallax*/} 
