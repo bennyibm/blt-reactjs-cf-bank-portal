@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BlogSection } from "../component";
+import { BlogSection, Feature } from "../component";
 
 type SlideItemProps = {
     image? : string,
@@ -9,7 +9,7 @@ type SlideItemProps = {
     description? : string,
 
 }
-function SlideItem({image = "custom/assembly.png", principalTitle = "ARE YOU READY?", subTitle = "YOURS SUCCESFULLS ARE OURS", description = "Check Coopbank included multiple features"} : SlideItemProps) {
+function SlideItem({image = "custom/assembly.png", principalTitle = "ARE YOU READY?", subTitle = "YOURS SUCCESFULLS ARE OURS", description = "Check CF-BANK included multiple features"} : SlideItemProps) {
     return(
         <li data-transition="zoomout" data-slotamount={7} data-masterspeed={1500}>
             {/* MAIN IMAGE */}
@@ -61,228 +61,224 @@ export default function Home(){
                 {/* END SLIDES  */} 
                 <div className="tp-bannertimer" />  
                 </div>
-            </div>       
-            {/* End Slide Section*/}
-            {/* Info Content - Boxes Services*/}
+            </div>
             <div className="content_info">
-                {/* title-vertical-line*/}
                 <div className="title-vertical-line">
-                <h2><span>Services</span> Options</h2>
+                <h2><span>Services</span> & Divisions</h2>
                 <p className="lead">We have created alliances with recognized entities that contribute to improving quality of your life.</p>
                 </div>
-                {/* End title-vertical-line*/}
                 <div className="paddings">
-                {/* Container Area - Boxes Services */}
-                <div className="container">
-                    {/* boxes-services */}
-                    <div className="row boxes-services">
-                    {/* item-boxe-services */}
-                    <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="item-boxed-service">
-                        <h4>Loan <br />Request</h4>
-                        <span>Helping to fulfill your dreams.</span>
-                        <Link to="#"><i className="fa fa-plus-circle" /> View more</Link>
+                    <div className="container">
+                        <div className="row boxes-services" style={{display : "flex", justifyContent : "center"}}>
+                            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div className="item-boxed-service"  style={{textAlign : "center"}}>
+                                    <h4>BANQUE D'AFFAIRES</h4>
+                                    <p>
+                                        La Division des services bancaires d'investissement est à l'avant-garde de la franchise client de Capital Financial Bank.
+                                    </p>
+                                    <br/>
+                                    <Link to="/nos-divisions/banque-d-investissement">
+                                        <i className="fa fa-plus-circle" />
+                                        Découvrir
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div className="item-boxed-service"  style={{textAlign : "center"}}>
+                                    <h4>BANQUE D'INVESTISSEMENT</h4>
+                                    <p>
+                                        Nous nous efforçons de fournir les meilleurs conseils et l'excellence en matière d'exécution sur les transactions
+                                    </p>
+                                    <br/>
+                                    <Link to="/nos-divisions/banque-d-investissement">
+                                        <i className="fa fa-plus-circle" />
+                                        Découvrir
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <div className="item-boxed-service"  style={{textAlign : "center"}}>
+                                    <h4>NOTATION FINANCIERE</h4>
+                                    <p>
+                                        Notre offre intégrée de notations de crédit, de recherche sur les risques et de perspectives critiques
+                                    </p>
+                                    <br/>
+                                    <Link to="/nos-divisions/notation-financiere">
+                                        <i className="fa fa-plus-circle" />
+                                        Découvrir
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    {/* End item-boxe-services */}
-                    {/* item-boxe-services */}
-                    <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="item-boxed-service">
-                        <h4>I want to save or invest</h4>
-                        <span>Advise your decisions</span>
-                        <Link to="#"><i className="fa fa-plus-circle" /> View more</Link>
-                        </div>
-                    </div>
-                    {/* End item-boxe-services */}
-                    {/* item-boxe-services */}
-                    <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="item-boxed-service">
-                        <h4>Request items online</h4>
-                        <span>We offer you tools</span>
-                        <Link to="#"><i className="fa fa-plus-circle" /> View more</Link>
-                        </div>
-                    </div>
-                    {/* End item-boxe-services */}
-                    {/* item-boxe-services */}
-                    <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="item-boxed-service">
-                        <h4>Online Transactions</h4>
-                        <span>Secure Information</span>
-                        <Link to="#"><i className="fa fa-plus-circle" /> View more</Link>
-                        </div>
-                    </div>
-                    {/* End item-boxe-services */}
-                    </div>
-                    {/* End boxes-services */}
-                </div>
-                {/* End Container Area - Boxes Services */}
                 </div>
             </div>
-            {/* End Info Content - Boxes Services*/}
-            {/* Info Content  - parallax - services Big Title */}
             <div className="parallax-window" data-parallax="scroll" data-image-src="/img/custom/world-business.jpg">
-                {/* Content Parallax*/}
                 <section className="opacy_bg_02 paddings">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-5">
                                 <div className="title-big padding-top">
-                                <h2>BEST SERVICES FOR BEST CLIENTS</h2>
+                                <h2>INVESTISSEURS FINANCIERS ET STRATEGIQUES</h2>
                                 </div>
-                                <Link to="#" className="btn btn-primary">View More</Link>
+                                <Link to="/investisseurs-financiers-et-strategiques" className="btn btn-primary">Découvrir</Link>
                             </div>
                             <div className="col-md-7">
-                                {/* boxes-services-02*/}
                                 <div className="row">
                                 <div className="col-md-6">
-                                    {/* Item boxed-service-02*/}
                                     <div className="item-boxed-service-02">
-                                    <h5>THE SECURE <br /> WAY TO PAY:</h5>
-                                    <h4>BILL PAY</h4>
-                                    <p>YOU RE PROTECTED WHEN YOU USE ONLINE BILL PAY</p>
+                                        <h5>SOIN DE SANTE</h5>
+                                        <p>
+                                            Le groupe Santé fournit des conseils et des services dans un large éventail de sous-secteurs...
+                                        </p>
+                                        <Link to="/investisseurs-financiers-et-strategiques/soin-de-sante">
+                                            <i className="fa fa-plus-circle" />
+                                            Découvrir
+                                        </Link>
                                     </div>
-                                    {/* End Item boxed-service-02*/}
                                 </div>
                                 <div className="col-md-6">
-                                    {/* Item boxed-service-02*/}
                                     <div className="item-boxed-service-02">
-                                    <h5>THE SECURE <br /> WAY TO PAY:</h5>
-                                    <h4>BILL PAY</h4>
-                                    <p>YOU RE PROTECTED WHEN YOU USE ONLINE BILL PAY</p>
+                                        <h5>RESSOURCES NATURELLES</h5>
+                                        <p>
+                                            Notre groupe des ressources naturelles travaille avec des clients dans les domaines de l'énergie, de l'électricité, des ...
+                                        </p>
+                                        <Link to="/investisseurs-financiers-et-strategiques/ressources-naturelles">
+                                            <i className="fa fa-plus-circle" />
+                                            Découvrir
+                                        </Link>
                                     </div>
-                                    {/* End Item boxed-service-02*/}
                                 </div>
                                 </div>
                                 <div className="row margin-top-mini">
                                 <div className="col-md-4">
-                                    {/* Item boxed-service-02*/}
                                     <div className="item-boxed-service-02">
-                                    <h5>THE SECURE <br /> WAY TO PAY:</h5>
-                                    <h4>BILL PAY</h4>
-                                    <p>YOU RE PROTECTED WHEN YOU USE ONLINE BILL PAY</p>
+                                        <h5>PRETS SENIOR</h5>
+                                        <p>
+                                            CF-Bank, Loan Partners et Senior Credit Partners est l'une des plus grandes familles de fonds...
+                                        </p>
+                                        <Link to="/investisseurs-financiers-et-strategiques/prets-senior">
+                                            <i className="fa fa-plus-circle" />
+                                            Découvrir
+                                        </Link>
                                     </div>
-                                    {/* End Item boxed-service-02*/}
                                 </div>
                                 <div className="col-md-4">
-                                    {/* Item boxed-service-02*/}
                                     <div className="item-boxed-service-02">
-                                    <h5>THE SECURE <br /> WAY TO PAY:</h5>
-                                    <h4>BILL PAY</h4>
-                                    <p>YOU RE PROTECTED WHEN YOU USE ONLINE BILL PAY</p>
+                                        <h5>CREDIT</h5>
+                                        <p>
+                                            Nous investissons dans la dette mezzanine, les prêts de premier rang, les prêts spécialisés...
+                                        </p>
+                                        <Link to="/investisseurs-financiers-et-strategiques/credit">
+                                            <i className="fa fa-plus-circle" />
+                                            Découvrir
+                                        </Link>
                                     </div>
-                                    {/* End Item boxed-service-02*/}
                                 </div>
                                 <div className="col-md-4">
-                                    {/* Item boxed-service-02*/}
                                     <div className="item-boxed-service-02">
-                                    <h5>THE SECURE <br /> WAY TO PAY:</h5>
-                                    <h4>BILL PAY</h4>
-                                    <p>YOU RE PROTECTED WHEN YOU USE ONLINE BILL PAY</p>
+                                        <h5>INFRASTRUCTURES</h5>
+                                        <p>
+                                            Notre groupe d'investissement dans les infrastructures cherche à investir du capital...
+                                        </p>
+                                        <Link to="/investisseurs-financiers-et-strategiques/infrastructure">
+                                            <i className="fa fa-plus-circle" />
+                                            Découvrir
+                                        </Link>
                                     </div>
-                                    {/* End Item boxed-service-02*/}
                                 </div>
                                 </div>
-                                {/* End boxes-services-02*/}
                             </div>
                         </div>
                     </div> 
                 </section>  
-                {/* End Content Parallax*/} 
             </div>
-            {/* End Info Content  - parallax - services Big Title */}
-            {/* End Info Content Blog Post*/}
             <BlogSection />
-            {/* End Info Content Blog Post*/}
-            {/* Info Content Process*/}
             <div className="content_info">
-                {/* title-vertical-line*/}
                 <div className="title-vertical-line">
-                <h2><span>Process</span> Services</h2>
-                <p className="lead">We have created alliances with recognized entities that contribute to improving quality of your life.</p>
+                    <h2>
+                        <span>Process</span> Services
+                    </h2>
+                    <p className="lead">We have created alliances with recognized entities that contribute to improving quality of your life.</p>
                 </div>
-                {/* End title-vertical-line*/}
-                {/* Info Resalt=""*/}
                 <div className="paddings">
-                {/* Container Area - services-process */}
-                <div className="container">
-                    <div className="row">
-                    <div className="col-md-12">
-                        {/* services-process */}
-                        <div className="services-process">
-                        {/* item-service-process */}
-                        <div className="item-service-process color-bg-1">
-                            <div className="head-service-process">
-                            <i className="fa fa-cubes" />
-                            <h3>INSURANCES</h3>
-                            </div>
-                            <div className="divisor-service-process">
-                            <span className="circle-top">1</span>
-                            <span className="circle" />
-                            </div>
-                            <div className="info-service-process">
-                            <h3>Our Insurances</h3>
-                            <p>Your peace of mind is priceless, we offer a broad portfolio of solutions to ensure what you love most.</p>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-12">
+                                {/* services-process */}
+                                <div className="services-process">
+                                {/* item-service-process */}
+                                <div className="item-service-process color-bg-1">
+                                    <div className="head-service-process">
+                                    <i className="fa fa-cubes" />
+                                    <h3>INSURANCES</h3>
+                                    </div>
+                                    <div className="divisor-service-process">
+                                    <span className="circle-top">1</span>
+                                    <span className="circle" />
+                                    </div>
+                                    <div className="info-service-process">
+                                    <h3>Our Insurances</h3>
+                                    <p>Your peace of mind is priceless, we offer a broad portfolio of solutions to ensure what you love most.</p>
+                                    </div>
+                                </div>
+                                {/* End item-service-process */}
+                                {/* item-service-process */}
+                                <div className="item-service-process color-bg-2">
+                                    <div className="head-service-process">
+                                    <i className="fa fa-diamond" />
+                                    <h3>BENEFITS</h3>
+                                    </div>
+                                    <div className="divisor-service-process">
+                                    <span className="circle-top">2</span>
+                                    <span className="circle" />
+                                    </div>
+                                    <div className="info-service-process">
+                                    <h3>Our Benefits</h3>
+                                    <p>We have created alliances with recognized entities that contribute to improving quality of your life.</p>
+                                    </div>
+                                </div>
+                                {/* End item-service-process */}
+                                {/* item-service-process */}
+                                <div className="item-service-process color-bg-3">
+                                    <div className="head-service-process">
+                                    <i className="fa fa-bicycle" />
+                                    <h3>SOCIAL</h3>
+                                    </div>
+                                    <div className="divisor-service-process">
+                                    <span className="circle-top">3</span>
+                                    <span className="circle" />
+                                    </div>
+                                    <div className="info-service-process">
+                                    <h3>Social Programs</h3>
+                                    <p>Our programs with social sense, everyday comprehensively improve the quality of life of our members.</p>
+                                    </div>
+                                </div>
+                                {/* End item-service-process */}
+                                {/* item-service-process */}
+                                <div className="item-service-process color-bg-4">
+                                    <div className="head-service-process">
+                                    <i className="fa fa-hotel" />
+                                    <h3>RESORTS</h3>
+                                    </div>
+                                    <div className="divisor-service-process">
+                                    <span className="circle-top">4</span>
+                                    <span className="circle" />
+                                    </div>
+                                    <div className="info-service-process">
+                                    <h3>Resorts Options</h3>
+                                    <p>We offer the best alt=""ernatives for recreation, relaxation and adventure to share with family and friends.</p>
+                                    </div>
+                                </div>
+                                {/* End item-service-process */}
+                                </div>
+                                {/* End services-process*/}
                             </div>
                         </div>
-                        {/* End item-service-process */}
-                        {/* item-service-process */}
-                        <div className="item-service-process color-bg-2">
-                            <div className="head-service-process">
-                            <i className="fa fa-diamond" />
-                            <h3>BENEFITS</h3>
-                            </div>
-                            <div className="divisor-service-process">
-                            <span className="circle-top">2</span>
-                            <span className="circle" />
-                            </div>
-                            <div className="info-service-process">
-                            <h3>Our Benefits</h3>
-                            <p>We have created alliances with recognized entities that contribute to improving quality of your life.</p>
-                            </div>
-                        </div>
-                        {/* End item-service-process */}
-                        {/* item-service-process */}
-                        <div className="item-service-process color-bg-3">
-                            <div className="head-service-process">
-                            <i className="fa fa-bicycle" />
-                            <h3>SOCIAL</h3>
-                            </div>
-                            <div className="divisor-service-process">
-                            <span className="circle-top">3</span>
-                            <span className="circle" />
-                            </div>
-                            <div className="info-service-process">
-                            <h3>Social Programs</h3>
-                            <p>Our programs with social sense, everyday comprehensively improve the quality of life of our members.</p>
-                            </div>
-                        </div>
-                        {/* End item-service-process */}
-                        {/* item-service-process */}
-                        <div className="item-service-process color-bg-4">
-                            <div className="head-service-process">
-                            <i className="fa fa-hotel" />
-                            <h3>RESORTS</h3>
-                            </div>
-                            <div className="divisor-service-process">
-                            <span className="circle-top">4</span>
-                            <span className="circle" />
-                            </div>
-                            <div className="info-service-process">
-                            <h3>Resorts Options</h3>
-                            <p>We offer the best alt=""ernatives for recreation, relaxation and adventure to share with family and friends.</p>
-                            </div>
-                        </div>
-                        {/* End item-service-process */}
-                        </div>
-                        {/* End services-process*/}
-                    </div>
+                        <Feature />
                     </div>
                 </div>
-                {/* End Container Area - services-process */}
-                </div>
-                {/* End Info Resalt=""*/}
             </div>
-            {/* End Info Content Process*/}
         </>
 
     )
