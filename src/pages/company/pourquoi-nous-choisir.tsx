@@ -6,7 +6,7 @@ import HeroBreadcrumb from "../../component/hero-breadcrumb";
 export default function PourquoiNousChoisir() {
     return(
         <div>
-            <HeroBreadcrumb title="Qu'est ce qui fait notre différence" heroImagePath="custom/business-man.jpg" heroImagePosition="left"/>
+            <HeroBreadcrumb title="Qu'est ce qui fait notre différence" heroImagePath="custom/black-circle.jpg" heroImagePosition="left"/>
             
             <div className="content_info">
                 <div className="paddings">

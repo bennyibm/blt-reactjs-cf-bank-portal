@@ -10,13 +10,13 @@ export default function Feature() {
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div className="item-boxed-service no-margin" style={{display : "flex", flexDirection : "column", alignItems : "center"}}>
                     <h4>Soumissionner</h4>
-                    <span>Coming-soon</span>
+                    <span>Bientôt disponible</span>
                     </div>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                     <div className="item-boxed-service no-margin" style={{display : "flex", flexDirection : "column", alignItems : "center"}}>
-                    <h4>Register</h4>
-                    <span>Coming-soon</span>
+                    <h4>Inscription</h4>
+                    <span>Bientôt disponible</span>
                     </div>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">

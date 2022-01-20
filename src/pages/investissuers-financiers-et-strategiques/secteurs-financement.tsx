@@ -4,7 +4,7 @@ import { Feature, HeroBreadcrumb } from '../../component'
 export function SoinDeSante() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Soin de santé"  heroImagePath="custom/assembly.png"/>
+            <HeroBreadcrumb title="Investissement / Soin de santé"  heroImagePath="custom/sante.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -12,7 +12,7 @@ export function SoinDeSante() {
                         
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/sante-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Soin de santé</h4>
@@ -37,7 +37,7 @@ export function SoinDeSante() {
 export function Industriels() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Industriels"  heroImagePath="custom/business-men-meeting.jpg"/>
+            <HeroBreadcrumb title="Investissement / Industriels"  heroImagePath="custom/industriel.jpg" heroImagePosition="center"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -45,7 +45,7 @@ export function Industriels() {
                         
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/industriel-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Industriels</h4>
@@ -73,7 +73,7 @@ export function Industriels() {
 export function FinanceMunicipale() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Finance Municipale"  heroImagePath="custom/business-men-meeting.jpg"/>
+            <HeroBreadcrumb title="Investissement / Finance Municipale"  heroImagePath="custom/finance-municipale.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -81,7 +81,7 @@ export function FinanceMunicipale() {
                         
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/finance-municipale-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Finance Municipale</h4>
@@ -107,7 +107,7 @@ export function FinanceMunicipale() {
 export function EnergiesAlternatives() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Energies Alternatives"  heroImagePath="custom/business-men-meeting.jpg"/>
+            <HeroBreadcrumb title="Investissement / Energies Alternatives"  heroImagePath="custom/energies-alternatives.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -115,7 +115,7 @@ export function EnergiesAlternatives() {
                         
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/energies-alternatives-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>énergies alternatives</h4>
@@ -145,7 +145,7 @@ export function EnergiesAlternatives() {
 export function PretsSenior() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Prets Sénior"  heroImagePath="custom/business-men-meeting.jpg"/>
+            <HeroBreadcrumb title="Investissement / Prets Sénior"  heroImagePath="custom/prets-senior.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -153,7 +153,7 @@ export function PretsSenior() {
                         
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/prets-senior-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Prets sénior</h4>
@@ -240,7 +240,7 @@ export function PretsSenior() {
 export function Credit() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Crédit"  heroImagePath="custom/business-men-meeting.jpg"/>
+            <HeroBreadcrumb title="Investissement / Crédit"  heroImagePath="custom/credit.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -248,7 +248,7 @@ export function Credit() {
                         
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/black-business-man-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Crédit</h4>
@@ -328,7 +328,7 @@ export function Credit() {
 export function Infrasctructure() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Infrasctructure"  heroImagePath="custom/business-men-meeting.jpg"/>
+            <HeroBreadcrumb title="Investissement / Infrasctructure"  heroImagePath="custom/infrastructure.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -336,7 +336,7 @@ export function Infrasctructure() {
                         
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/infrastructure-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Infrasctructure</h4>
@@ -413,7 +413,7 @@ export function Infrasctructure() {
 export function RessourcesNaturelles() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Ressources Naturelles"  heroImagePath="custom/business-men-meeting.jpg"/>
+            <HeroBreadcrumb title="Investissement / Ressources Naturelles"  heroImagePath="custom/ressources-naturelles.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -421,7 +421,7 @@ export function RessourcesNaturelles() {
                         
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/ressources-naturelles-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Ressources Naturelles</h4>
@@ -449,7 +449,7 @@ export function RessourcesNaturelles() {
 export function Immobilier() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Immobilier"  heroImagePath="custom/assembly.png"/>
+            <HeroBreadcrumb title="Investissement / Immobilier"  heroImagePath="custom/immobilier.jpg" />
 
             <div className="content_info">
                 <div className="paddings">
@@ -463,7 +463,7 @@ export function Immobilier() {
                 
                         <div className="row"  style={{display : "flex", flexWrap : "wrap"}}>
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/immobilier-2.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8" style={{display : "flex", flexDirection : "column", justifyContent: "center"}}>
                                 <h4>Actions immobilières</h4>
@@ -541,7 +541,7 @@ export function Immobilier() {
                                 </p>
                             </div>
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-meeting.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/immobilier-3.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-12">
                                 <div className="row">

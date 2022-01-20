@@ -1,11 +1,11 @@
-import React, { FunctionComponent }  from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
 import { Feature, HeroBreadcrumb } from "../component";
 
 export default function Blog(){
     return(
         <>
-            <HeroBreadcrumb title="In The news" heroImagePath="custom/world-business.jpg"/>
+            <HeroBreadcrumb title="In The news" heroImagePath="custom/in-the-news.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -15,10 +15,10 @@ export default function Blog(){
                                 <div className="item-blog-post">
                                     <div className="head-item-blog-post">
                                         <i className="fa fa-database" />
-                                        <h3>Emer'J Forum</h3>
+                                        <h3>Emmer'J Forum</h3>
                                     </div>
                                     <div className="img-item-blog-post">
-                                        <img src="img/blog-img/2.jpg" alt="" />
+                                        <img src="/img/custom/emmerj.png" alt="" />
                                         <div className="post-meta">
                                             <ul>
                                                 <li>
@@ -38,7 +38,7 @@ export default function Blog(){
                                     </div>
                                     <div className="info-item-blog-post">
                                         <p>
-                                            Créé à l'initiative de DUMA SOLUTIONS, une entreprise œuvrant dans la FINTECH, crée par des congolais issus de la diaspora (Canada et UK), le Forum ERMMER"J est un rendez-vous unique en son genre en RDC, de part son approche et son contenu.
+                                            Evénement de promotion de l'entrepreneuriat fortement axé sur les usages du numérique où les participants (les jeunes) auront l'occasion de se former et interagir avec des intervenants de haut calibre venus de partout dans le monde afin de les former et partager leur expérience.
                                         </p>
                                         <a href="http://forum.emmerj.com" target="_blank"><i className="fa fa-plus-circle" /> Découvrir</a>
                                     </div>

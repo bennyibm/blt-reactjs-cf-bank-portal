@@ -5,7 +5,7 @@ import { Feature, HeroBreadcrumb } from '../../component'
 export default function NosClients(){
     return(
         <div>
-            <HeroBreadcrumb title="Nos clients" />
+            <HeroBreadcrumb title="Nos clients" heroImagePath="custom/clients.jpg" />
 
             <div className="content_info">
                 <div className="paddings">

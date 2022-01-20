@@ -9,34 +9,26 @@ type SlideItemProps = {
     description? : string,
 
 }
-function SlideItem({image = "custom/assembly.png", principalTitle = "ARE YOU READY?", subTitle = "YOURS SUCCESFULLS ARE OURS", description = "Check CF-BANK included multiple features"} : SlideItemProps) {
+function SlideItem({image = "custom/assembly.png", principalTitle = "Es-tu prêt?", subTitle = "Votre succès est notre", description = "Trouvez une varieté des services avec CF-BANK"} : SlideItemProps) {
     return(
         <li data-transition="zoomout" data-slotamount={7} data-masterspeed={1500}>
-            {/* MAIN IMAGE */}
             <img src={`/img/${image}`} alt="fullslide1" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat" />
-            {/* LAYERS */}
-            {/* LAYER NR. 1 */}
+            
             <div className="tp-caption medium_text lft stl" data-x="center" data-hoffset data-y="top" data-voffset={160} data-speed={300} data-start={800} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
                 {subTitle}
             </div>
-            {/* LAYER NR. 2 */}
             <div className="tp-caption large_bold_white sft stb" data-x="center" data-hoffset data-y="top" data-voffset={190} data-speed={300} data-start={1000} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
                 {principalTitle}
             </div>
-            {/* LAYER NR. 3 */}
             <div className="tp-caption small_light_white sfb stb" data-x="center" data-hoffset data-y="top" data-voffset={260} data-speed={500} data-start={1200} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
                 {description}
             </div>
-            {/* LAYER NR. 3 */}
-            <div className="tp-caption lfb tp-resizeme" data-x="center" data-hoffset={-100} data-y="center" data-voffset={75} data-speed={300} data-start={1400} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed={300}>
+            {/* <div className="tp-caption lfb tp-resizeme" data-x="center" data-hoffset={-100} data-y="center" data-voffset={75} data-speed={300} data-start={1400} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed={300}>
                 <Link to="#" className="btn btn-primary"><i className="fa fa-graduation-cap" />View More</Link>
             </div>
-            {/* END LAYER NR. 3 */}
-            {/* LAYER NR. 3 */}
             <div className="tp-caption lfb tp-resizeme" data-x="center" data-hoffset={100} data-y="center" data-voffset={75} data-speed={300} data-start={1600} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed={300}>
                 <Link to="#" className="btn btn-primary"><i className="fa fa-heart" />View More</Link>
-            </div>
-            {/* END LAYER NR. 3 */}
+            </div> */}
         </li>
     )
 }
@@ -44,7 +36,9 @@ export default function Home(){
 
     const slides = [
         {
-            image : "custom/black-business-man.jpg"
+            image : "custom/black-business-man.jpg",
+            subTitle : "votre succès est notre",
+            principalTitle : "Es-tu prêt?"
         },
         {
             image : "custom/man-woman-business.jpg"
@@ -56,7 +50,7 @@ export default function Home(){
                 <div className="tp-banner">
                 {/* SLIDES CONTENT*/}
                 <ul> 
-                    {slides.map( slide => <SlideItem image={slide.image} /> )}
+                    {slides.map( ({image, subTitle, principalTitle}) => <SlideItem image={image} subTitle={subTitle} principalTitle={principalTitle} /> )}
                 </ul> 
                 {/* END SLIDES  */} 
                 <div className="tp-bannertimer" />  
@@ -65,7 +59,7 @@ export default function Home(){
             <div className="content_info">
                 <div className="title-vertical-line">
                 <h2><span>Services</span> & Divisions</h2>
-                <p className="lead">We have created alliances with recognized entities that contribute to improving quality of your life.</p>
+                <p className="lead">Nous avons créé des alliances avec des entités reconnues qui contribuent à améliorer votre qualité de vie.</p>
                 </div>
                 <div className="paddings">
                     <div className="container">
@@ -197,9 +191,11 @@ export default function Home(){
             <div className="content_info">
                 <div className="title-vertical-line">
                     <h2>
-                        <span>Process</span> Services
+                        <span>Services</span> de processus
                     </h2>
-                    <p className="lead">We have created alliances with recognized entities that contribute to improving quality of your life.</p>
+                    <p className="lead">
+                        Nous avons créé des alliances avec des entités reconnues qui contribuent à améliorer votre qualité de vie.
+                    </p>
                 </div>
                 <div className="paddings">
                     <div className="container">
@@ -210,16 +206,18 @@ export default function Home(){
                                 {/* item-service-process */}
                                 <div className="item-service-process color-bg-1">
                                     <div className="head-service-process">
-                                    <i className="fa fa-cubes" />
-                                    <h3>INSURANCES</h3>
+                                        <i className="fa fa-cubes" />
+                                        <h3>ASSURANCES</h3>
                                     </div>
                                     <div className="divisor-service-process">
-                                    <span className="circle-top">1</span>
-                                    <span className="circle" />
+                                        <span className="circle-top">1</span>
+                                        <span className="circle" />
                                     </div>
                                     <div className="info-service-process">
-                                    <h3>Our Insurances</h3>
-                                    <p>Your peace of mind is priceless, we offer a broad portfolio of solutions to ensure what you love most.</p>
+                                        <h3>Nos assurances</h3>
+                                        <p>
+                                            Votre tranquillité d'esprit n'a pas de prix, nous offrons un large portefeuille des solutions
+                                        </p>
                                     </div>
                                 </div>
                                 {/* End item-service-process */}
@@ -227,15 +225,17 @@ export default function Home(){
                                 <div className="item-service-process color-bg-2">
                                     <div className="head-service-process">
                                     <i className="fa fa-diamond" />
-                                    <h3>BENEFITS</h3>
+                                    <h3>AVANTAGES</h3>
                                     </div>
                                     <div className="divisor-service-process">
                                     <span className="circle-top">2</span>
                                     <span className="circle" />
                                     </div>
                                     <div className="info-service-process">
-                                    <h3>Our Benefits</h3>
-                                    <p>We have created alliances with recognized entities that contribute to improving quality of your life.</p>
+                                    <h3>Nos avantages</h3>
+                                    <p>
+                                        Nous avons créé des alliances avec des entités reconnues qui contribuent à améliorer votre qualité de vie.
+                                    </p>
                                     </div>
                                 </div>
                                 {/* End item-service-process */}
@@ -243,31 +243,35 @@ export default function Home(){
                                 <div className="item-service-process color-bg-3">
                                     <div className="head-service-process">
                                     <i className="fa fa-bicycle" />
-                                    <h3>SOCIAL</h3>
+                                    <h3>SOCIALE</h3>
                                     </div>
                                     <div className="divisor-service-process">
                                     <span className="circle-top">3</span>
                                     <span className="circle" />
                                     </div>
                                     <div className="info-service-process">
-                                    <h3>Social Programs</h3>
-                                    <p>Our programs with social sense, everyday comprehensively improve the quality of life of our members.</p>
+                                    <h3>Programmes sociaux</h3>
+                                    <p>
+                                        Nos programmes à sens social améliorent chaque jour de manière globale la qualité de vie de nos membres.
+                                    </p>
                                     </div>
                                 </div>
                                 {/* End item-service-process */}
                                 {/* item-service-process */}
                                 <div className="item-service-process color-bg-4">
                                     <div className="head-service-process">
-                                    <i className="fa fa-hotel" />
-                                    <h3>RESORTS</h3>
+                                        <i className="fa fa-hotel" />
+                                        <h3>RESORTS</h3>
                                     </div>
                                     <div className="divisor-service-process">
                                     <span className="circle-top">4</span>
                                     <span className="circle" />
                                     </div>
                                     <div className="info-service-process">
-                                    <h3>Resorts Options</h3>
-                                    <p>We offer the best alt=""ernatives for recreation, relaxation and adventure to share with family and friends.</p>
+                                    <h3>Options de villégiature</h3>
+                                    <p>
+                                        Nous offrons les meilleures alternatives de loisirs, de détente et d'aventure à partager en famille et entre amis.
+                                    </p>
                                     </div>
                                 </div>
                                 {/* End item-service-process */}

@@ -12,15 +12,12 @@ export default function ContatDetails(){
             <a href="tel:+442045018493">+44 (0) 204 501 8493</a>
         </li>
         <li>
-            <h4><i className="fa fa-globe" />Site web</h4>
-            <Link to="http://www.cfbank.co.uk " target="_blank">www.cfbank.co.uk</Link>
-        </li>
-        <li>
             <h4><i className="fa fa-map" />Adresse</h4>
             <Link to="#" >CF Bank, 5e Etage <br/>
-167/169 Great Portland street; <br/>
-London, W1W 5PF
-United Kingdom</Link>
+                167/169 Great Portland street; <br/>
+                London, W1W 5PF
+                United Kingdom
+            </Link>
         </li>
     </ul>
     )

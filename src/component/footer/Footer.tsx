@@ -65,14 +65,14 @@ const Footer : FunctionComponent = () =>{
 
                     <div className="col-sm-6 col-md-4">
                         <div className="border-right txt-right">
-                            <h4>Newsletter</h4>
-                            <p>Please enter your e-mail and subscribe to our newsletter.</p>
+                            <h4>Boite au lettre</h4>
+                            <p>Veuillez saisir votre e-mail et vous inscrire à notre boite-aux-lettres.</p>
                             <form id="newsletterForm" className="newsletterForm">
                                 <div className="input-group">
                                     <span className="input-group-addon">
                                         <i className="fa fa-envelope"></i>
                                     </span>
-                                    <input className="form-control" placeholder="Email Address" name="email"  type="email" aria-required={true} />
+                                    <input className="form-control" placeholder="Adresse mail" name="email"  type="email" aria-required={true} />
                                     <span className="input-group-btn">
                                         <button className="btn btn-primary" type="submit" name="subscribe" disabled >Go!</button>
                                     </span>
@@ -84,7 +84,7 @@ const Footer : FunctionComponent = () =>{
 
                     <div className="col-sm-6 col-md-2">
                         <div className="border-right-none">
-                            <h4>Follow To CF BANK</h4>
+                            <h4>Suivez-nous</h4>
                             <ul className="social">
                                 <li className="facebook"><span><i className="fa fa-facebook"></i></span><Link to="#">Facebook</Link></li>
                                 <li className="twitter"><span><i className="fa fa-twitter"></i></span><Link to="#">Twitter</Link></li>

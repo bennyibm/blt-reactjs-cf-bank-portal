@@ -5,7 +5,7 @@ import HeroBreadcrumb from "../../component/hero-breadcrumb";
 export default function BanqueDAffaires() {
     return(
         <div>
-            <HeroBreadcrumb title="Banque d'affairres" heroImagePath="custom/business-thinking-session.jpg" heroImagePosition="bottom" />
+            <HeroBreadcrumb title="Banque d'affairres" heroImagePath="custom/business.jpg"/>
             
             <div className="content_info">
                 <div className="paddings">
@@ -18,7 +18,7 @@ export default function BanqueDAffaires() {
                         <br/>
                         <div className="row">
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/brainstorming-3.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>1. Fusions et acquisitions</h4>
@@ -52,7 +52,7 @@ export default function BanqueDAffaires() {
                                 </p>
                             </div>
                             <div className="col-md-4">                       
-                                <img className="img-responsive" src="/img/custom/business-woman.jpg" style={{borderRadius : 10, height : 260, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/capital-financement.jpg" style={{borderRadius : 10, height : 260, objectFit : "cover"}} alt="" />
                             </div>
                         </div>
                         
@@ -62,7 +62,7 @@ export default function BanqueDAffaires() {
 
                         <div className="row"  style={{display : "flex", flexWrap : "wrap"}}>
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/fusion.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8" style={{display : "flex", flexDirection : "column", justifyContent: "center"}}>
                                 <h4>3. Fusions et acquisitions</h4>

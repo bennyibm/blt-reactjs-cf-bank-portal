@@ -63,13 +63,13 @@ const NavBar : FunctionComponent = () =>{
                                 </NavBarItemWithSubMenu>
                                 <NavBarItemWithSubMenu title="Gouvernance">
                                         <li>
-                                            <Link to="/gouvernance/Conseil d'administration"> Conseil d'administration </Link>
+                                            <Link to="/gouvernance/conseil-d-administration"> Conseil d'administration </Link>
                                         </li>
                                         <li>
-                                            <Link to="/gouvernance/Comité de pilotage">Comité de pilotage </Link>
+                                            <Link to="/gouvernance/comite-de-pilotage">Comité de pilotage </Link>
                                         </li>
                                         <li>
-                                            <Link to="/gouvernance/Comité de direction">Comité de direction</Link>
+                                            <Link to="/gouvernance/comite-de-direction">Comité de direction</Link>
                                         </li>
                                 </NavBarItemWithSubMenu>
                                 <NavBarItemWithSubMenu title="Nos Divisions">

@@ -29,38 +29,7 @@ export default function AproposDeCFBANK() {
                     </div>
                 </div>
             </div>
-            <div className="parallax-window" data-parallax="scroll" data-image-src="/img/custom/business-man.jpg">
-                {/* Content Parallax*/}
-                <div className="opacy_bg_02 paddings">
-                <div className="container">
-                    <div className="row">
-                    {/* title-downloads */}             
-                    <h1 className="title-downloads">
-                        <span className="logo-clients">CF-BANK</span> Has more than
-                        <span className="responsive-numbers">
-                        <span>2</span>
-                        ,
-                        <span>3</span>
-                        <span>8</span>
-                        <span>9</span>
-                        ,
-                        <span>5</span>
-                        <span>1</span>
-                        <span>8</span>
-                        </span>
-                        Clients.
-                    </h1>  
-                    {/* End title-downloads */}     
-                    {/* subtitle-downloads */} 
-                    <div className="subtitle-downloads">
-                        <h4>The best service with the <i className="fa fa-heart" /></h4>
-                    </div> 
-                    {/* End subtitle-downloads */}  
-                    </div>
-                </div> 
-                </div>  
-                {/* End Content Parallax*/} 
-            </div>
+            
             <div className="content_info">
                 <div className="skin_base color-white paddings">
                 <div className="container wow fadeInUp">

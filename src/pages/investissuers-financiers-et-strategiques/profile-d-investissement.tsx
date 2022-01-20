@@ -4,7 +4,7 @@ import { HeroBreadcrumb, Feature } from '../../component'
 export default function ProfileInvestissement() {
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Immobilier"  heroImagePath="custom/assembly.png"/>
+            <HeroBreadcrumb title="Profile d'Investissement"  heroImagePath="custom/profile-d-investissement.jpg"/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -16,7 +16,7 @@ export default function ProfileInvestissement() {
                 
                         <div className="row"  style={{display : "flex", flexWrap : "wrap"}}>
                             <div className="col-md-4">
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/type-d-investissement.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8" style={{display : "flex", flexDirection : "column", justifyContent: "center"}}>
                                 <h4>TYPE DE TRANSACTION / STRUCTURES D'INVESTISSEMENT</h4>

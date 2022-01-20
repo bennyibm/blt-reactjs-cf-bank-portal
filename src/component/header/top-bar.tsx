@@ -34,9 +34,9 @@ const LoginArea : FunctionComponent = () =>{
         <div  className="col-md-8 col-lg-7">
             <div  className="info-login">
                 <div  className="head-info-login">
-                    <p>Coming-soon</p>
+                    <p>bientôt disponible</p>
                     <span>
-                        <Link to="#">Register Here</Link>
+                        <Link to="#">Inscription</Link>
                     </span>
                 </div>
                 <div  className="form-theme">

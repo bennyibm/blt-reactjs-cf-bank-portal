@@ -16,7 +16,7 @@ export default function NotationFinanciere() {
                         <br/>
                         <div className="row">
                             <div className="col-md-4" >
-                                <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/puzzle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
                                 <h4>Fusions et acquisitions</h4>
@@ -56,7 +56,6 @@ export default function NotationFinanciere() {
                         </p>
                         <div className="row" style={{display : "flex"}}>
                             <div className="col-md-8"  style={{display : "flex", alignItems : "center"}}>
-                                {/* <h4>Vente de details</h4> */}
                                 <div className="row">
                                     <div className="col-md-6">
                                         <ul className="list-styles">
@@ -117,7 +116,7 @@ export default function NotationFinanciere() {
                                 </div>
                             </div>
                             <div className="col-md-4">                       
-                                <img className="img-responsive" src="/img/custom/business-woman.jpg" style={{borderRadius : 10, height : 260, objectFit : "cover"}} alt="" />
+                                <img className="img-responsive" src="/img/custom/business-momy.jpg" style={{borderRadius : 10, height : 260, objectFit : "cover"}} alt="" />
                             </div>
                         </div>
                         <Feature />
@@ -130,7 +129,7 @@ export default function NotationFinanciere() {
     }
     return(
         <div>
-            <HeroBreadcrumb title="Notation financiere" heroImagePath="custom/business-thinking-session.jpg" heroImagePosition="bottom" />
+            <HeroBreadcrumb title="Notation financiere" heroImagePath="custom/notation-financiere.jpg"/>
             {renderHome()}
         </div>
 

@@ -6,7 +6,7 @@ import HeroBreadcrumb from "../../component/hero-breadcrumb";
 export default function InvestisseursFInanciersEtStrategiques() {
   return(
     <div>
-        <HeroBreadcrumb title="Investisseurs financiers et strategiques"  heroImagePath="custom/assembly.png"/>
+        <HeroBreadcrumb title="Investisseurs financiers et strategiques"  heroImagePath="custom/brainstorming-4.jpg"/>
 
         <div className="content_info">
           <div className="paddings">
@@ -19,7 +19,7 @@ export default function InvestisseursFInanciersEtStrategiques() {
                   <br/>
                   <div className="row">
                       <div className="col-md-4">
-                          <img className="img-responsive" src="/img/custom/business-men-circle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                          <img className="img-responsive" src="/img/custom/financial-bank.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                       </div>
                       <div className="col-md-8">
                           <h4>Les Investisseurs</h4>
@@ -40,7 +40,7 @@ export default function InvestisseursFInanciersEtStrategiques() {
                           </p>
                       </div>
                       <div className="col-md-4">                       
-                          <img className="img-responsive" src="/img/custom/business-woman.jpg" style={{borderRadius : 10, height : 260, objectFit : "cover"}} alt="" />
+                          <img className="img-responsive" src="/img/custom/why-choose-us-2.jpg" style={{borderRadius : 10, height : 260, objectFit : "cover"}} alt="" />
                       </div>
                   </div>
                   

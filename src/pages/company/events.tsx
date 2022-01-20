@@ -5,7 +5,7 @@ import { Feature, HeroBreadcrumb } from "../../component";
 export default function Events(){
     return(
         <>
-            <HeroBreadcrumb title="Nos evenements" />
+            <HeroBreadcrumb title="Nos evenements" heroImagePath="custom/evenements.jpg" />
             <div className="content_info">
                 <div className="paddings">
                     <div className="container">
@@ -15,7 +15,7 @@ export default function Events(){
                                     <div className="col-md-12">
                                         <div className="title-subtitle padding-bottom-mini">
                                             {/* <h5>Keep informed and updated on all news related to your bank.</h5> */}
-                                            <h3>Upcoming CF-BANK Events.</h3>
+                                            <h3>Prochains événements CF-BANK.</h3>
                                         </div>
                                     </div>
                                     {/* Item event*/} 
@@ -38,7 +38,7 @@ export default function Events(){
                                     <div className="col-md-12">
                                         <div className="title-subtitle padding-bottom-mini">
                                             {/* <h5>Keep informed and updated on all news related to your bank.</h5> */}
-                                            <h3>Past CF-BANK Events.</h3>
+                                            <h3>Événements passés de CF-BANK.</h3>
                                         </div>
                                     </div>
                                     {/* Item event*/} 

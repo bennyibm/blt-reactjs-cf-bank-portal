@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect, useState } from "react";
 import { Link, useParams } from 'react-router-dom';
 import { Feature } from "../../component";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
@@ -16,7 +16,7 @@ type TeamMemberType={
 const defaultTeamMember = {
     name : "Benny",
     location : "Congo/Kinshasa",
-    email : "benny.nkonga@businesslighthouse.tech",
+    email : "benny.nkonga@blth.tech",
     phone : "+243815490726",
     facebook : "bennyibmn",
     linkedin : "bennyinkonga"
@@ -31,11 +31,11 @@ const TeamMemberItem : FunctionComponent<{teamMember : TeamMemberType}> = ({team
                 <ul className="list-styles">
                     <li>
                         <i className="fa fa-envelope" /> 
-                        <Link to={`mailto:${teamMember.email}`}>{teamMember.email}</Link>
+                        <a href={`mailto:${teamMember.email}`}>{teamMember.email}</a>
                     </li>
                     <li>
                         <i className="fa fa-headphones" />
-                         <Link to={`tel:${teamMember.phone}`}>{teamMember.phone}</Link>
+                         <a href={`tel:${teamMember.phone}`}>{teamMember.phone}</a>
                     </li>
                     <li>
                         <i className="fa fa-facebook" /> 
@@ -51,161 +51,167 @@ const TeamMemberItem : FunctionComponent<{teamMember : TeamMemberType}> = ({team
     )
 }
 
-const teamMembersDummy = {
-    "Conseil d'administration" : [
-        {
-            name : "Emmanuel LOMAMI",
-            location : "UK/London",
-            email : "emmanuel.lomami@dumacash.com",
-            phone : "+243815490726",
-            facebook : "",
-            linkedin : ""
-        },
-        {
-            name : "Gloire LOMAMI",
-            location : "CANADA/Québec",
-            email : "gloire.lomami@dumacash.com",
-            phone : "+243815490726",
-            facebook : "",
-            linkedin : "glomami"
-        },
-        {
-            name : "Emmanuel LOMAMI",
-            location : "UK/London",
-            email : "emmanuel.lomami@dumacash.com",
-            phone : "+243815490726",
-            facebook : "",
-            linkedin : ""
-        },
-        {
-            name : "Gloire LOMAMI",
-            location : "CANADA/Québec",
-            email : "gloire.lomami@dumacash.com",
-            phone : "+243815490726",
-            facebook : "",
-            linkedin : "glomami"
-        },
-    ],
-    "Comité de pilotage" : [{
-        name : "Benny NKONGA",
-        location : "Congo/Kinshasa",
-        email : "benny.nkonga@businesslighthouse.tech",
-        phone : "+243815490726",
-        facebook : "bennyibmn",
-        linkedin : "bennyinkonga"
-    },
-    {
-        name : "Prince BAKENGA",
-        location : "Congo/Kinshasa",
-        email : "prince.bakenga@businesslighthouse.tech",
-        phone : "+243815490726",
-        facebook : "princebak",
-        linkedin : "princebakenga"
-    },
-    {
-        name : "Murdoch KANGUDIE",
-        location : "Congo/Kinshasa",
-        email : "muroch@businesslighthouse.tech",
-        phone : "+243815490726",
-        facebook : "murdoch",
-        linkedin : "murdoch"
-    },
-    {
-        name : "Benny",
-        location : "Congo/Kinshasa",
-        email : "benny.nkonga@businesslighthouse.tech",
-        phone : "+243815490726",
-        facebook : "bennyibmn",
-        linkedin : "bennyinkonga"
-    }],
-    "Comité de direction" : [
-        {
-            name : "Benny",
-            location : "Congo/Kinshasa",
-            email : "benny.nkonga@businesslighthouse.tech",
-            phone : "+243815490726",
-            facebook : "bennyibmn",
-            linkedin : "bennyinkonga"
-        },
-        {
-            name : "Benny",
-            location : "Congo/Kinshasa",
-            email : "benny.nkonga@businesslighthouse.tech",
-            phone : "+243815490726",
-            facebook : "bennyibmn",
-            linkedin : "bennyinkonga"
-        },
-        {
-            name : "Benny",
-            location : "Congo/Kinshasa",
-            email : "benny.nkonga@businesslighthouse.tech",
-            phone : "+243815490726",
-            facebook : "bennyibmn",
-            linkedin : "bennyinkonga"
-        },
-        {
-            name : "Benny",
-            location : "Congo/Kinshasa",
-            email : "benny.nkonga@businesslighthouse.tech",
-            phone : "+243815490726",
-            facebook : "bennyibmn",
-            linkedin : "bennyinkonga"
-        }
-    ],
+interface GouvernancePage{
+    image? : string,
+    name : string,
+    title : string,
+    description? : string,
+    teamMembers : TeamMemberType[]
 }
 
-const renderGouvernancePageMembers = (gouvernancePage : string) => {
-    let teamMembers
-
-    switch (gouvernancePage) {
-        case "Conseil d'administration":
-            teamMembers = teamMembersDummy["Conseil d'administration"]
-            break;
-        case "Comité de pilotage" :
-            teamMembers = teamMembersDummy["Comité de pilotage"]
-            break;
-        case "Comité de direction" :
-            teamMembers = teamMembersDummy["Comité de direction"]
-            break;
-
-        default:
-            break;
+const pages : GouvernancePage[] = [
+    {
+        name : "comite-de-direction",
+        title : "Comité de direction",
+        teamMembers : [
+            {
+                name : "Emmanuel LOMAMI",
+                location : "UK/London",
+                email : "emmanuel.lo@dumacash.com",
+                phone : "+243815490726",
+                facebook : "",
+                linkedin : ""
+            },
+            {
+                name : "Gloire LOMAMI",
+                location : "CANADA/Québec",
+                email : "gloire.lomami@dumacash.com",
+                phone : "+243815490726",
+                facebook : "",
+                linkedin : "glomami"
+            },
+            {
+                name : "Emmanuel LOMAMI",
+                location : "UK/London",
+                email : "emmanuel.lo@dumacash.com",
+                phone : "+243815490726",
+                facebook : "",
+                linkedin : ""
+            },
+            {
+                name : "Gloire LOMAMI",
+                location : "CANADA/Québec",
+                email : "gloire.lomami@dumacash.com",
+                phone : "+243815490726",
+                facebook : "",
+                linkedin : "glomami"
+            },
+        ],
+        description : "Nous vous présentons notre équippe des professionnels hautement qualifiés et expérimentés.",
+    },
+    {
+        name : "comite-de-pilotage",
+        title : "Comité de pilotage",
+        teamMembers : [
+            {
+                name : "Benny NKONGA",
+                location : "Congo/Kinshasa",
+                email : "benny.nkonga@blth.tech",
+                phone : "+243815490726",
+                facebook : "bennyibmn",
+                linkedin : "bennyinkonga"
+            },
+            {
+                name : "Prince BAKENGA",
+                location : "Congo/Kinshasa",
+                email : "prince.bakenga@blth.tech",
+                phone : "+243815490726",
+                facebook : "princebak",
+                linkedin : "princebakenga"
+            },
+            {
+                name : "Murdoch KANGUDIE",
+                location : "Congo/Kinshasa",
+                email : "muroch@blth.tech",
+                phone : "+243815490726",
+                facebook : "murdoch",
+                linkedin : "murdoch"
+            },
+            {
+                name : "Benny",
+                location : "Congo/Kinshasa",
+                email : "benny.nkonga@blth.tech",
+                phone : "+243815490726",
+                facebook : "bennyibmn",
+                linkedin : "bennyinkonga"
+            }
+        ],
+        description : "Nous vous présentons notre équippe des professionnels hautement qualifiés et expérimentés."
+    },
+    {
+        name : "conseil-d-administration",
+        title : "Conseil d'administration",
+        teamMembers : [
+            {
+                name : "Benny",
+                location : "Congo/Kinshasa",
+                email : "benny.nkonga@blth.tech",
+                phone : "+243815490726",
+                facebook : "bennyibmn",
+                linkedin : "bennyinkonga"
+            },
+            {
+                name : "Benny",
+                location : "Congo/Kinshasa",
+                email : "benny.nkonga@blth.tech",
+                phone : "+243815490726",
+                facebook : "bennyibmn",
+                linkedin : "bennyinkonga"
+            },
+            {
+                name : "Benny",
+                location : "Congo/Kinshasa",
+                email : "benny.nkonga@blth.tech",
+                phone : "+243815490726",
+                facebook : "bennyibmn",
+                linkedin : "bennyinkonga"
+            },
+            {
+                name : "Benny",
+                location : "Congo/Kinshasa",
+                email : "benny.nkonga@blth.tech",
+                phone : "+243815490726",
+                facebook : "bennyibmn",
+                linkedin : "bennyinkonga"
+            }
+        ],
+        description : "Nous vous présentons notre équippe des professionnels hautement qualifiés et expérimentés."
     }
+]
 
-    return teamMembers?.map((teamMember, index) => <TeamMemberItem key={`member-${index}`} teamMember={teamMember} />)
-}
 export default function Gouvernance() {
     const {gouvernancePage} = useParams<string>()
+    const [pageContent, setPageContent] = useState<GouvernancePage | undefined>(undefined)
+
+    useEffect( () => {
+        if(gouvernancePage){
+            setPageContent( pages.find(page => page.name === gouvernancePage) )
+        }
+    }, [gouvernancePage])
 
     return(
         <div>
-            <HeroBreadcrumb title={gouvernancePage!} heroImagePath="custom/why-choose-us.jpg" />
+            <HeroBreadcrumb title={pageContent?.title!} heroImagePath={`custom/${pageContent?.name}.jpg`} heroImagePosition="bottom" />
                         
-            {/*Info Content Team Members*/}
             <div className="content_info">
-                {/* Parallax Background */}
                 <div className="borders world-bg" />
-                {/* Parallax Background */}
-                {/* title-vertical-line*/}
                 <div className="title-vertical-line">
-                    <h2>{gouvernancePage}</h2>
+                    <h2>{pageContent?.title!}</h2>
                     <p className="lead">
-                        Nous vous présentons notre équippe des professionnels hautement qualifiés et expérimentés.
+                        {pageContent?.description}
                     </p>
                 </div>
-                {/* End title-vertical-line*/}
-                {/* Content Parallax*/}
                 <section className="paddings">
-                <div className="container">
-                    <div className="row">
-                        {gouvernancePage && renderGouvernancePageMembers(gouvernancePage)}
-                    </div>
-                    <Feature />
-                </div> 
+                    <div className="container">
+                        <div className="row">
+                            {
+                                pageContent?.teamMembers.map((teamMember, index) => <TeamMemberItem key={`member-${index}`} teamMember={teamMember} />)
+                            }
+                        </div>
+                        <Feature />
+                    </div> 
                 </section>  
-                {/* End Content Parallax*/} 
             </div>
-            {/* End Info Content Team Members*/}
         </div>
     )
 }
