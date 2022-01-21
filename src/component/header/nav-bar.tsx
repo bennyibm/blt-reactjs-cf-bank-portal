@@ -61,9 +61,9 @@ const NavBar : FunctionComponent = () =>{
                                             <Link to="events"> Events </Link>
                                         </li>
                                 </NavBarItemWithSubMenu>
-                                <NavBarItemWithSubMenu title="Gouvernance">
+                                {/* <NavBarItemWithSubMenu title="Gouvernance">
                                         <li>
-                                            <Link to="/gouvernance/conseil-d-administration"> Conseil d'administration </Link>
+                                           <Link to="/gouvernance/conseil-d-administration"> Conseil d'administration </Link>
                                         </li>
                                         <li>
                                             <Link to="/gouvernance/comite-de-pilotage">Comité de pilotage </Link>
@@ -71,7 +71,7 @@ const NavBar : FunctionComponent = () =>{
                                         <li>
                                             <Link to="/gouvernance/comite-de-direction">Comité de direction</Link>
                                         </li>
-                                </NavBarItemWithSubMenu>
+                                </NavBarItemWithSubMenu>  */}
                                 <NavBarItemWithSubMenu title="Nos Divisions">
                                     <li>
                                         <Link to="/nos-divisions/banque-d-investissement"> Banque d'Investissement </Link>
@@ -97,10 +97,10 @@ const NavBar : FunctionComponent = () =>{
                                                         <strong>Investisseurs</strong>  
                                                     </li>
                                                     <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques">APROPOS</Link>
+                                                        <Link to="/investisseurs-financiers-et-strategiques">Apropos</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/profile-d-investissement">PROFILE D'INVESTISSEMENT</Link>
+                                                        <Link to="/investisseurs-financiers-et-strategiques/profile-d-investissement">Profile d'Investissement</Link>
                                                     </li>
                                                 </ul>
                                                 <ul className="col-md-3 list-unstyled">
@@ -109,27 +109,27 @@ const NavBar : FunctionComponent = () =>{
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/soin-de-sante"> 
-                                                            SOIN DE SANTE
+                                                            Soin de santé
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/industriels"> 
-                                                            INSDUSTRIELS
+                                                            Industriels
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/ressources-naturelles"> 
-                                                            RESSOURCES NATURELLES
+                                                            Ressources Naturelles
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/finance-municipale"> 
-                                                            FINANCE MUNICIPALE
+                                                            Finance Municipale
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/immobilier"> 
-                                                            IMMOBILIER
+                                                            Immobilier
                                                         </Link>
                                                     </li>
                                                 
@@ -140,34 +140,34 @@ const NavBar : FunctionComponent = () =>{
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/technologie-media-et-telecomunications"> 
-                                                            TECH, MEDIAS TELECOMM
+                                                            Tech, Médias Télécomm
                                                             {/* TECHNOLOGIE, MEDIAS TELECOMMUNICATIONS */}
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/infrastructure"> 
-                                                            INFRASTRUCTURES
+                                                            Infrastructures
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/credit"> 
-                                                            CREDITS
+                                                            Crédits
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/prets-senior"> 
-                                                            PRETS SENIOR
+                                                            Prets senior
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link to="/investisseurs-financiers-et-strategiques/energies-alternatives"> 
-                                                            ENERGIES ALTERNATIVES
+                                                            Enérgies Alternatives
                                                         </Link>
                                                     </li>
                                                 </ul>
                                                 <ul className="col-md-3 list-unstyled">
                                                     <li>
-                                                        <strong>Access to all functions of Coop Bank</strong>
+                                                        <strong>Access to all functions of Cf-Bank</strong>
                                                     </li>
                                                     <li>
                                                         <p style={{textAlign : "justify", wordBreak : "break-word"}}>

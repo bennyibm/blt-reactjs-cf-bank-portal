@@ -34,6 +34,39 @@ export function SoinDeSante() {
     )
 };
 
+export function TechMediasTelecom() {
+    return(
+        <div>
+            <HeroBreadcrumb title="Investissement / Technologie, Médias et Télécommuniations" heroImagePath="custom/tech.png" heroImagePosition="bottom"/>
+
+            <div className="content_info">
+                <div className="paddings">
+                    <div className="container">
+                        
+                        <div className="row">
+                            <div className="col-md-4">
+                                <img className="img-responsive" src="/img/custom/tech-2.png" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
+                            </div>
+                            <div className="col-md-8">
+                                <h4>Technologie, Médias et Télécommuniations</h4>
+                                <p>
+                                    Notre groupe Technologie, médias et télécommunications fournit des informations et des services couvrant un large éventail d'industries, notamment les sociétés d'électronique, de logiciels, d'Internet, des médias, du sans fil et du câble.
+                                </p>
+                                <p>
+                                    Avec des experts dans des bureaux et nos consultants internationaux , nos équipes aident les clients dans une variété de transactions, y compris les fusions et acquisitions, les désinvestissements, les offres publiques initiales et autres offres d'actions, la souscription de dette, les instruments hybrides, la gestion des risques, les conseils en matière de crédit et d'autres services financiers.
+                                </p>
+                            </div>
+                        </div>
+                             
+                        <Feature />
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    )
+};
+
 export function Industriels() {
     return(
         <div>
