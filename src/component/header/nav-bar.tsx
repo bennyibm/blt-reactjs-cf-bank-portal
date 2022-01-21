@@ -44,7 +44,7 @@ const NavBar : FunctionComponent = () =>{
                         </div>
                         <div id="navbar-collapse-1"  className="navbar-collapse collapse">
                             <ul  className="nav navbar-nav">
-                                <NavBarItemWithSubMenu title="Company">
+                                <NavBarItemWithSubMenu title="Compagnie">
                                         <li>
                                             <Link to="apropos-de-cfbank"> A propos </Link>
                                         </li>
