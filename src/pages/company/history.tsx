@@ -16,11 +16,11 @@ export default function History(){
                     <div className="container">
                         <div className="row">
                             <div className="col-md-5">
-                                <img src="/img/custom/business-man.jpg" alt="" className="img-responsive" />
+                                <img src="/img/custom/launch-business.jpg" alt="" className="img-responsive" />
                             </div>       
                             <div className="col-md-7">
                                 <div className="title-subtitle">
-                                <h3>Qui sommes nous</h3>
+                                {/* <h3>Qui sommes nous</h3> */}
                                 <p className="lead">
                                     Capital Financial Bank, plc. est un leader mondial des services bancaires d’affaire, d'investissement, des valeurs mobilières et de la gestion de placements qui fournit une large gamme de services financiers à une clientèle importante et diversifiée qui comprend des sociétés, des institutions financières, des gouvernements et des particuliers.
                                     </p>
