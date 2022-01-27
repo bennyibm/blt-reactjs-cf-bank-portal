@@ -2,7 +2,7 @@
 //--------------------------------------------------------------------------------------------------------------------------------
 //This is JS file that contains principal fuctions of theme */
 // -------------------------------------------------------------------------------------------------------------------------------
-// Template Name: CF BANK - Banking, Cooperatives and Employee funds Theme
+// Template Name: CF BANK -, Cooperatives and Employee funds Theme
 // Author: Iwthemes.
 // Name File: main.js
 // Version 1.0 - Created on 16 Nov 2015

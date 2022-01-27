@@ -20,7 +20,7 @@
 	    // Theme Panel - disable panel options
 	    var themepanel = "0"; // 1 (default - enable), 0 ( disable)
 
-	    $(".skin").attr("href", "css/skins/"+ skin + "/" + skin + ".css");
+	    $(".skin").attr("href", "/css/skins/"+ skin + "/" + skin + ".css");
 	    $("#fond-header").addClass(bg_color_header).addClass(bg_parrner_header);	
 	    $("#layout").addClass(layout);	
 	    $("body").addClass(bg);   
@@ -108,35 +108,35 @@
 	//=================================== Skins Changer ====================================//
     // General Skin
     $(".red").click(function(){
-	   	$(".skin").attr("href", "css/skins/red/red.css");
+	   	$(".skin").attr("href", "/css/skins/red/red.css");
 	    return false;
 	});
 	$(".blue").click(function(){
-	    $(".skin").attr("href", "css/skins/blue/blue.css");
+	    $(".skin").attr("href", "/css/skins/blue/blue.css");
 	    return false;
 	});
 	$(".yellow").click(function(){
-	    $(".skin").attr("href", "css/skins/yellow/yellow.css");
+	    $(".skin").attr("href", "/css/skins/yellow/yellow.css");
 	    return false;
 	});
 	$(".green").click(function(){
-	    $(".skin").attr("href", "css/skins/green/green.css");
+	    $(".skin").attr("href", "/css/skins/green/green.css");
 	    return false;
 	});
 	$(".orange").click(function(){
-    	$(".skin").attr("href", "css/skins/orange/orange.css");
+    	$(".skin").attr("href", "/css/skins/orange/orange.css");
     	return false;
 	});
 	$(".purple").click(function(){
-	    $(".skin").attr("href", "css/skins/purple/purple.css");
+	    $(".skin").attr("href", "/css/skins/purple/purple.css");
 	    return false;
 	});
 	$(".pink").click(function(){
-	    $(".skin").attr("href", "css/skins/pink/pink.css");
+	    $(".skin").attr("href", "/css/skins/pink/pink.css");
 	    return false;
 	});
 	$(".cocoa").click(function(){
-        $(".skin").attr("href", "css/skins/cocoa/cocoa.css");
+        $(".skin").attr("href", "/css/skins/cocoa/cocoa.css");
         return false;
    	});
 

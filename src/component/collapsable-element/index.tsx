@@ -12,12 +12,12 @@ export default function CollapsableElement({label, children} : props) {
 
     
     return(
-        <li className={styles.collapsableElement}>
+        <li style={{flexWrap : "wrap"}} className={styles.collapsableElement}>
             <a href="/" className={styles.label} onClick={ (e) => {e.stopPropagation(); e.preventDefault(); setExpand(!expand)} }>
                 <i className={`fa fa-${expand ? "minus" : "plus"}`} />
                 {label}
             </a>   
-            <div className={expand ? styles.show : styles.hide} id={targetId}>
+            <div style={{width : "100%"}} className={expand ? styles.show : styles.hide} id={targetId}>
                 {children}
             </div>
         </li>

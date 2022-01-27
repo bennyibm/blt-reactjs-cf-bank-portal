@@ -1,7 +1,7 @@
-import React, {FunctionComponent} from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 
-const TopBar : FunctionComponent = () =>{
+export default function TopBar() {
 
     return(
         <header id="header">
@@ -10,7 +10,7 @@ const TopBar : FunctionComponent = () =>{
                 <div  className="col-md-4 col-lg-5">
                     <div  className="logo">
                         <a href="/">
-                            <img src={require("./../../assets/images/cf-bank-logo.png")} alt="CF-BANK logo" style={{width : 260, height: 100, objectFit : "cover"}} />
+                            <img src="/img/cf-bank-logo.png" alt="CF-BANK logo" style={{width : 260, height: 100, objectFit : "cover"}} />
                         </a>
                         {/* <div  className="icon-logo">
                             <i  className="fa fa-university"></i>
@@ -29,14 +29,14 @@ const TopBar : FunctionComponent = () =>{
     )
 }
 
-const LoginArea : FunctionComponent = () =>{
+function LoginArea(){
     return(
         <div  className="col-md-8 col-lg-7">
             <div  className="info-login">
                 <div  className="head-info-login">
                     <p>bientôt disponible</p>
                     <span>
-                        <Link to="#">Inscription</Link>
+                        <a href="/" onClick={e => e.preventDefault()}>Inscription</a>
                     </span>
                 </div>
                 <div  className="form-theme">
@@ -59,5 +59,3 @@ const LoginArea : FunctionComponent = () =>{
         </div>
     )
 }
-
-export default TopBar

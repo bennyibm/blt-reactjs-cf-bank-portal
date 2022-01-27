@@ -32,6 +32,7 @@ function SlideItem({image = "custom/assembly.png", principalTitle = "Es-tu prêt
         </li>
     )
 }
+
 export default function Home(){
 
     const slides = [
@@ -47,13 +48,13 @@ export default function Home(){
     return(
         <>
             <div className="tp-banner-container">
-                <div className="tp-banner">
-                {/* SLIDES CONTENT*/}
-                <ul> 
-                    {slides.map( ({image, subTitle, principalTitle}) => <SlideItem image={image} subTitle={subTitle} principalTitle={principalTitle} /> )}
-                </ul> 
-                {/* END SLIDES  */} 
-                <div className="tp-bannertimer" />  
+                <div className="tp-banner ">
+                    {/* SLIDES CONTENT*/}
+                    <ul> 
+                        {slides.map( ({image, subTitle, principalTitle}) => <SlideItem image={image} subTitle={subTitle} principalTitle={principalTitle} /> )}
+                    </ul> 
+                    {/* END SLIDES  */} 
+                    <div className="tp-bannertimer" />  
                 </div>
             </div>
             <div className="content_info">
@@ -283,6 +284,7 @@ export default function Home(){
                     </div>
                 </div>
             </div>
+            
         </>
 
     )

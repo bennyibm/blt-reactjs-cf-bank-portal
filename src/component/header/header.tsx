@@ -4,7 +4,7 @@ import TopBar from "./top-bar"
 
 const Header : FunctionComponent = () =>{
     return(
-        <>
+        <div>
             {/* <!-- fond-header--> */}
             <div id="fond-header"  className="fond-header pattern-header-01"></div>
 
@@ -13,7 +13,7 @@ const Header : FunctionComponent = () =>{
 
             {/* <!-- NavBar Area --> */}
             <NavBar />
-        </>
+        </div>
     )
 }
 

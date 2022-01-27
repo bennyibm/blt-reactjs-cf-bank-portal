@@ -36,7 +36,7 @@ const Footer : FunctionComponent = () =>{
                             </ul>
                             <div className="logo-footer">
                                 <Link to="/">
-                                    <img src="img/cf-bank-logo.png" alt="CF-BANK logo" style={{width: 200, height: 80, objectFit : "cover"}} />
+                                    <img src="/img/logo.png" alt="CF-BANK logo" style={{width: 200, height: 80, objectFit : "cover"}} />
                                 </Link>
 
                             </div>

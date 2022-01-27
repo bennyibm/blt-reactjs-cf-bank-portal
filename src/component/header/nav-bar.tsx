@@ -1,35 +1,39 @@
-import React, {FunctionComponent, ReactNode} from "react"
+import React, { ReactNode} from "react"
 import { Link, useLocation } from "react-router-dom"
 
-const NavBarItem : FunctionComponent<{title : string, link? : string}> = ({title, link}) =>{
-    if(!link)
-        link = title.toLowerCase()
+function NavBarItem (props : {title : string, link? : string}){
+    if(!props.link)
+        props.link = props.title.toLowerCase()
 
     const {pathname} = useLocation()
-    const isActive = pathname.substring(1) === link 
+    const isActive = pathname.endsWith(props.link) 
     return(
-        <li className={["dropdown",isActive ? "active" : ""].join(" ")}>
-            <Link to={link}>{title}</Link>
+        <li className={isActive ? "active" : ""}>
+            <Link to={props.link}>{props.title}</Link>
         </li>
     )
 }
 
-const NavBarItemWithSubMenu : FunctionComponent<{title : string, children : ReactNode}> = ({title, children}) =>{
+function NavBarItemWithSubMenu(props : {title : string, classNames? : string, children : ReactNode}){
+    const {pathname} = useLocation()
+
+    const titleSlug = props.title.toLowerCase().replaceAll(" ", "-")
+    const isActive = pathname.substring(1).startsWith(titleSlug)
     return(
-        <li className="dropdown">
+        <li  className={`dropdown ${props.classNames} ${isActive && "active"}`}>
             <Link to="#" data-toggle="dropdown" className="dropdown-toggle">
-                {title}
+                {props.title}
                 <b className="caret" />
             </Link>
             <ul className="dropdown-menu">                
-                {children}
+                {props.children}
             </ul>
         </li>
 
     )
 }
 
-const NavBar : FunctionComponent = () =>{
+export default function NavBar(){
     return(
         <nav id="menu">
             <div  className="navbar yamm navbar-default">
@@ -45,21 +49,21 @@ const NavBar : FunctionComponent = () =>{
                         <div id="navbar-collapse-1"  className="navbar-collapse collapse">
                             <ul  className="nav navbar-nav">
                                 <NavBarItemWithSubMenu title="Compagnie">
-                                        <li>
-                                            <Link to="apropos-de-cfbank"> A propos </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="historique"> Historique </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="ce-qui-nous-differencie"> Pourquoi nous </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="nos-clients"> Nos clients </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="events"> Events </Link>
-                                        </li>
+                                    <li>
+                                        <Link to="/compagnie/apropos-de-cfbank"> A propos </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/compagnie/historique"> Historique </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/compagnie/ce-qui-nous-differencie"> Pourquoi nous </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/compagnie/nos-clients"> Nos clients </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/compagnie/events"> Events </Link>
+                                    </li>
                                 </NavBarItemWithSubMenu>
                                 {/* <NavBarItemWithSubMenu title="Gouvernance">
                                         <li>
@@ -83,87 +87,37 @@ const NavBar : FunctionComponent = () =>{
                                         <Link to="/nos-divisions/notation-financiere"> Notation financiere </Link>
                                     </li>
                                 </NavBarItemWithSubMenu>
-                                <li className="dropdown yamm-fw">
-                                    <Link to="#" data-toggle="dropdown" className="dropdown-toggle">
-                                        Investisseurs financiers et strategiques
-                                        <b className="caret" />
-                                    </Link>
-                                    <ul className="dropdown-menu">
-                                        <li>
-                                            <div className="yamm-content">
+                                <NavBarItemWithSubMenu title="Investisseurs financiers et strategiques" classNames="yamm-fw">
+                                    <li>
+                                        <div className="yamm-content">
                                             <div className="row">
                                                 <ul className="col-md-3 list-unstyled">
                                                     <li>
                                                         <strong>Investisseurs</strong>  
                                                     </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques">Apropos</Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/profile-d-investissement">Profile d'Investissement</Link>
-                                                    </li>
+                                                    <NavBarItem title="Apropos" link="/investisseurs-financiers-et-strategiques" />
+                                                    <NavBarItem title="Profile d'investissement" link="/investisseurs-financiers-et-strategiques/profile-d-investissement" />
                                                 </ul>
                                                 <ul className="col-md-3 list-unstyled">
                                                     <li>
                                                         <strong>Secteurs d'investissement</strong>
                                                     </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/soin-de-sante"> 
-                                                            Soin de santé
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/industriels"> 
-                                                            Industriels
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/ressources-naturelles"> 
-                                                            Ressources Naturelles
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/finance-municipale"> 
-                                                            Finance Municipale
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/immobilier"> 
-                                                            Immobilier
-                                                        </Link>
-                                                    </li>
-                                                
+                                                    <NavBarItem title="Soin de santé" link="/investisseurs-financiers-et-strategiques/soin-de-sante" />
+                                                    <NavBarItem title="Industriels" link="/investisseurs-financiers-et-strategiques/industriels" />
+                                                    <NavBarItem title="Ressources Naturelles" link="/investisseurs-financiers-et-strategiques/ressources-naturelles" />
+                                                    <NavBarItem title="Finance Municipale" link="/investisseurs-financiers-et-strategiques/finance-municipale" />
+                                                    <NavBarItem title="Immobilier" link="/investisseurs-financiers-et-strategiques/immobilier" />
                                                 </ul>
                                                 <ul className="col-md-3 list-unstyled">
                                                     <li>
                                                         <strong>Seteur d'investissement</strong>
                                                     </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/technologie-media-et-telecomunications"> 
-                                                            Tech, Médias Télécomm
-                                                            {/* TECHNOLOGIE, MEDIAS TELECOMMUNICATIONS */}
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/infrastructure"> 
-                                                            Infrastructures
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/credit"> 
-                                                            Crédits
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/prets-senior"> 
-                                                            Prets senior
-                                                        </Link>
-                                                    </li>
-                                                    <li>
-                                                        <Link to="/investisseurs-financiers-et-strategiques/energies-alternatives"> 
-                                                            Enérgies Alternatives
-                                                        </Link>
-                                                    </li>
+                                                    <NavBarItem title="Tech, Médias Télécomm" link="/investisseurs-financiers-et-strategiques/technologie-media-et-telecomunications" />
+                                                    <NavBarItem title="Infrastructures" link="/investisseurs-financiers-et-strategiques/infrastructures" />
+                                                    <NavBarItem title="Crédits" link="/investisseurs-financiers-et-strategiques/credits" />
+                                                    <NavBarItem title="Prets senior" link="/investisseurs-financiers-et-strategiques/prets-senior" />
+                                                    <NavBarItem title="Enérgies Alternatives" link="/investisseurs-financiers-et-strategiques/energies-alternatives" />
+                                                    
                                                 </ul>
                                                 <ul className="col-md-3 list-unstyled">
                                                     <li>
@@ -176,23 +130,25 @@ const NavBar : FunctionComponent = () =>{
                                                     </li>
                                                 </ul>
                                             </div>
-                                            </div>
-                                            {/* <img src="img/img-theme/img-dropdown-bg.png" className="img-nav" alt="" /> */}
-                                        </li>
-                                    </ul>
-                                </li>
+                                        </div>
+                                        {/* <img src="img/img-theme/img-dropdown-bg.png" className="img-nav" alt="" /> */}
+                                    </li>
+                                </NavBarItemWithSubMenu>
+                                
 
                                 <NavBarItemWithSubMenu title="Media">
-                                        <li>
+                                        {/* <li>
                                             <Link to="/in-the-news">In the news</Link>
-                                        </li>
+                                        </li> */}
+                                        <NavBarItem title="In the news" link="/media/in-the-news" />
+
                                         {/* <li>
                                             <Link to="/press-release">Press Release</Link>
                                         </li> */}
                                 </NavBarItemWithSubMenu>
                                 <NavBarItem title="Contact" link="contact" />
                             </ul>
-                            <ul  className="nav navbar-nav navbar-right">
+                            {/* <ul  className="nav navbar-nav navbar-right">
                                 <li  className="dropdown">
                                     <Link to="#" data-toggle="dropdown"  className="dropdown-toggle" aria-expanded="false">
                                         <b className="glyphicon glyphicon-search"></b>
@@ -212,7 +168,7 @@ const NavBar : FunctionComponent = () =>{
                                         </li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
                 </div>
@@ -221,4 +177,3 @@ const NavBar : FunctionComponent = () =>{
     )
 }
 
-export default NavBar

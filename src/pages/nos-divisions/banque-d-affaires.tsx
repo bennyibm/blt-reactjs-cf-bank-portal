@@ -31,7 +31,7 @@ export default function BanqueDAffaires() {
                                 </p>
                             </div>
                             <div className="col-md-12">
-                                <h4>Vente de details</h4>
+                                <h5>Vente de details</h5>
                                 <p>
                                     Consumer Retail Group CFB  conseille ses clients sur un large éventail de transactions, y compris les fusions et acquisitions, les offres d'actions et de dettes, les dérivés et les produits structurés, la gestion des risques, etc. Nous couvrons des secteurs tels que l'habillement, les aliments et boissons, les aliments et services pour animaux de compagnie, la beauté et produits de soins personnels, restaurants, détaillants spécialisés et purs, grands magasins et supermarchés.
                                 </p>
@@ -46,7 +46,7 @@ export default function BanqueDAffaires() {
                         </p>
                         <div className="row">
                             <div className="col-md-8">
-                                <h4>2.	CAPITAL FINANCIAL BANK Asset Management</h4>
+                                <h4>2. capital financial bank asset management</h4>
                                 <p>
                                     En tant que l'un des principaux gestionnaires d'actifs en Afrique, notre mission est de vous aider à atteindre vos objectifs d'investissement.
                                 </p>

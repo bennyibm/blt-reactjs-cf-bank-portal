@@ -7,7 +7,7 @@ type HeroBreadcrumbProps = {
     heroImagePath? : string,
     heroImagePosition? : "top" | "bottom" | "left" | "right" | "center" 
 }
-export default function HeroBreadcrumb({title, description, heroImagePath = "custom/hands-together.png", heroImagePosition = "center"} : HeroBreadcrumbProps){
+export default function HeroBreadcrumb({title, description, heroImagePath = "custom/brainstorming-2.jpg", heroImagePosition = "center"} : HeroBreadcrumbProps){
     return(
         <div className="content_info">
             {/* Info Section title*/}
@@ -15,8 +15,8 @@ export default function HeroBreadcrumb({title, description, heroImagePath = "cus
                 <div className="container">
                     <div className="row">
                         <div className="col-md-7">
-                            <h3 style={{color : "white"}}>{title}</h3>
-                            <h5 style={{color : "white"}}>Capital Financial BANK</h5>
+                            <h3>{title}</h3>
+                            <h5>Capital Financial BANK</h5>
                             <p style={{color : "white"}}>
                                 {description}
                             </p>

@@ -331,6 +331,8 @@ hr.tall {
 }
 .list-styles li{
  	padding: 0 0 15px 0;
+	display: flex;
+	align-items: baseline;
 }
 .list-styles li:last-child{
  	padding: 0;
@@ -339,6 +341,9 @@ hr.tall {
 .list-styles li{
 	font-size: 0.82rem;
 	color: #000;
+}
+.list-styles li > a, .list-styles li > i{
+	display: block;
 }
 .list-styles li i{
 	border-radius: 50%;
@@ -1035,7 +1040,7 @@ iframe.video{
 	padding: 40px 0;
 }
 .section-title-01 h3{
-	color: #fff;
+	color: #000;
 	padding: 60px 0 0 0;
 	font-size: 3rem;
 	line-height: 3rem;

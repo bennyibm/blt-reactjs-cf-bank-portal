@@ -57,6 +57,7 @@ export default function NotationFinanciere() {
                         <div className="row" style={{display : "flex"}}>
                             <div className="col-md-8"  style={{display : "flex", alignItems : "center"}}>
                                 <div className="row">
+                                    <h4 style={{marginLeft : 10}}>Nos services</h4>
                                     <div className="col-md-6">
                                         <ul className="list-styles">
                                             <li>
