@@ -1029,6 +1029,7 @@ iframe.video{
 	right: 0;
 }
 .section-title-01{
+	height: 345px;
 	max-height: 400px;
 	padding: 20px 0 0 0;
 	background-color: #262626;
@@ -1039,14 +1040,21 @@ iframe.video{
 .section-title-01-small{
 	padding: 40px 0;
 }
+.section-title-01 *{
+	text-shadow: .3rem .3rem .3rem #999;
+}
 .section-title-01 h3{
-	color: #000;
+	color: #fff;
 	padding: 60px 0 0 0;
 	font-size: 3rem;
 	line-height: 3rem;
 	text-transform: uppercase;
 	position: relative;
 	z-index: 1;
+}
+.section-title-01 h5{
+	margin : 1rem 0;
+	font-size: 2rem !important;
 }
 .section-title-01-small h3{
 	font-size: 2rem;
@@ -1164,10 +1172,12 @@ iframe.video{
 .color-bg-1 .head-service-process,
 .item-financial-content.color-bg-1,
 .table thead .color-bg-1{
+	/* background: #F16122 !important; */
 	background: #F16122 !important;
 }
 .color-bg-1  .head-service-process:before{
     border-left: 70px solid #F16122;
+    /* border-left: 70px solid #F16122; */
 }
 .color-bg-1 .divisor-service-process .circle-top{
 	border:solid 3px #F16122;
@@ -1181,27 +1191,29 @@ iframe.video{
 .color-bg-2 .head-service-process,
 .item-financial-content.color-bg-2,
 .table thead .color-bg-2{
-	background: #15a4d3 !important;
+	/* background: #15a4d3 !important; */
+	background: #2A2D7C !important;
 }
 .color-bg-2  .head-service-process:before{
-    border-left: 70px solid #15a4d3;
+    /* border-left: 70px solid #15a4d3; */
+    border-left: 70px solid #2A2D7C;
 }
 .color-bg-2 .divisor-service-process .circle-top{
-	border:solid 3px #15a4d3;
+	border:solid 3px #2A2D7C;
 }
 .color-bg-2 .info-service-process h3,
 .mini-box .color-bg-2 i,
 .color-dark-table.color-bg-2{
-	color: #15a4d3;
+	color: #2A2D7C;
 }
 /* Color 3------------------------*/
 .color-bg-3 .head-service-process,
 .item-financial-content.color-bg-3,
 .table thead .color-bg-3{
-	background: #EB4436 !important;
+	background: #F16122 !important;
 }
 .color-bg-3  .head-service-process:before{
-    border-left: 70px solid #EB4436;
+    border-left: 70px solid #F16122;
 }
 .color-bg-3 .divisor-service-process .circle-top{
 	border:solid 3px #EB4436;
@@ -1215,18 +1227,18 @@ iframe.video{
 .color-bg-4 .head-service-process,
 .item-financial-content.color-bg-4,
 .table thead .color-bg-4{
-	background: #F16122 !important;
+	background: #2A2D7C !important;
 }
 .color-bg-4  .head-service-process:before{
-    border-left: 70px solid #F16122;
+    border-left: 70px solid #2A2D7C;
 }
 .color-bg-4 .divisor-service-process .circle-top{
-	border:solid 3px #F16122;
+	border:solid 3px #2A2D7C;
 }
 .color-bg-4 .info-service-process h3,
 .mini-box .color-bg-4 i,
 .color-dark-table.color-bg-4{
-	color: #F16122;
+	color: #2A2D7C;
 }
 .head-service-process.color-bg-2:before{
     border-left: 70px solid #15a4d3 !important;

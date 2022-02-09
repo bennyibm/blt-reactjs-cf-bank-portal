@@ -11,20 +11,20 @@ export default function HeroBreadcrumb({title, description, heroImagePath = "cus
     return(
         <div className="content_info">
             {/* Info Section title*/}
-            <div className="section-title-01 breadcrumb-hero" style={{backgroundImage : `url(/img/${heroImagePath})`, backgroundPosition : heroImagePosition }}>
+            {/*
+                if we need image comeback
+                style={{backgroundImage : `url(/img/${heroImagePath})`, backgroundPosition : heroImagePosition }} 
+             */
+            }
+            <div  className="section-title-01 breadcrumb-hero" style={{backgroundImage : `url(/img/${heroImagePath})`, backgroundPosition : heroImagePosition }}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-7">
+                        <div className="col">
                             <h3>{title}</h3>
                             <h5>Capital Financial BANK</h5>
                             <p style={{color : "white"}}>
                                 {description}
                             </p>
-                        </div>
-                        <div className="col-md-5 hidden-xs hidden-sm">
-                            <div className="image-title-section">
-                            {/* <img src="img/women-head.png" alt="" className="img-responsive" /> */}
-                            </div>
                         </div>
                     </div>
                 </div>

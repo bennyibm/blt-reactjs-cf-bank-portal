@@ -18,6 +18,11 @@
 
 
 
+.tp-caption *{
+   color:#000 !important;
+   text-shadow:0px 2px 5px #fff !important;
+   margin : 1rem 0 !important;
+}
 
 .tp-caption.medium_grey {
 position:absolute;
