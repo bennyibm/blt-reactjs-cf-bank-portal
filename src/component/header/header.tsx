@@ -3,8 +3,10 @@ import NavBar from "./nav-bar"
 import TopBar from "./top-bar"
 
 const Header : FunctionComponent = () =>{
+    // variant of blue 2a2d7c6b
+    // pure white fff
     return(
-        <div>
+        <div style={{backgroundColor : "#fff"}}>
             {/* <!-- fond-header--> */}
             <div id="fond-header"  className="fond-header pattern-header-01"></div>
 
