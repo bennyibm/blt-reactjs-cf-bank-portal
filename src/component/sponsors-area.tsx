@@ -18,7 +18,7 @@ export function SponsorItem({label = "Name Sponsor", link = "#", imageUrl = "img
 }
 export default function SponsorsArea(){
     return(
-        <div className="container wow fadeInUp">
+        <div className="container-fluid wow fadeInUp" style={{backgroundColor : "#efefef"}}>
             <div className="row">
                 <div className="col-md-12">
                     <ul className="owl-carousel carousel-sponsors tooltip-hover" id="carousel-sponsors">
