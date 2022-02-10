@@ -1,62 +1,118 @@
-import React from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { BlogSection, Feature } from "../component";
 
 type SlideItemProps = {
     image? : string,
+    imagePosition? : "top" | "bottom" | "left" |  "right",
     principalTitle? : string,
     subTitle? : string,
     description? : string,
 
 }
-function SlideItem({image = "custom/assembly.png", principalTitle = "Es-tu prêt?", subTitle = "Votre succès est notre", description = "Trouvez une varieté des services avec CF-BANK"} : SlideItemProps) {
-    return(
-        <li data-transition="zoomout" data-slotamount={7} data-masterspeed={1500}>
-            <img src={`/img/${image}`} alt="fullslide1" data-bgfit="cover" data-bgposition="top center" data-bgrepeat="no-repeat" />
-            
-            <div className="tp-caption medium_text lft stl" data-x="center" data-hoffset data-y="top" data-voffset={160} data-speed={300} data-start={800} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
-                {subTitle}
-            </div>
-            <div className="tp-caption large_bold_white sft stb" data-x="center" data-hoffset data-y="top" data-voffset={190} data-speed={300} data-start={1000} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
-                {principalTitle}
-            </div>
-            <div className="tp-caption small_light_white sfb stb" data-x="center" data-hoffset data-y="top" data-voffset={260} data-speed={500} data-start={1200} data-splitin="lines" data-splitout="none" data-easing="easeOutExpo">
-                {description}
-            </div>
-            {/* <div className="tp-caption lfb tp-resizeme" data-x="center" data-hoffset={-100} data-y="center" data-voffset={75} data-speed={300} data-start={1400} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed={300}>
-                <Link to="#" className="btn btn-primary"><i className="fa fa-graduation-cap" />View More</Link>
-            </div>
-            <div className="tp-caption lfb tp-resizeme" data-x="center" data-hoffset={100} data-y="center" data-voffset={75} data-speed={300} data-start={1600} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed={300}>
-                <Link to="#" className="btn btn-primary"><i className="fa fa-heart" />View More</Link>
-            </div> */}
-        </li>
-    )
-}
 
-export default function Home(){
 
-    const slides = [
+
+
+function Slider(){
+    const slides : SlideItemProps[] = [
         {
-            image : "custom/black-business-man.jpg",
+            image : "/img/custom/black-business-man.jpg",
+            imagePosition : "top",
             subTitle : "votre succès est notre",
-            principalTitle : "Es-tu prêt?"
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services ave notre bank"
         },
         {
-            image : "custom/man-woman-business.jpg"
+            image : "/img/custom/man-woman-business.jpg",
+            imagePosition : "top",
+            subTitle : "votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services ave notre bank"
         }
-]
-    return(
-        <>
-            <div className="tp-banner-container">
-                <div className="tp-banner ">
-                    {/* SLIDES CONTENT*/}
-                    <ul> 
-                        {slides.map( ({image, subTitle, principalTitle}) => <SlideItem image={image} subTitle={subTitle} principalTitle={principalTitle} /> )}
-                    </ul> 
-                    {/* END SLIDES  */} 
-                    <div className="tp-bannertimer" />  
+    ]
+
+
+
+    const slideProgression = useRef<HTMLDivElement | null>(null)
+    const slideProgressionValue = useRef<string>()
+
+    // const slideProgressionTimer  = useRef<NodeJS.Timer>()
+    // const updateSlideProression= useCallback( () => {
+    //     slideProgressionValue.current = slideProgression.current!.style.width.substring(0, slideProgression.current!.style.width.length - 1);
+        
+    //     slideProgressionValue.current = (parseFloat(slideProgressionValue.current) + 0.5).toString() ;
+    //     slideProgression.current!.style.width = slideProgressionValue.current.concat("%");
+    //     // console.log("current progression : ", slideProgression.current!.style.width);
+    // }, [])
+
+    const sliderBg = useRef<HTMLImageElement | null> (null);
+    const sliderTimer = useRef<NodeJS.Timer>();
+    const activeSlideIndex = useRef<Number>(1);
+    const slidesInDom = useRef<NodeListOf<HTMLDivElement> | null> (null)
+    
+    const renderSlide = useCallback( (slide : SlideItemProps, index) =>{
+        return(
+            
+            <div className="slide" key={`slide-${index}`}>
+                <div className="content">
+                    <span>{slide.subTitle}</span>
+                    <h1>{slide.principalTitle}</h1>
+                    <p>{slide.description}</p>
+                </div>
+                <div className={`image ${slide.imagePosition}`}>
+                    <img src={slide.image} alt="" />
                 </div>
             </div>
+        )
+    }, [])
+    const swap = useCallback( (direction : "left" | "right" = "right") =>{
+        sliderBg.current!.src = slidesInDom.current?.item(activeSlideIndex.current.valueOf()).querySelector(".image img")?.getAttribute("src")! ;
+
+        slidesInDom.current?.item(activeSlideIndex.current.valueOf()).classList.remove("active");
+        const lenght = slidesInDom.current?.length ? slidesInDom.current?.length : 1;
+
+        if(direction === "left"){
+            activeSlideIndex.current = (activeSlideIndex.current.valueOf() - 1 + lenght) % lenght
+        }else{
+            activeSlideIndex.current = (activeSlideIndex.current.valueOf() +1) % lenght
+        }
+
+        const activeSlide = slidesInDom.current?.item(activeSlideIndex.current.valueOf());
+        activeSlide?.classList.add("active");
+        
+        if(sliderTimer.current){
+            clearInterval(sliderTimer.current)
+        }
+        
+        sliderTimer.current = setInterval( () => swap("right"), 6000)
+        
+    }, [])
+
+    
+    useEffect( () =>{
+        slidesInDom.current = document.querySelectorAll(".slides-container .slide");
+
+        swap("right")
+        
+    }, [swap])
+
+    return(
+        <div className="slides-container">
+            <img src="" alt="" className="bg" ref={sliderBg} />
+            {slides.map((slide, index) => renderSlide(slide, index))}
+            {/* controls */}
+            <div className="control fa fa-angle-left" id="prev" onClick={ e => swap("left")} />
+            <div className="control fa fa-angle-right" id="next" onClick={e => swap("right")} />
+        </div>
+    )
+}
+export default function Home(){
+
+    return(
+        <>
+            <Slider />
+
             <div className="content_info">
                 <div className="title-vertical-line">
                 <h2><span>Services</span> & Divisions</h2>
