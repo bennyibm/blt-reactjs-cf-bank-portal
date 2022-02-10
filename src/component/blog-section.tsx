@@ -15,13 +15,13 @@ export function BlogItem() {
     return(
         <div className="col-md-4  padding-bottom">
             <div className="item-blog-post">
-                <div className="head-item-blog-post">
+                <div className="head-item-blog-post-custom">
                     <i className="fa fa-calculator" />
                     <h3>Emmer'J Forum 2021</h3>
                 </div>
                 <div className="img-item-blog-post">
                     <img src="/img/custom/emmerj.png" alt="" />
-                    <div className="post-meta">
+                    <div className="post-meta" style={{backgroundColor : "#2a2d7c"}}>
                         <ul>
                             <li>
                                 <i className="fa fa-map" />

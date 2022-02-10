@@ -13,13 +13,13 @@ export default function Blog(){
                         <div className="row">
                             <div className="col-md-9 blog-post-section">
                                 <div className="item-blog-post">
-                                    <div className="head-item-blog-post">
+                                    <div className="head-item-blog-post-custom">
                                         <i className="fa fa-database" />
                                         <h3>Emmer'J Forum</h3>
                                     </div>
                                     <div className="img-item-blog-post">
                                         <img src="/img/custom/emmerj.png" alt="" />
-                                        <div className="post-meta">
+                                        <div className="post-meta" style={{backgroundColor : "#2a2d7c"}}>
                                             <ul>
                                                 <li>
                                                     <i className="fa fa-user" />
