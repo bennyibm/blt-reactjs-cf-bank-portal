@@ -19,35 +19,35 @@ function Slider(){
         {
             image : "/img/custom/black-business-man.jpg",
             imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
             description : "Trouvez une gamme des services ave notre bank"
         },
         {
             image : "/img/custom/man-woman-business.jpg",
             imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
             description : "Trouvez une gamme des services ave notre bank"
         },
         {
             image : "/img/custom/black-circle.jpg",
             // imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
             description : "Trouvez une gamme des services ave notre bank"
         },
         {
             image : "/img/custom/brainstorming.jpg",
             // imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
             description : "Trouvez une gamme des services ave notre bank"
         },
         {
             image : "/img/custom/business.jpg",
             // imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
             description : "Trouvez une gamme des services ave notre bank"
         },

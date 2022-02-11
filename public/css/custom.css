@@ -115,23 +115,25 @@
     }
 }
 .slides-container .slide .content *{
-    /* text-shadow: .3rem .3rem .3rem #FFF; */
     text-align: center;
 }
 .slides-container .slide .content span{
     font-size : 2rem;
     color : #fff;
+    text-shadow: .05rem .05rem .05rem #FFF;
 }
 .slides-container .slide .content h1{
     font-size : 3rem;
     text-transform: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color : #F16122;
+    text-shadow: .05rem .05rem .05rem #F16122;
 }
 .slides-container .slide .content p{
     font-size: 1.5rem;
     color : #fff !important;
-    text-transform: capitalize;
+    text-shadow: .08rem .08rem .08rem #000;
+    /* text-transform: capitalize; */
 }
 
 .slides-container .control{
