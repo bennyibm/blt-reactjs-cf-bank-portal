@@ -492,7 +492,7 @@ iframe.video{
     width: 100%;
     z-index: -1;
     height: 600px;
-    background-color: #2A2D7C;
+    background-color: #fff !important;
     background-attachment: fixed;
 }
 .pattern-header-01{
