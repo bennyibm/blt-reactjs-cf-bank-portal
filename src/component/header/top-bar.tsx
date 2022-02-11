@@ -9,7 +9,7 @@ export default function TopBar() {
                 <div  className="col-md-4 col-lg-5">
                     <div  className="logo">
                         <a href="/">
-                            <img src="/img/cf-bank-logo.png" alt="CF-BANK logo" style={{width : 260, height: 100, objectFit : "cover"}} />
+                            <img src="/img/cf-bank-logo.png" alt="CF-BANK logo" style={{width : 200, height: 80, objectFit : "cover"}} />
                         </a>
                         {/* <div  className="icon-logo">
                             <i  className="fa fa-university"></i>
