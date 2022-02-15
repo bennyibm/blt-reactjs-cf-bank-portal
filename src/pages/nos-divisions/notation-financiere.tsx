@@ -9,7 +9,7 @@ export default function NotationFinanciere() {
             <div className="content_info">
                 <div className="paddings">
                     <div className="container">
-                        <p style={{textAlign : "center", marginLeft : 150, marginRight : 150}}>
+                        <p style={{textAlign : "center", margin : "auto"}}>
                             Notre offre intégrée de notations de crédit, de recherche sur les risques et de perspectives critiques est essentielle pour traduire la complexité en clarté afin que vous puissiez prendre des décisions avec conviction. Découvrez notre suite de produits et services ci-dessous.
                         </p>
                         <br/>
@@ -27,7 +27,7 @@ export default function NotationFinanciere() {
                                     Avec les services d'analyse avancée de Capital Financial Bank Ratings, les assureurs notés peuvent examiner les frais par rapport à des catégories d'actifs spécifiques telles que les infrastructures, les fonds spéculatifs / les investissements en capital-investissement, les lignes de mortalité à long terme ou d'autres qui attirent des frais de capital élevés. Les commentaires sont fournis dans le contexte du modèle de capital d'assurance de CFB Ratings et de l'analyse des cotes de CFB Ratings concernant l'assureur. Dans ce contexte, il peut être utile pour répondre aux exigences globales de conservation du capital d'un assureur à son niveau de notation actuel. Bien que les services d'analyse avancée de S&P Global Ratings ne soient pas des conseils ou une recommandation, ils peuvent fournir aux clients une autre pièce du puzzle dans leur analyse de décision.
                                 </p>
                             </div>
-                            <div>
+                            <div className="col-md-12">
                                 <p>
                                     Pour les compagnies d'assurance, le résultat de nos services d'analyse avancée peut vous permettre de:
                                     <ul className="list-styles">
@@ -54,7 +54,7 @@ export default function NotationFinanciere() {
                         <p >
                             <hr style={{margin : "30px 100px", width : "80%"}} />
                         </p>
-                        <div className="row" style={{display : "flex"}}>
+                        <div className="row" style={{display : "flex", flexWrap : "wrap-reverse"}}>
                             <div className="col-md-8"  style={{display : "flex", alignItems : "center"}}>
                                 <div className="row">
                                     <h4 style={{marginLeft : 10}}>Nos services</h4>

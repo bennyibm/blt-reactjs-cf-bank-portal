@@ -29,7 +29,7 @@ export default function BanqueDInvestissement() {
                         </div>
                             
                         <div className="row">
-                            <div className="col credit-area">
+                            <div className="col-md-12 credit-area">
                                 <h4 style={{marginBottom : -30}}>Nos services</h4>
                                 <ul className="nav nav-tabs" role="tablist">
                                     <li role="presentation" className="active">
@@ -83,7 +83,7 @@ export default function BanqueDInvestissement() {
                                     </ul>
                                 </div>
                                 <div role="tabpanel" className="tab-pane fade in" id="tab2">
-                                    <div className="row" style={{display : "flex"}}>
+                                    <div className="row" style={{display : "flex", flexWrap : "wrap"}}>
                                         <div className="col-md-3">
                                             <img className="img-responsive" src="/img/custom/black-business-man-2.jpg" style={{borderRadius : 10, width : "100%", height : 200, objectFit : "cover"}} alt="" />
                                         </div>
@@ -96,7 +96,7 @@ export default function BanqueDInvestissement() {
                                     
                                 </div>
                                 <div role="tabpanel" className="tab-pane fade in" id="tab3">
-                                    <div className="row" style={{display : "flex"}}>
+                                    <div className="row" style={{display : "flex", flexWrap : "wrap"}}>
                                         <div className="col-md-3">
                                             <img className="img-responsive" src="/img/custom/brainstorming-2.jpg" style={{borderRadius : 10, width : "100%", height : 200, objectFit : "cover"}} alt="" />
                                         </div>
@@ -109,7 +109,7 @@ export default function BanqueDInvestissement() {
                                     
                                 </div>
                                 <div role="tabpanel" className="tab-pane fade in" id="tab4">
-                                    <div className="row" style={{display : "flex"}}>
+                                    <div className="row" style={{display : "flex", flexWrap : "wrap"}}>
                                         <div className="col-md-3">
                                             <img className="img-responsive" src="/img/custom/assembly.png" style={{borderRadius : 10, width : "100%", height : 200, objectFit : "cover"}} alt="" />
                                         </div>

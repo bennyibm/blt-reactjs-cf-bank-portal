@@ -179,6 +179,12 @@
 .item-blog-post .head-item-blog-post-custom h3{
     color : #FFF;
 }
+
+.boxes-services-custom{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    column-gap : 2rem;
+}
 @media(max-width : 691px){
     .slides-container .control{
         top : 0;

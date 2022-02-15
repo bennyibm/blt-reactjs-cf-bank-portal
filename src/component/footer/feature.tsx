@@ -8,19 +8,19 @@ export default function Feature() {
           <div className="divisor-line" />
             <div className="row boxes-services">
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div className="item-boxed-service no-margin" style={{display : "flex", flexDirection : "column", alignItems : "center"}}>
+                    <div className="item-boxed-service" style={{display : "flex", flexDirection : "column", alignItems : "center"}}>
                     <h4>Soumissionner</h4>
                     <span>Bientôt disponible</span>
                     </div>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div className="item-boxed-service no-margin" style={{display : "flex", flexDirection : "column", alignItems : "center"}}>
+                    <div className="item-boxed-service" style={{display : "flex", flexDirection : "column", alignItems : "center"}}>
                     <h4>Inscription</h4>
                     <span>Bientôt disponible</span>
                     </div>
                 </div>
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                    <div className="item-boxed-service no-margin" style={{display : "flex", flexDirection : "column", alignItems : "center"}}>
+                    <div className="item-boxed-service" style={{display : "flex", flexDirection : "column", alignItems : "center"}}>
                         <h4 style={{cursor : "pointer"}} onClick={() => navigate("/contact") }>
                             Contact
                         </h4>

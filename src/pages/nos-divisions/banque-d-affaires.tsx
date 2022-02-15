@@ -11,7 +11,7 @@ export default function BanqueDAffaires() {
                 <div className="paddings">
                     <div className="container">
                         <h3 style={{textAlign : "center"}}>Le principal conseiller et financier de confiance de nos clients</h3>
-                        <p style={{textAlign : "center", marginLeft : 150, marginRight : 150}}>
+                        <p style={{textAlign : "center", margin : "auto"}}>
                             Nous aspirons à être le principal conseiller et financier de confiance de nos clients, qui comprennent des sociétés, des institutions financières, des sponsors financiers, des gouvernements et des autorités publiques ainsi que des conseils d'administration et des comités spéciaux. La Division des services bancaires d'investissement est à l'avant-garde de la franchise client de Capital Financial Bank.
                         </p>
                         <br/>

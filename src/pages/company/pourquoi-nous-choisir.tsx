@@ -15,9 +15,9 @@ export default function PourquoiNousChoisir() {
                         <p>
                             Le Groupe d'investissement dans les énergies alternatives dispose de professionnels hautement qualifiés et expérimentés possédant une vaste connaissance de l'industrie ainsi qu'une expertise des produits, ce qui nous permet d'élaborer des solutions créatives adaptées aux besoins des sociétés du portefeuille.
                         </p>
-                        <div className="row" style={ { display : "flex" } }>
+                        <div className="row" style={ { display : "flex", flexWrap : "wrap" } }>
                             <div className="col-md-4">
-                                <img className="img-responsive" src="img/custom/meeting.jpg" alt="" />
+                                <img className="img-responsive" src="/img/custom/meeting.jpg" alt="" />
                             </div>
                             <div className="col-md-8" style={ { display : "flex", flexDirection : "column", justifyContent : "center"} }>
                                 <h4>Large orientation sectorielle</h4>
@@ -29,7 +29,7 @@ export default function PourquoiNousChoisir() {
                         <p>
                             {/* Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus */}
                         </p>
-                        <div className="row"  style={ { display : "flex" } }>
+                        <div className="row"  style={ { display : "flex", flexWrap : "wrap-reverse"  } }>
                             <div className="col-md-8"  style={ { display : "flex", flexDirection : "column", justifyContent : "center"} }>
                                 <h4>Expertise dans tous les produits</h4>
                                 <p>
@@ -40,7 +40,7 @@ export default function PourquoiNousChoisir() {
                                 <img className="img-responsive" src="/img/custom/business-thinking-session.jpg" alt="" />
                             </div>
                         </div> 
-                        <div className="row" style={{display : "flex"}}>
+                        <div className="row" style={{display : "flex", flexWrap : "wrap" }}>
                             <div className="col-md-4">                       
                                 <img className="img-responsive" src="/img/custom/black-meeting.jpg" alt="" />
                             </div>

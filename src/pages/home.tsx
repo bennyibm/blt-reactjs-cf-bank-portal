@@ -137,8 +137,7 @@ export default function Home(){
                 </div>
                 <div className="paddings">
                     <div className="container">
-                        <div className="row boxes-services" style={{display : "flex", justifyContent : "center"}}>
-                            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div className="boxes-services-custom">
                                 <div className="item-boxed-service"  style={{textAlign : "center"}}>
                                     <h4>BANQUE D'AFFAIRES</h4>
                                     <p>
@@ -150,8 +149,7 @@ export default function Home(){
                                         Découvrir
                                     </Link>
                                 </div>
-                            </div>
-                            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            {/* <div className=""> */}
                                 <div className="item-boxed-service"  style={{textAlign : "center"}}>
                                     <h4>BANQUE D'INVESTISSEMENT</h4>
                                     <p>
@@ -163,8 +161,8 @@ export default function Home(){
                                         Découvrir
                                     </Link>
                                 </div>
-                            </div>
-                            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            {/* </div> */}
+                            {/* <div className=""> */}
                                 <div className="item-boxed-service"  style={{textAlign : "center"}}>
                                     <h4>NOTATION FINANCIERE</h4>
                                     <p>
@@ -176,7 +174,7 @@ export default function Home(){
                                         Découvrir
                                     </Link>
                                 </div>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>

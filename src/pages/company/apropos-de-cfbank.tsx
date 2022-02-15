@@ -9,7 +9,7 @@ export default function AproposDeCFBANK() {
             <div className="content_info">
                 <div className="padding-top padding-bottom-mini">
                     <div className="container">
-                        <div className="row" style={{ display: "flex" }}>
+                        <div className="row" style={{ display: "flex", flexWrap : "wrap" }}>
                             <div className="col-md-5">
                                 <img src="/img/custom/business-men-circle.jpg" style={{ borderRadius: 10 }} alt="" className="img-responsive" />
                             </div>
@@ -86,7 +86,7 @@ export default function AproposDeCFBANK() {
                 <div className="padding-top padding-bottom-mini">
                     {/* Container Area - Boxes Services */}
                     <div className="container">
-                        <div className="row" style={{ display: "flex" }}>
+                        <div className="row" style={{ display: "flex", flexWrap : "wrap-reverse" }}>
                             <div className="col-md-5">
                                 <img src="/img/custom/black-circle-business.jpg" alt="" style={{ height: 300, objectFit: "cover", borderRadius: 10 }} className="img-responsive" />
                             </div>

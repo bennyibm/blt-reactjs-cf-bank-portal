@@ -12,7 +12,7 @@ export default function InvestisseursFInanciersEtStrategiques() {
           <div className="paddings">
               <div className="container">
                   <h3 style={{textAlign : "center"}}>Le principal conseiller et financier de confiance de nos clients</h3>
-                  <p style={{textAlign : "center", marginLeft : 150, marginRight : 150}}>
+                  <p style={{textAlign : "center", margin : "auto"}}>
                     Le Groupe des investisseurs financiers et stratégiques CFB fournit des services de conseil et de banque d'investissement à un large éventail d'institutions, notamment des sociétés de capital-investissement, des fonds de pension, des fonds souverains, des family offices et d'autres investisseurs.
                   </p>
                   <br/>

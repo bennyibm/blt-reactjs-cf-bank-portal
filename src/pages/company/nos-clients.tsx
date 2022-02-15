@@ -11,14 +11,14 @@ export default function NosClients(){
                 <div className="paddings">
                     <div className="container">
                         <h3 style={{textAlign : "center"}}>Au centre de notre affaire, nous placons nos clients</h3>
-                        <p style={{textAlign : "center", margin : "50px 150px", marginTop : 0}}>
+                        <p style={{textAlign : "center", margin : "2rem auto", marginTop : 0}}>
                             Nos clients sont au centre de tout ce que nous faisons. Ils sont mondiaux, avec des défis complexes qui nécessitent une expertise approfondie en investissement et un service client dédié pour les aider à atteindre leurs objectifs d'investissement uniques. Nous servons un large éventail de clients - particuliers, conseillers et institutions - qui comptent sur nous pour les aider à comprendre les marchés, à proposer des solutions d'investissement innovantes et à planifier leur avenir.
                         </p>
 
                         <section>
-                            <div className="row boxes-services">
+                            <div className="boxes-services-custom">
                                 {/* item-boxe-services */}
-                                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                <div className="">
                                     <div className="item-boxed-service">
                                         <h4>Répondre aux besoins de nos clients</h4>
                                         <p>
@@ -34,7 +34,7 @@ export default function NosClients(){
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                <div className="">
                                     <div className="item-boxed-service">
                                         <h4>Gestionnaires des risques</h4>
                                         <p>
@@ -42,7 +42,7 @@ export default function NosClients(){
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                <div className="">
                                     <div className="item-boxed-service">
                                         <h4>Réactivité et créativité</h4>
                                         <p>
@@ -50,7 +50,7 @@ export default function NosClients(){
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                <div className="">
                                     <div className="item-boxed-service">
                                         <h4>Investissement à rendement ajusté au risque</h4>
                                         <p>
@@ -58,7 +58,7 @@ export default function NosClients(){
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                <div className="">
                                     <div className="item-boxed-service">
                                         <h4>Solution unique et complète</h4>
                                         <p>
@@ -66,7 +66,7 @@ export default function NosClients(){
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                                <div className="">
                                     <div className="item-boxed-service">
                                         <h4>Accès au capital pour les sociétés à capital limité</h4>
                                         <p>

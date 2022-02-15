@@ -488,7 +488,7 @@ export function Immobilier() {
                 <div className="paddings">
                     <div className="container">
                         <h4 style={{textAlign : "center"}}>Investir dans Immobilier</h4>
-                        <p style={{textAlign : "center", marginLeft : 100, marginRight : 100}}>
+                        <p style={{textAlign : "center", margin : "auto", marginBottom : "1rem"}}>
                             Notre groupe Immobilier fournit des services de financement et de conseil à des clients dans un large éventail de secteurs liés à l'immobilier.
                             Il s'agit notamment des fiducies de placement immobilier (FPI), des hôtels et des sociétés de jeux, des détaillants et des entités du secteur public. Le groupe possède une expertise sectorielle dans les immeubles commerciaux, les hôtels et terrains de golf, les centres commerciaux, les immeubles de bureaux, les immeubles industriels, les immeubles multifamiliaux, les projets de développement et les casinos et la technologie des jeux.
                             Notre groupe de financement  immobilier qui comprend notre plateforme de prêts hypothécaires commerciaux via nos partenaires, est responsable de la tarification et de la distribution de la dette immobilière commerciale. Ce groupe se concentre sur l'exécution sur le marché des capitaux, par le biais de syndications de prêts et de titrisations, des prêts émis par des partenaires  Capital Financial Bank et en tant qu'agent de placement pour les emprunteurs immobiliers commerciaux.
