@@ -23,37 +23,37 @@ function Slider(){
         {
             image : "/img/custom/black-business-man.jpg",
             imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
-            description : "Trouvez une gamme des services ave notre bank"
+            description : "Trouvez une Gamme ses services avec notre banque"
         },
         {
             image : "/img/custom/man-woman-business.jpg",
             imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
-            description : "Trouvez une gamme des services ave notre bank"
+            description : "Trouvez une Gamme ses services avec notre banque"
         },
         {
             image : "/img/custom/black-circle.jpg",
             // imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
-            description : "Trouvez une gamme des services ave notre bank"
+            description : "Trouvez une Gamme ses services avec notre banque"
         },
         {
             image : "/img/custom/brainstorming.jpg",
             // imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
-            description : "Trouvez une gamme des services ave notre bank"
+            description : "Trouvez une Gamme ses services avec notre banque"
         },
         {
             image : "/img/custom/business.jpg",
             // imagePosition : "top",
-            subTitle : "votre succès est notre",
+            subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",
-            description : "Trouvez une gamme des services ave notre bank"
+            description : "Trouvez une Gamme ses services avec notre banque"
         },
     ]
 
@@ -80,7 +80,7 @@ function Slider(){
             <div className="slide" key={`slide-${index}`}>
                 <div className="content">
                     <span>{slide.subTitle}</span>
-                    <h1>{slide.principalTitle}</h1>
+                    <p className="principal-title">{slide.principalTitle}</p>
                     <p>{slide.description}</p>
                 </div>
                 <div className={`image ${slide.imagePosition}`}>

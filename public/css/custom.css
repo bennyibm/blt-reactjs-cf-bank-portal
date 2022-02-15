@@ -120,14 +120,17 @@
 .slides-container .slide .content span{
     font-size : 2rem;
     color : #fff;
-    text-shadow: .05rem .05rem .05rem #FFF;
+    text-shadow: .05rem .05rem .05rem #000;
 }
-.slides-container .slide .content h1{
+.slides-container .slide .content .principal-title{
     font-size : 3rem;
+    font-weight: bold;
     text-transform: none;
     /* text-transform: capitalize; */
-    color : #F16122;
-    text-shadow: .05rem .05rem .05rem #F16122;
+    color : #F16122 !important;
+    text-shadow: .05rem .05rem .05rem #000;
+    text-transform: none;
+    margin : 1rem 0;
 }
 .slides-container .slide .content p{
     font-size: 1.5rem;

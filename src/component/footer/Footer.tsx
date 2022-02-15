@@ -65,7 +65,7 @@ const Footer : FunctionComponent = () =>{
 
                     <div className="col-sm-6 col-md-4">
                         <div className="border-right txt-right">
-                            <h4>Boite au lettre</h4>
+                            <h4>Boite aux lettres</h4>
                             <p>Veuillez saisir votre e-mail et vous inscrire à notre boite-aux-lettres.</p>
                             <form id="newsletterForm" className="newsletterForm">
                                 <div className="input-group">
