@@ -1,9 +1,20 @@
 import React from "react";
 import { Link} from "react-router-dom";
 import { Feature } from "../../component";
+// import { SlideItemProps } from "../../component/custom-slider";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 export default function NotationFinanciere() {
+    // const slides : SlideItemProps[] = [
+    //     {
+    //         image : "/img/custom/black-business-man.jpg",
+    //         imagePosition : "top",
+    //         subTitle : "Votre succès est notre",
+    //         principalTitle : "Es-tu prêt?",
+    //         description : "Trouvez une gamme des services avec notre banque"
+    //     },
+    // ]
+
     function renderHome(){
         return (
             <div className="content_info">

@@ -1,15 +1,33 @@
 import React from 'react'
 import { HeroBreadcrumb, Feature } from '../../component'
+import { SlideItemProps } from '../../component/custom-slider'
 
 export default function ProfileInvestissement() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/business-men-meeting.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/type-d-investissement.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Profile d'Investissement"  heroImagePath="custom/profile-d-investissement.jpg"/>
+            <HeroBreadcrumb title="Profil d'Investissement"  heroImagePath="custom/profile-d-investissement.jpg" slides={slides} />
 
             <div className="content_info">
                 <div className="paddings">
                     <div className="container">
-                        <h4 style={{textAlign : "center"}}>Profile d'investissement</h4>
+                        <h4 style={{textAlign : "center"}}>Profil d'investissement</h4>
                         <p style={{textAlign : "center", marginLeft : 100, marginRight : 100}}>
                             Nous poursuivons des investissements avec les caractéristiques suivantes
                         </p>

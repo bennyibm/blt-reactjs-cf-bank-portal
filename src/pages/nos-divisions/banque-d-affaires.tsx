@@ -1,11 +1,42 @@
 import React from "react";
 import { Feature } from "../../component";
+import { SlideItemProps } from "../../component/custom-slider";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 export default function BanqueDAffaires() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/brainstorming-3.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/capital-financement.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/fusion.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/business-woman.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Banque d'affairres" heroImagePath="custom/business.jpg"/>
+            <HeroBreadcrumb title="Banque d'affairres" heroImagePath="custom/business.jpg" slides={slides}/>
             
             <div className="content_info">
                 <div className="paddings">

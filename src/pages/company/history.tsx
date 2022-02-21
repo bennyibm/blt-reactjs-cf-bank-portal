@@ -1,11 +1,35 @@
 import React from "react";
 import { Feature, HeroBreadcrumb } from "../../component";
+import { SlideItemProps } from "../../component/custom-slider";
 
 export default function History(){
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/brainstorming-3.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/brainstorming-4.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/comite-de-direction.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+    ]
     return(
         <div>
             
-            <HeroBreadcrumb title="Historique" heroImagePath="custom/brainstorming.jpg"/>
+            <HeroBreadcrumb title="Historique" heroImagePath="custom/brainstorming.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="title-vertical-line">

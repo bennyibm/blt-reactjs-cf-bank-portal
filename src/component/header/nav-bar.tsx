@@ -96,7 +96,7 @@ export default function NavBar(){
                                                         <strong>Investisseurs</strong>  
                                                     </li>
                                                     <NavBarItem title="Apropos" link="/investisseurs-financiers-et-strategiques" />
-                                                    <NavBarItem title="Profile d'investissement" link="/investisseurs-financiers-et-strategiques/profile-d-investissement" />
+                                                    <NavBarItem title="Profil d'investissement" link="/investisseurs-financiers-et-strategiques/profile-d-investissement" />
                                                 </ul>
                                                 <ul className="col-md-3 list-unstyled">
                                                     <li>

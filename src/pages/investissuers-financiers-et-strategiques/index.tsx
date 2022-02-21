@@ -1,12 +1,32 @@
 import React from "react";
 import { Feature } from "../../component";
+import { SlideItemProps } from "../../component/custom-slider";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 
 export default function InvestisseursFInanciersEtStrategiques() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/financial-bank.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/why-choose-us-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
+    
   return(
+      
     <div>
-        <HeroBreadcrumb title="Investisseurs financiers et strategiques"  heroImagePath="custom/brainstorming-4.jpg"/>
+        <HeroBreadcrumb title="Investisseurs financiers et strategiques"  heroImagePath="custom/brainstorming-4.jpg" slides={slides}/>
 
         <div className="content_info">
           <div className="paddings">

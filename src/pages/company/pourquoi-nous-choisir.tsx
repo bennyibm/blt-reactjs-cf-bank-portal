@@ -1,12 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Feature } from "../../component";
+import { SlideItemProps } from "../../component/custom-slider";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 export default function PourquoiNousChoisir() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/meeting.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/business-thinking-session.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/black-meeting.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+    ]
+    
     return(
         <div>
-            <HeroBreadcrumb title="Qu'est ce qui fait notre différence" heroImagePath="custom/black-circle.jpg" heroImagePosition="left"/>
+            <HeroBreadcrumb title="Qu'est ce qui fait notre différence" heroImagePath="custom/black-circle.jpg" slides={slides}/>
             
             <div className="content_info">
                 <div className="paddings">

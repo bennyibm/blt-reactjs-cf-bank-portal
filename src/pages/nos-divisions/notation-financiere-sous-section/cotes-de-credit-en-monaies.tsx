@@ -1,9 +1,17 @@
 import React from 'react'
 import { Feature, HeroBreadcrumb } from '../../../component'
 
-
+// const slides = [
+//         {
+//             image : "/img/custom/black-business-man.jpg",
+//             imagePosition : "top",
+//             subTitle : "Votre succès est notre",
+//             principalTitle : "Es-tu prêt?",
+//             description : "Trouvez une gamme des services avec notre banque"
+//         },
+//     ]
 export default function CotesDeCreditEnMonaie() {
-
+    
     return(
         <div>
             <HeroBreadcrumb title='Cotes de crédit en monaie internationnale et Cotes de crédit en monaie locale' />
@@ -12,12 +20,12 @@ export default function CotesDeCreditEnMonaie() {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-9">
-                                <h3>Cotes de crédit en monaie internationnale et otes de crédit en monaie locale</h3>
+                                <h3>Cotes de crédit en monaie internationnale et cotes de crédit en monaie locale</h3>
                                 <p>
                                     Les notations de crédit des émetteurs de CFB Ratings font une distinction entre les notations en devises étrangères et les notations en devises locales. La notation de crédit en devises d'un émetteur diffère de la notation en devises locales de celui-ci lorsque le débiteur a une capacité différente à respecter ses obligations libellées dans sa monnaie locale, par rapport aux obligations libellées en devises.  
                                 </p>
                                 <p>
-                                        Il peut prendre la forme d'un émetteur ou émettre une note de crédit. Cotes de crédit en devises étrangères sont généralement fournies qu'à l'échelle mondiale de CFB Ratings, mais également à l'échelle nationale dans les économies fortement dollarisées. 
+                                    Il peut prendre la forme d'un émetteur ou émettre une note de crédit. Cotes de crédit en devises étrangères sont généralement fournies qu'à l'échelle mondiale de CFB Ratings, mais également à l'échelle nationale dans les économies fortement dollarisées. 
                                 </p>
                                 <p>
                                     Pour les deux cotes de crédit en monnaie locale et évaluations des devises étrangères crédit, l'opinion à l'échelle mondiale Ratings CFB est basé sur les caractéristiques individuelles de crédit du débiteur, y compris l'influence des facteurs de risque pays ou économique. 

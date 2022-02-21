@@ -1,11 +1,21 @@
 import React  from "react";
 import { Link } from "react-router-dom";
 import { Feature, HeroBreadcrumb } from "../component";
+import { SlideItemProps } from "../component/custom-slider";
 
 export default function Blog(){
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/in-the-news.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+    ]
     return(
         <>
-            <HeroBreadcrumb title="In The news" heroImagePath="custom/in-the-news.jpg"/>
+            <HeroBreadcrumb title="In The news" heroImagePath="custom/in-the-news.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">

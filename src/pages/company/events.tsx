@@ -1,11 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Feature, HeroBreadcrumb } from "../../component";
+import { SlideItemProps } from "../../component/custom-slider";
 
 export default function Events(){
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/evenements.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/brainstorming-2.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/black-circle-business.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+    ]
     return(
         <>
-            <HeroBreadcrumb title="Nos evenements" heroImagePath="custom/evenements.jpg" />
+            <HeroBreadcrumb title="Nos evenements" heroImagePath="custom/evenements.jpg" slides={slides}/>
             <div className="content_info">
                 <div className="paddings">
                     <div className="container">

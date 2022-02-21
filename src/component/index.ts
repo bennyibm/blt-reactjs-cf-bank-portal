@@ -6,7 +6,8 @@ import BackToHome from './back-to-home';
 import BlogSection from './blog-section';
 import CollapsableElement from './collapsable-element/index';
 import Feature from './footer/feature';
+import CustomSlider from './custom-slider/index';
 
 
 
-export {SponsorsArea, Header, HeroBreadcrumb, ContactUs, BackToHome, BlogSection, CollapsableElement, Feature}
+export {SponsorsArea, Header, HeroBreadcrumb, ContactUs, BackToHome, BlogSection, CollapsableElement, Feature, CustomSlider}

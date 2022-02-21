@@ -1,11 +1,42 @@
 import React from 'react'
 import { CollapsableElement, Feature, HeroBreadcrumb } from '../../component'
+import { SlideItemProps } from '../../component/custom-slider'
 
 export default function BanqueDInvestissement() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/investissement.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/black-business-man-2.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/type-d-investissement.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/assembly.png",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+    ]
     
     return(
         <div>
-            <HeroBreadcrumb title="Banque d'investissement" heroImagePath="custom/meeting-2.jpg" heroImagePosition="center" />
+            <HeroBreadcrumb title="Banque d'investissement" heroImagePath="custom/meeting-2.jpg" heroImagePosition="center" slides={slides} />
             
             <div className="content_info">
                 <div className="paddings">

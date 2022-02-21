@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { Feature } from "../../component";
 import ContatDetails from "../../component/contat-details";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
+import CustomSlider, { SlideItemProps } from "../../component/custom-slider";
 
 export default function ContactUs(){
     
@@ -11,6 +12,18 @@ export default function ContactUs(){
     const [isError, setIsError] = useState<boolean>(false)
     const [showResult, setShowResult] = useState<boolean>(false)
     const [resultMessage, setResultMessage] = useState<string>()
+
+
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/contact.jpg",
+            imagePosition : "top",
+            // subTitle : "Votre succès est notre",
+            principalTitle : "Contatez-nous",
+            description : "Entrez en contact facilement avec un des nos experts"
+        },
+        
+    ]
 
     useEffect( () => setButtonText( sending ? "Envoi du message" : "Envoyez" ), [sending])
     
@@ -45,7 +58,7 @@ export default function ContactUs(){
 
     return(
         <div>
-            <HeroBreadcrumb title="Contactez-nous" heroImagePath="custom/contact.jpg" />
+            <HeroBreadcrumb title="Contactez-nous" heroImagePath="custom/contact.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="padding-top padding-bottom-mini">

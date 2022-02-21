@@ -1,11 +1,35 @@
 import React from "react";
 import { Feature } from "../../component";
+import { SlideItemProps } from "../../component/custom-slider";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 export default function AproposDeCFBANK() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/business-men-circle.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/business-men-meeting.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/black-circle-business.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+    ]
     return (
         <div>
-            <HeroBreadcrumb title="Apropos de CF BANK" heroImagePath="custom/business-men-circle.jpg" heroImagePosition="bottom" />
+            <HeroBreadcrumb title="Apropos de CF BANK" heroImagePath="custom/business-men-circle.jpg" heroImagePosition="bottom" slides={slides} />
             <div className="content_info">
                 <div className="padding-top padding-bottom-mini">
                     <div className="container">

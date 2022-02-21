@@ -1,11 +1,28 @@
 import React from 'react'
 import { Feature, HeroBreadcrumb } from '../../component'
+import { SlideItemProps } from '../../component/custom-slider'
 
 
 export default function NosClients(){
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/clients.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/comite-de-pilotage.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Nos clients" heroImagePath="custom/clients.jpg" />
+            <HeroBreadcrumb title="Nos clients" heroImagePath="custom/clients.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">

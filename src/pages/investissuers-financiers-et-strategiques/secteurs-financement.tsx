@@ -1,10 +1,29 @@
 import React from 'react'
 import { Feature, HeroBreadcrumb } from '../../component'
+import { SlideItemProps } from '../../component/custom-slider'
 
 export function SoinDeSante() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/sante.jpg",
+            imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/sante-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
+
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Soin de santé"  heroImagePath="custom/sante.jpg"/>
+            <HeroBreadcrumb title="Investissement / Soin de santé"  heroImagePath="custom/sante.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -35,9 +54,26 @@ export function SoinDeSante() {
 };
 
 export function TechMediasTelecom() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/tech.png",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/tech-2.png",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Technologie, Médias et Télécommuniations" heroImagePath="custom/tech.png" heroImagePosition="bottom"/>
+            <HeroBreadcrumb title="Investissement / Technologie, Médias et Télécommuniations" heroImagePath="custom/tech.png" heroImagePosition="bottom" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -68,9 +104,26 @@ export function TechMediasTelecom() {
 };
 
 export function Industriels() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/industriel-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/industriel.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Industriels"  heroImagePath="custom/industriel.jpg" heroImagePosition="center"/>
+            <HeroBreadcrumb title="Investissement / Industriels"  heroImagePath="custom/industriel.jpg" heroImagePosition="center" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -104,9 +157,26 @@ export function Industriels() {
 
 
 export function FinanceMunicipale() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/finance-municipale.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/finance-municipale-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Finance Municipale"  heroImagePath="custom/finance-municipale.jpg"/>
+            <HeroBreadcrumb title="Investissement / Finance Municipale"  heroImagePath="custom/finance-municipale.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -138,9 +208,26 @@ export function FinanceMunicipale() {
 };
 
 export function EnergiesAlternatives() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/energies-alternatives.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/energies-alternatives-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Energies Alternatives"  heroImagePath="custom/energies-alternatives.jpg"/>
+            <HeroBreadcrumb title="Investissement / Energies Alternatives"  heroImagePath="custom/energies-alternatives.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -176,9 +263,26 @@ export function EnergiesAlternatives() {
 
 
 export function PretsSenior() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/prets-senior.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/prets-senior-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Prets Sénior"  heroImagePath="custom/prets-senior.jpg"/>
+            <HeroBreadcrumb title="Investissement / Prets Sénior"  heroImagePath="custom/prets-senior.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -271,9 +375,18 @@ export function PretsSenior() {
 };
 
 export function Credit() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/credit.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Crédit"  heroImagePath="custom/credit.jpg"/>
+            <HeroBreadcrumb title="Investissement / Crédit"  heroImagePath="custom/credit.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -359,9 +472,26 @@ export function Credit() {
 };
 
 export function Infrasctructure() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/infrastructure.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/infrastructure-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Infrasctructure"  heroImagePath="custom/infrastructure.jpg"/>
+            <HeroBreadcrumb title="Investissement / Infrasctructure"  heroImagePath="custom/infrastructure.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -444,9 +574,26 @@ export function Infrasctructure() {
 
 
 export function RessourcesNaturelles() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/ressources-naturelles-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/ressources-naturelles.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Ressources Naturelles"  heroImagePath="custom/ressources-naturelles.jpg"/>
+            <HeroBreadcrumb title="Investissement / Ressources Naturelles"  heroImagePath="custom/ressources-naturelles.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
@@ -480,9 +627,26 @@ export function RessourcesNaturelles() {
 
 
 export function Immobilier() {
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/immobilier.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/immobilier-2.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        }
+        
+    ]
     return(
         <div>
-            <HeroBreadcrumb title="Investissement / Immobilier"  heroImagePath="custom/immobilier.jpg" />
+            <HeroBreadcrumb title="Investissement / Immobilier"  heroImagePath="custom/immobilier.jpg" slides={slides}/>
 
             <div className="content_info">
                 <div className="paddings">
