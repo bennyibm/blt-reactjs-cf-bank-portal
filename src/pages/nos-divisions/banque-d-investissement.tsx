@@ -19,7 +19,7 @@ export default function BanqueDInvestissement() {
             description : "Trouvez une gamme des services avec notre banque"
         },
         {
-            image : "/img/custom/type-d-investissement.jpg",
+            image : "/img/custom/brainstorming-2.jpg",
             imagePosition : "top",
             subTitle : "Votre succès est notre",
             principalTitle : "Es-tu prêt?",

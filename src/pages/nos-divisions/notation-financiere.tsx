@@ -1,19 +1,28 @@
 import React from "react";
 import { Link} from "react-router-dom";
 import { Feature } from "../../component";
+import { SlideItemProps } from "../../component/custom-slider";
 // import { SlideItemProps } from "../../component/custom-slider";
 import HeroBreadcrumb from "../../component/hero-breadcrumb";
 
 export default function NotationFinanciere() {
-    // const slides : SlideItemProps[] = [
-    //     {
-    //         image : "/img/custom/black-business-man.jpg",
-    //         imagePosition : "top",
-    //         subTitle : "Votre succès est notre",
-    //         principalTitle : "Es-tu prêt?",
-    //         description : "Trouvez une gamme des services avec notre banque"
-    //     },
-    // ]
+    const slides : SlideItemProps[] = [
+        {
+            image : "/img/custom/puzzle.jpg",
+            // imagePosition : "top",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
+            image : "/img/custom/business-momy.jpg",
+            imagePosition : "custom-top",
+            customTopPosition : "-65px",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+    ]
 
     function renderHome(){
         return (
@@ -141,7 +150,7 @@ export default function NotationFinanciere() {
     }
     return(
         <div>
-            <HeroBreadcrumb title="Notation financiere" heroImagePath="custom/notation-financiere.jpg"/>
+            <HeroBreadcrumb title="Notation financiere" heroImagePath="custom/notation-financiere.jpg" slides={slides}/>
             {renderHome()}
         </div>
 

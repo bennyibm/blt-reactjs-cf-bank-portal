@@ -6,6 +6,14 @@ import { SlideItemProps } from "../component/custom-slider";
 export default function Home(){
     const dumySlides : SlideItemProps[] = [
         {
+            image : "/img/custom/black-business-man.jpg",
+            imagePosition : "custom-top",
+            customTopPosition : "-36px",
+            subTitle : "Votre succès est notre",
+            principalTitle : "Es-tu prêt?",
+            description : "Trouvez une gamme des services avec notre banque"
+        },
+        {
             image : "/img/custom/black-business-man-2.jpg",
             imagePosition : "top",
             subTitle : "Votre succès est notre",
