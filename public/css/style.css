@@ -1893,12 +1893,13 @@ aside h4{
 .footer-down{
 	padding: 15px 0;
 	border-top: 1px solid #ddd;
-	background: #f4f6f3;
+	background: #2A2D7C;
 }
 .footer-down p{
 	margin: 0;
 	text-align: right;
-	font-size: 0.875rem !important
+	font-size: 0.875rem !important;
+	color : #fff !important;
 }
 .footer-down ul{
 	text-align: left;
@@ -1917,12 +1918,13 @@ aside h4{
 }
 .footer-down ul li a{
 	font-size: 0.75rem;
-	color: #a8a39e;
+	color: #fff;
 }
 .nav-footer li:before {
 	content: '|';
 	display: inline-block;
 	margin-right: 10px;
+	color : #fff;
 }
 .nav-footer li:nth-child(1):before {
 	display: none;
