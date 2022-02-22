@@ -716,7 +716,7 @@ iframe.video{
 }
 #menu .navbar-default {
     background-image: none !important;
-    background-color: #444;
+    background-color: #2A2D7C;
     margin-bottom: 0;
     border-radius: 5px 5px 0 0!important;
     border:0 !important;
@@ -788,15 +788,15 @@ iframe.video{
 }
 /*  Info Login -----------------------------------------*/
 .info-login{
-	background-color: #444;
-	background: rgba(0,0,0,0.4);
+	background-color: #2A2D7C;
+	background: rgb(42, 45, 124, .3);
 	border-radius: 5px;
 	width: 70%;
 	height: auto;
 	float: right;
 }
 .info-login .head-info-login{
-	background-color: #444;
+	background-color: #2A2D7C;
 	padding: 0;
 	text-align: right;
 	overflow: auto;
