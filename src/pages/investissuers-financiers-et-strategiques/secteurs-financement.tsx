@@ -399,22 +399,25 @@ export function Credit() {
                             <div className="col-md-8">
                                 <h4>Crédit</h4>
                                 <p>
-                                Nous investissons dans la dette mezzanine, les prêts de premier rang, les prêts spécialisés, le crédit structuré, l'énergie alternative et le crédit opportuniste via nos partenaires.
-                                
+                                    Nous investissons dans la dette mezzanine, les prêts de premier rang, les prêts spécialisés, le crédit structuré, l'énergie alternative et le crédit opportuniste via nos partenaires, au travers de :
                                 </p>
-                                <p>
-                                    Dette mezzanine
-                                </p>
-                                <p>
-                                    CFB Mezzanine Partners («CFBMP») est une familles de fonds mezzanine.
-                                </p>
+                                <ul className="list-styles">
+                                    <li>
+                                        <i className="fa fa-check" />
+                                        Dette mezzanine 
+                                    </li>
+                                    <li>
+                                        <i className="fa fa-check" />
+                                        CFB Mezzanine Partners («CFBMP») qui est une familles de fonds mezzanine. 
+                                    </li>
+                                </ul>
                             </div>
                             <div className="col-md-12">
                                 <div className="row">
                                     <div className="col-md-6">
                                         <p>
                                             <br/>
-                                            Investissant du capital, nous cherchons à fournir du capital privé à haut rendement pour les opérations de levier et de rachat de gestion de taille moyenne à grande, les recapitalisations, les financements, les refinancements, les acquisitions et les restructurations pour des clients tels que les sociétés de capital-investissement, les sociétés familiales privées et les émetteurs privés. Notre équipe:
+                                            Investissant du capital, nous cherchons à fournir du capital privé à haut rendement pour les opérations de levier et de rachat de gestion de taille moyenne à grande, les recapitalisations, les financements, les refinancements, les acquisitions et les restructurations pour des clients tels que les sociétés de capital-investissement, les sociétés familiales privées et les émetteurs privés. Notre équipe :
                                             <ul className="list-styles">
                                                 <li>
                                                     <i className="fa fa-check" />
@@ -439,7 +442,7 @@ export function Credit() {
                                     <div className="col-md-6">
                                         <p>
                                             <br/>
-                                            Fort de notre expérience sur le marché mezzanine, notre groupe entretient de solides relations avec les principaux sponsors et sociétés de capital-investissement du monde entier. Ces relations, ainsi que notre capacité à accéder au réseau Capital Financial Bank, créent des opportunités pour CFB Mezzanine Partners de consentir des crédits. Les autres avantages incluent:
+                                            Fort de notre expérience sur le marché mezzanine, notre groupe entretient de solides relations avec les principaux sponsors et sociétés de capital-investissement du monde entier. Ces relations, ainsi que notre capacité à accéder au réseau Capital Financial Bank, créent des opportunités pour CFB Mezzanine Partners de consentir des crédits. Les autres avantages incluent :
                                             <ul className="list-styles">
                                                 <li>
                                                     <i className="fa fa-check" />
