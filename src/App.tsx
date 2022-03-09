@@ -90,7 +90,7 @@ export default function App () {
             <Route path="contact" element={<ContactUs />} />
             <Route path="media/in-the-news" element={<Blog />} />            
             
-            {/* <Route path="gouvernance/:gouvernancePage" element={<Gouvernance />} /> */}
+            <Route path="gouvernance/:gouvernancePage" element={<Gouvernance />} />
             {/* <Route path="press-release" element={<Blog />} /> */}
           </Routes>
           

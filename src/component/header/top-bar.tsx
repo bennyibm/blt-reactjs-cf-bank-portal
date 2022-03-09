@@ -35,7 +35,7 @@ function LoginArea(){
                 <div  className="head-info-login">
                     <p>bientôt disponible</p>
                     <span>
-                        <a href="/" onClick={e => e.preventDefault()}>Inscription</a>
+                        <a href="/" onClick={e => e.preventDefault()}>Devenir client</a>
                     </span>
                 </div>
                 <div  className="form-theme">

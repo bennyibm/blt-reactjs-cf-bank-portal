@@ -39,7 +39,7 @@ export default function NotationFinanciere() {
                                 <img className="img-responsive" src="/img/custom/puzzle.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8">
-                                <h4>Fusions et acquisitions</h4>
+                                <h4>nos offres de notation financiere</h4>
                                 <p>
                                     Les réserves obligatoires en capital pour les classes d'actifs à haut rendement peuvent limiter les pratiques de gestion des investissements des assureurs. 
                                 </p>

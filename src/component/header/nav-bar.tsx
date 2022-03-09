@@ -65,7 +65,7 @@ export default function NavBar(){
                                         <Link to="/compagnie/events"> Events </Link>
                                     </li>
                                 </NavBarItemWithSubMenu>
-                                {/* <NavBarItemWithSubMenu title="Gouvernance">
+                                <NavBarItemWithSubMenu title="Gouvernement">
                                         <li>
                                            <Link to="/gouvernance/conseil-d-administration"> Conseil d'administration </Link>
                                         </li>
@@ -75,7 +75,7 @@ export default function NavBar(){
                                         <li>
                                             <Link to="/gouvernance/comite-de-direction">Comité de direction</Link>
                                         </li>
-                                </NavBarItemWithSubMenu>  */}
+                                </NavBarItemWithSubMenu> 
                                 <NavBarItemWithSubMenu title="Nos Divisions">
                                     <li>
                                         <Link to="/nos-divisions/banque-d-investissement"> Banque d'Investissement </Link>

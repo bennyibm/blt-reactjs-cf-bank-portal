@@ -96,7 +96,7 @@ export default function BanqueDAffaires() {
                                 <img className="img-responsive" src="/img/custom/fusion.jpg" style={{borderRadius : 10, height : 280, objectFit : "cover"}} alt="" />
                             </div>
                             <div className="col-md-8" style={{display : "flex", flexDirection : "column", justifyContent: "center"}}>
-                                <h4>3. Fusions et acquisitions</h4>
+                                {/* <h4>3. Fusions et acquisitions</h4> */}
                                 <p className="text-black">
                                     Notre groupe Corporate Private Equity  CFB recherche une appréciation du capital à long terme en engageant des actions dans des sociétés de haute qualité avec une gestion solide. <br/>
                                     Nous cherchons à générer des rendements supérieurs dans une variété de situations, y compris les rachats à effet de levier, les recapitalisations, les investissements de croissance et les investissements stressés / en difficulté dans une gamme d'industries et de zones géographiques. Nous ciblons des investissements allant de 50 millions de dollars à plus de 800 millions de dollars. <br/>
